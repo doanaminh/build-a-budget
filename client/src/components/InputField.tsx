@@ -39,6 +39,7 @@ const InputField: React.FC<Props> = ({
             <span className="symbol">{symbol}</span>
             <input
               className={`inputArea ${invalidInput ? "inputBoxInvalid" : ""}`}
+              pattern="[0-9]*"
               name={inputName}
               type="number"
               placeholder={placeholder}
