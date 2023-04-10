@@ -1,7 +1,13 @@
+// Importing important files 
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+
+// Importing components
 import Navbar from './components/Navbar';
+
+// Importing pages
+import Home from './pages/Home';
+import Credits from './pages/Credits';
 
 export default function App() {
 
@@ -12,6 +18,7 @@ export default function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/credits" element={<Credits />} />
           </Routes>
         </div>
       </BrowserRouter>

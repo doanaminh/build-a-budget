@@ -2,12 +2,12 @@ export default function () {
     return (
         <>
             <div className='Navbar'>
-                <i>BaB</i>
+                <h2><a href="/">BaB</a></h2>
                 <ul>
-                    <li>Start Here</li>
-                    <li>FAQ</li>
-                    <li>Calculator</li>
-                    <li>About</li>
+                    <li><a href="">Start Here</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Calculator</a></li>
+                    <li><a href="">About</a></li>
                 </ul>
             </div>
         </>

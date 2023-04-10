@@ -55,6 +55,22 @@ COMPONENTS
 */
 .Navbar {
   background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navbar h2 a {
+  padding: 0 0.5rem;
+  color: burlywood;
+}
+.Navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.Navbar li a {
+  padding: 0 0.5rem;
+  color: burlywood;
 }
 
 /* 
@@ -64,8 +80,29 @@ PAGES
 || HOME
 */
 .Home {
+  color:blanchedalmond;
+}
+.Home main {
   background-image: url(/assets/pexels-picas-joe-11348123.jpg);
   background-size: cover;
+  padding: 1rem 0 0 1rem;
   height: 500px;
-  color:blanchedalmond;
+}
+.Home h1 {
+  margin: 0;
+}
+.homePanel {
+  display: flex;
+  justify-content: space-around;
+  background-color: blanchedalmond;
+  color: burlywood;
+}
+.homePanel article {
+  width: 30%;
+}
+.homePanel p {
+  text-align: center;
+}
+.homePanel img {
+  width: 100%;
 }
