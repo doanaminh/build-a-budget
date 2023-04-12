@@ -1,3 +1,5 @@
+import Button from "../components/Button"
+
 export default function () {
     return(
         <>
@@ -7,6 +9,11 @@ export default function () {
                     <p>
                         Create your budget and achieve your goals!
                     </p>
+                    <Button
+                        height='20px'
+                        width='50px'
+                        onClick={() => console.log('hello')}
+                    />
                 </main>
                 <section className='homePanel'>
                     <article>
