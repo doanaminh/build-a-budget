@@ -61,7 +61,7 @@ COMPONENTS
 }
 .Navbar h2 a {
   padding: 0 0.5rem;
-  color: burlywood;
+  color: #ad8e60;
 }
 .Navbar ul {
   display: flex;
@@ -70,7 +70,7 @@ COMPONENTS
 }
 .Navbar li a {
   padding: 0 0.5rem;
-  color: burlywood;
+  color: #ad8e60;
 }
 
 /* 
@@ -95,7 +95,7 @@ PAGES
   display: flex;
   justify-content: space-around;
   background-color: blanchedalmond;
-  color: burlywood;
+  color: #866b41;
 }
 .homePanel article {
   width: 30%;
