@@ -10,8 +10,12 @@ export default function () {
                         Create your budget and achieve your goals!
                     </p>
                     <Button
-                        height='20px'
-                        width='50px'
+                        backgroundColor="blanchedalmond"
+                        children='Start Here'
+                        color='burlywood'
+                        fontSize="1.8rem"
+                        height='80px'
+                        width='200px'
                         onClick={() => console.log('hello')}
                     />
                 </main>
