@@ -33,7 +33,7 @@ export default function () {
                     <article>
                         <img src="/assets/concept-of-to-do-list.png" alt="" />
                         <p>Total credit card debt in the U.S. by Q1 of 2023 is nearly $988 billion and for the average american is $5,733.</p>
-                        <a href="https://www.cnbc.com/2023/06/09/how-much-credit-card-debt-americans-hold-by-age.html"></a>
+                        <a href="https://www.cnbc.com/2023/06/09/how-much-credit-card-debt-americans-hold-by-age.html">source</a>
                     </article>
                 </section>
             </section>
