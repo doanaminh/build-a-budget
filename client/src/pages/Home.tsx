@@ -3,11 +3,17 @@ import Button from "../components/Button"
 export default function () {
     return(
         <>
+
+            {/* HERO SECTION */}
             <section className="Home">
                 <main>
                     <h1>Build-a-Budget</h1>
                     <p>
-                        Create your budget and achieve your goals!
+                        What is a budget? 
+                        <br />
+                        In short: a financial plan.
+                        <br />
+                         Create your own and conquer your future!
                     </p>
                     <Button
                         backgroundColor="blanchedalmond"
@@ -19,21 +25,36 @@ export default function () {
                         onClick={() => console.log('hello')}
                     />
                 </main>
+
+                {/* STATISTICS PANEL SECTION */}
                 <section className='homePanel'>
+                    <h3>Why do I need a budget?</h3>
+                    <section className='panels'>
+                        <article>
+                            <img src="/assets/concept-of-to-do-list.png" alt="" />
+                            <p>The total U.S. student debt by the end of 2022 is $1.76 trillion and the average undergraduate student loan debt is around $37,787.</p>
+                            <a href="https://www.bankrate.com/loans/student-loans/student-loan-debt-statistics/#key-statistics">source</a>
+                        </article>
+                        <article>
+                            <img src="/assets/concept-of-to-do-list.png" alt="" />
+                            <p>The total mortgage debt in the U.S. as of Q1 of 2023 is $12.04 trillion and the average mortgage debt in 2022 is $236,443.</p>
+                            <a href="https://www.fool.com/the-ascent/research/average-household-debt/">source</a>
+                        </article>
+                        <article>
+                            <img src="/assets/concept-of-to-do-list.png" alt="" />
+                            <p>Total credit card debt in the U.S. by Q1 of 2023 is nearly $988 billion and for the average american is $5,733.</p>
+                            <a href="https://www.cnbc.com/2023/06/09/how-much-credit-card-debt-americans-hold-by-age.html">source</a>
+                        </article>
+                    </section>
+                </section>
+
+                {/* FURTHER READING */}
+                <section>
+                    <h3>What can I achieve with a budget?</h3>
                     <article>
-                        <img src="/assets/concept-of-to-do-list.png" alt="" />
-                        <p>The total U.S. student debt by the end of 2022 is $1.76 trillion and the average undergraduate student loan debt is around $37,787.</p>
-                        <a href="https://www.bankrate.com/loans/student-loans/student-loan-debt-statistics/#key-statistics">source</a>
-                    </article>
-                    <article>
-                        <img src="/assets/concept-of-to-do-list.png" alt="" />
-                        <p>The total mortgage debt in the U.S. as of Q1 of 2023 is $12.04 trillion and the average mortgage debt in 2022 is $236,443.</p>
-                        <a href="https://www.fool.com/the-ascent/research/average-household-debt/">source</a>
-                    </article>
-                    <article>
-                        <img src="/assets/concept-of-to-do-list.png" alt="" />
-                        <p>Total credit card debt in the U.S. by Q1 of 2023 is nearly $988 billion and for the average american is $5,733.</p>
-                        <a href="https://www.cnbc.com/2023/06/09/how-much-credit-card-debt-americans-hold-by-age.html">source</a>
+                        <p>
+                            Dream home?
+                        </p>
                     </article>
                 </section>
             </section>

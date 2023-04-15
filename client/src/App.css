@@ -91,17 +91,29 @@ PAGES
 .Home h1 {
   margin: 0;
 }
+.Home p {
+  font-size: 1.4rem;
+}
 .homePanel {
-  display: flex;
-  justify-content: space-around;
   background-color: blanchedalmond;
   color: #866b41;
+}
+.homePanel h3 {
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.homePanel .panels {
+  display: flex;
+  justify-content: space-around;
 }
 .homePanel article {
   width: 30%;
 }
 .homePanel p {
   text-align: center;
+  font-size: 1.2rem;
 }
 .homePanel img {
   width: 100%;
