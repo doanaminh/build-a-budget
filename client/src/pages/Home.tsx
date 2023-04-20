@@ -1,4 +1,8 @@
-import Button from "../components/Button"
+import Button from "../components/Button";
+import home from '/svg/home.svg';
+import freedom from '/svg/freedom.svg';
+import travel from '/svg/travel.svg';
+import emergency from '/svg/emergency.svg';
 
 export default function () {
     return(
@@ -30,53 +34,64 @@ export default function () {
                 <section className='homePanel'>
                     <h3>Why do I need a budget?</h3>
 
-                    {/* DEBT INFOGRAPHICS */}
-                    <section className="debt">
-                        <h4>DEBT</h4>
-                        <section className='panels'>
+                    {/* GOALS */}
+                    <section className="goals">
+                        <section>
                             <article>
-                                <img src="/assets/concept-of-to-do-list.png" alt="" />
-                                <p>The average undergraduate student loan debt by the end of 2022 was around <b>$37,787</b>.</p>
-                                <a href="https://www.bankrate.com/loans/student-loans/student-loan-debt-statistics/#key-statistics">source</a>
+                                <img src={freedom} alt="" />
+                                <h4>Financial Freedom</h4>
                             </article>
                             <article>
-                                <img src="/assets/concept-of-to-do-list.png" alt="" />
-                                <p>The average mortgage debt in America in 2022 was <b>$236,443</b>.</p>
-                                <a href="https://www.fool.com/the-ascent/research/average-household-debt/">source</a>
+                                <img src={home} alt="" />
+                                <h4>Dream Home</h4>
                             </article>
                             <article>
-                                <img src="/assets/concept-of-to-do-list.png" alt="" />
-                                <p>The average american in Q1 of 2023 has <b>$5,733</b> in credit card debt.</p>
-                                <a href="https://www.cnbc.com/2023/06/09/how-much-credit-card-debt-americans-hold-by-age.html">source</a>
+                                <img src={travel} alt="" />
+                                <h4>Traveling</h4>
                             </article>
                         </section>
                     </section>
 
                     {/* EMERGENCY */}
                     <section className="emergency">
-                        <h4>EMERGENCY</h4>
-                        <p>Emergencies happen when we least expect it. Automotive, medical, natural. No matter how small or large the expense, would you have an emergency fund ready? A reported 22% of U.S. adults claim to have no emergency savings.</p>
-                        <a href="https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/">source</a>
+                        <img src={emergency} alt="" />
+                        <h4>EMERGENCIES</h4>
+                        <p>Emergencies happen when we least expect it. Automotive, medical, natural; no matter how small or large the expense, would you have an emergency fund ready? A reported 22% of U.S. adults claim to have no emergency savings. <a href="https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/" target='_blank'>source</a></p>
+                        
+                    </section>
+
+                    {/* DEBT INFOGRAPHICS */}
+                    <section className="debt">
+                        <h4>DEBT</h4>
+                        <section className='panels'>
+                            <article>
+                                <img src="/assets/concept-of-to-do-list.png" alt="" />
+                                <p>The average undergraduate student loan debt by the end of 2022 was around <b>$37,787</b>.  <a href="https://www.bankrate.com/loans/student-loans/student-loan-debt-statistics/#key-statistics" target='_blank'>source</a></p>
+                               
+                            </article>
+                            <article>
+                                <img src="/assets/concept-of-to-do-list.png" alt="" />
+                                <p>The average mortgage debt in America in 2022 was <b>$236,443</b>. <a href="https://www.fool.com/the-ascent/research/average-household-debt/" target='_blank'>source</a></p>
+                                
+                            </article>
+                            <article>
+                                <img src="/assets/concept-of-to-do-list.png" alt="" />
+                                <p>The average american in Q1 of 2023 has <b>$5,733</b> in credit card debt. <a href="https://www.cnbc.com/2023/06/09/how-much-credit-card-debt-americans-hold-by-age.html" target='_blank'>source</a></p>
+                                
+                            </article>
+                        </section>
                     </section>
 
                     {/* EDUCATION INFOGRAPHICS */}
                     <section className="education">
                         <h4>EDUCATION</h4>
                         <p>To manage money better requires an understanding of how it actually works. The average American was only able to correctly answer about <b>48%</b> of the 2023 P-Fin Index financial literacy survey. This survey measures knowledge relating to financial situations encountered in the normal course of life.</p>
-                        <a href="https://gflec.org/wp-content/uploads/2023/04/2023-P-Fin-Index-report-TIAA-Inst-and-GFLEC-Apr-2023.pdf">source</a>
+                        <a href="https://gflec.org/wp-content/uploads/2023/04/2023-P-Fin-Index-report-TIAA-Inst-and-GFLEC-Apr-2023.pdf" target='_blank'>source</a>
                     </section>
                     
                 </section>
 
-                {/* FURTHER READING */}
-                <section className="goals">
-                    <h3>What can I achieve with a budget?</h3>
-                    <article>
-                        <p>
-                            Dream home?
-                        </p>
-                    </article>
-                </section>
+
             </section>
 
             
