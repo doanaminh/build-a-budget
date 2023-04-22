@@ -8,6 +8,9 @@ export default function () {
                     <li><a href="https://iconscout.com/illustrations/artist" target="_blank">Free Artist Illustration</a> by <a href="https://iconscout.com/contributors/delesign">Delesign Graphics</a> on <a href="https://iconscout.com">IconScout</a></li>
                     <li><a href="https://iconscout.com/illustrations/backpack" target="_blank">Free Backpack Illustration</a> by <a href="https://iconscout.com/contributors/delesign">Delesign Graphics</a> on <a href="https://iconscout.com">IconScout</a></li>
                     <li><a href="https://iconscout.com/illustrations/woman" target="_blank">Free Woman getting treatment inside quarantine ward Illustration</a> by <a href="https://iconscout.com/contributors/roundsquid" target="_blank">roundsquid</a></li>
+                    <li><a href="https://iconscout.com/illustrations/book-lovers" target="_blank">Free Book Lovers Illustration</a> by <a href="https://iconscout.com/contributors/manypixels-gallery" target="_blank">Manypixels Gallery</a></li>
+                    <li><a href="https://iconscout.com/icons/house-payment" target="_blank">Free House Payment Icon</a> by <a href="https://iconscout.com/contributors/triangle-squad" target="_blank">Triangle Squad</a></li>
+                    <li><a href="https://iconscout.com/icons/credit-card" target="_blank">Free Credit-Card Icon</a> by <a href="https://iconscout.com/contributors/chanut-is-industries">Chanut Is industries</a> on <a href="https://iconscout.com">IconScout</a></li>
                 </ul>
             </section>
         </>

@@ -3,6 +3,9 @@ import home from '/svg/home.svg';
 import freedom from '/svg/freedom.svg';
 import travel from '/svg/travel.svg';
 import emergency from '/svg/emergency.svg';
+import education from '/svg/education.svg';
+import creditCard from '/svg/creditCard.svg';
+import mortgage from '/svg/mortgage.svg';
 
 export default function () {
     return(
@@ -62,20 +65,19 @@ export default function () {
 
                     {/* DEBT INFOGRAPHICS */}
                     <section className="debt">
-                        <h4>DEBT</h4>
-                        <section className='panels'>
+                        <section>
                             <article>
-                                <img src="/assets/concept-of-to-do-list.png" alt="" />
+                            <img src={education} alt="" />
                                 <p>The average undergraduate student loan debt by the end of 2022 was around <b>$37,787</b>.  <a href="https://www.bankrate.com/loans/student-loans/student-loan-debt-statistics/#key-statistics" target='_blank'>source</a></p>
                                
                             </article>
                             <article>
-                                <img src="/assets/concept-of-to-do-list.png" alt="" />
+                                <img src={mortgage} alt="" />
                                 <p>The average mortgage debt in America in 2022 was <b>$236,443</b>. <a href="https://www.fool.com/the-ascent/research/average-household-debt/" target='_blank'>source</a></p>
                                 
                             </article>
                             <article>
-                                <img src="/assets/concept-of-to-do-list.png" alt="" />
+                                <img src={creditCard} alt="" />
                                 <p>The average american in Q1 of 2023 has <b>$5,733</b> in credit card debt. <a href="https://www.cnbc.com/2023/06/09/how-much-credit-card-debt-americans-hold-by-age.html" target='_blank'>source</a></p>
                                 
                             </article>
