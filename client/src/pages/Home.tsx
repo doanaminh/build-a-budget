@@ -26,7 +26,7 @@ export default function () {
                         backgroundColor="blanchedalmond"
                         children='Start Here'
                         color='#ad8e60'
-                        fontSize="1.8rem"
+                        fontSize="1.6rem"
                         height='80px'
                         width='200px'
                         onClick={() => console.log('hello')}
