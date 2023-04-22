@@ -5,7 +5,7 @@
   text-align: center;
 } */
 
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -16,7 +16,7 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
+} */
 
 @keyframes logo-spin {
   from {
@@ -176,4 +176,26 @@ main p {
 }
 .debt img {
   width: 100%;
+}
+
+/* 
+||| EDUCATION
+*/
+.education {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.education h4 {
+  font-size: 2rem;
+  margin: 0;
+}
+.education p {
+  font-size: 1.5rem;
+}
+.education img {
+  width: 100%;
+  padding-bottom: 1rem;
 }

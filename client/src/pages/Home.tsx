@@ -86,9 +86,9 @@ export default function () {
 
                     {/* EDUCATION INFOGRAPHICS */}
                     <section className="education">
+                        <img src="assets\pexels-monstera-5849556.jpg" alt="" />
                         <h4>EDUCATION</h4>
-                        <p>To manage money better requires an understanding of how it actually works. The average American was only able to correctly answer about <b>48%</b> of the 2023 P-Fin Index financial literacy survey. This survey measures knowledge relating to financial situations encountered in the normal course of life.</p>
-                        <a href="https://gflec.org/wp-content/uploads/2023/04/2023-P-Fin-Index-report-TIAA-Inst-and-GFLEC-Apr-2023.pdf" target='_blank'>source</a>
+                        <p>To manage money better requires an understanding of how it actually works. The average American was only able to correctly answer about <b>48%</b> of the 2023 P-Fin Index financial literacy survey. This survey measures knowledge relating to financial situations encountered in the normal course of life. <a href="https://gflec.org/wp-content/uploads/2023/04/2023-P-Fin-Index-report-TIAA-Inst-and-GFLEC-Apr-2023.pdf" target='_blank'>source</a></p>
                     </section>
                     
                 </section>
