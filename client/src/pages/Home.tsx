@@ -59,8 +59,7 @@ export default function () {
                     <section className="emergency">
                         <img src={emergency} alt="" />
                         <h4>EMERGENCIES</h4>
-                        <p>Emergencies happen when we least expect it. Automotive, medical, natural; no matter how small or large the expense, would you have an emergency fund ready? A reported 22% of U.S. adults claim to have no emergency savings. <a href="https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/" target='_blank'>source</a></p>
-                        
+                        <p>Emergencies happen when we least expect it. Automotive, medical, natural; no matter how small or large the expense, will you be ready? A reported 22% of U.S. adults claim to have no emergency savings. <a href="https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/" target='_blank'>?</a></p>
                     </section>
 
                     {/* DEBT INFOGRAPHICS */}
@@ -93,15 +92,13 @@ export default function () {
                     
                 </section>
 
+                {/* TAKE ACTION */}
+                <section>
+                    <p>Educate yourself and take control of your finances!</p>
+                </section>
 
             </section>
 
-            
-            <ul>
-                <li><a href="https://i.imgur.com/u0ocDRI.png" target='_blank'>REDDIT REFERENCE</a></li>
-                <li><a href="/credits">credits</a></li>
-                <li>ADD A SECTION ON EMERGENCY FUND</li>
-            </ul>
         </>
     )
 }

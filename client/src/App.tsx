@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Importing components
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 // Importing pages
 import Home from './pages/Home';
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/credits" element={<Credits />} />
           </Routes>
+          <Footer />
         </div>
       </BrowserRouter>
     </>

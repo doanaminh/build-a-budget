@@ -52,7 +52,6 @@ START
 COMPONENTS
 =======================================================
 */
-
 /* 
 || NAVBAR
 */
@@ -72,6 +71,29 @@ COMPONENTS
   list-style: none;
 }
 .Navbar li a {
+  padding: 0 0.5rem;
+  color: #ad8e60;
+}
+
+/* 
+|| FOOTER
+ */
+ .Footer {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Footer h2 a {
+  padding: 0 0.5rem;
+  color: #ad8e60;
+}
+.Footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.Footer li a {
   padding: 0 0.5rem;
   color: #ad8e60;
 }
