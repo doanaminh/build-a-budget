@@ -67,17 +67,17 @@ export default function () {
                         <section>
                             <article>
                             <img src={education} alt="" />
-                                <p>The average undergraduate student loan debt by the end of 2022 was around <b>$37,787</b>.  <a href="https://www.bankrate.com/loans/student-loans/student-loan-debt-statistics/#key-statistics" target='_blank'>source</a></p>
+                                <p>The average undergraduate student loan debt by the end of 2022 was around <b>$37,787</b>.  <a href="https://www.bankrate.com/loans/student-loans/student-loan-debt-statistics/#key-statistics" target='_blank'>?</a></p>
                                
                             </article>
                             <article>
                                 <img src={mortgage} alt="" />
-                                <p>The average mortgage debt in America in 2022 was <b>$236,443</b>. <a href="https://www.fool.com/the-ascent/research/average-household-debt/" target='_blank'>source</a></p>
+                                <p>The average mortgage debt in America in 2022 was <b>$236,443</b>. <a href="https://www.fool.com/the-ascent/research/average-household-debt/" target='_blank'>?</a></p>
                                 
                             </article>
                             <article>
                                 <img src={creditCard} alt="" />
-                                <p>The average american in Q1 of 2023 has <b>$5,733</b> in credit card debt. <a href="https://www.cnbc.com/2023/06/09/how-much-credit-card-debt-americans-hold-by-age.html" target='_blank'>source</a></p>
+                                <p>The average american in Q1 of 2023 has <b>$5,733</b> in credit card debt. <a href="https://www.cnbc.com/2023/06/09/how-much-credit-card-debt-americans-hold-by-age.html" target='_blank'>?</a></p>
                                 
                             </article>
                         </section>
@@ -87,14 +87,23 @@ export default function () {
                     <section className="education">
                         <img src="assets\pexels-monstera-5849556.jpg" alt="" />
                         <h4>EDUCATION</h4>
-                        <p>To manage money better requires an understanding of how it actually works. The average American was only able to correctly answer about <b>48%</b> of the 2023 P-Fin Index financial literacy survey. This survey measures knowledge relating to financial situations encountered in the normal course of life. <a href="https://gflec.org/wp-content/uploads/2023/04/2023-P-Fin-Index-report-TIAA-Inst-and-GFLEC-Apr-2023.pdf" target='_blank'>source</a></p>
+                        <p>To manage money better requires an understanding of how it actually works. The average American was only able to correctly answer about <b>48%</b> of the 2023 P-Fin Index financial literacy survey. This survey measures knowledge relating to financial situations encountered in the normal course of life. <a href="https://gflec.org/wp-content/uploads/2023/04/2023-P-Fin-Index-report-TIAA-Inst-and-GFLEC-Apr-2023.pdf" target='_blank'>?</a></p>
                     </section>
                     
                 </section>
 
                 {/* TAKE ACTION */}
-                <section>
+                <section className='takeAction'>
                     <p>Educate yourself and take control of your finances!</p>
+                    <Button 
+                        backgroundColor="blanchedalmond"
+                        children='Get Started'
+                        color='#ad8e60'
+                        fontSize="1.5rem"
+                        height='80px'
+                        width='200px'
+                        onClick={() => console.log('hello')}
+                    />
                 </section>
 
             </section>

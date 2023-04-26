@@ -178,6 +178,7 @@ main p {
 }
 .emergency p {
   font-size: 1.5rem;
+  padding: 0 2rem;
 }
 .emergency img {
   width: 60%;
@@ -187,6 +188,9 @@ main p {
 /* 
 ||| DEBT
 */
+.debt {
+  padding: 2rem 0;
+}
 .debt section {
   display: flex;
   justify-content: space-around;
@@ -216,8 +220,21 @@ main p {
 }
 .education p {
   font-size: 1.5rem;
+  padding: 0 1rem;
 }
 .education img {
   width: 100%;
   padding-bottom: 1rem;
+}
+
+/* 
+||| TAKE ACTION
+*/
+.takeAction {
+  background-color: #ceae7f;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
 }
