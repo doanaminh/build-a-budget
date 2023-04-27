@@ -6,6 +6,7 @@ import emergency from '/svg/emergency.svg';
 import education from '/svg/education.svg';
 import creditCard from '/svg/creditCard.svg';
 import mortgage from '/svg/mortgage.svg';
+import BudgetCalculator from "./BudgetCalculator";
 
 export default function () {
     return(
