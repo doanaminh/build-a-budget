@@ -1,3 +1,5 @@
+import Button from "../components/Button"
+
 export default function() {
     return (
         <>
@@ -107,6 +109,14 @@ export default function() {
                             </ul>
                         </article>
                     </section>
+                    <Button
+                        backgroundColor="gold"
+                        color="white"
+                        fontSize="1rem"
+                        height="1.5rem"
+                        width="3rem"
+                        onClick={() => console.log('click')}
+                    />
                 </form>
             </section>
         </>
