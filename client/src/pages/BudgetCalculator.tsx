@@ -116,7 +116,7 @@ export default function() {
                         height="1.5rem"
                         width="3rem"
                         onClick={() => console.log('click')}
-                    />
+                    >Hello</Button>
                 </form>
             </section>
         </>
