@@ -261,3 +261,6 @@ main p {
   justify-content: space-between;
   padding: 0.25rem 0;
 }
+.BudgetCalculator label {
+  width: 50%;
+}

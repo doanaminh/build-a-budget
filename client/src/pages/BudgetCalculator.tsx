@@ -163,14 +163,18 @@ export default function() {
                             </ul>
                         </article>
                     </section>
-                    <Button
-                        backgroundColor="#43718b"
-                        color="white"
-                        fontSize="1rem"
-                        height="3rem"
-                        width="10rem"
-                        onClick={() => console.log('click')}
-                    >Calculate</Button>
+                    <div>
+                        <div></div>
+                        <Button
+                            backgroundColor="#43718b"
+                            color="white"
+                            fontSize="1rem"
+                            height="3rem"
+                            width="10rem"
+                            onClick={() => console.log('click')}
+                        >Calculate</Button>
+                        <div></div>
+                    </div>
                 </form>
             </section>
         </>
