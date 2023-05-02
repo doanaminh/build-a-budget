@@ -264,3 +264,6 @@ main p {
 .BudgetCalculator label {
   width: 50%;
 }
+.BudgetCalculator input {
+  text-align: end;
+}

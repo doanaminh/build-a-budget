@@ -1,8 +1,19 @@
-import Button from "../components/Button"
+import { useState } from 'react';
+import Button from "../components/Button";
+
 
 export default function() {
+
+    const [val, setVal] = useState(0);
+    const handleChange = (event) => {
+        setVal(event.target.value);
+    }
+    let monthlyIncome = val;
+    
+
     return (
         <>
+            <button onClick={() => console.log(monthlyIncome)}></button>
             <section className='BudgetCalculator'>
                 {/*  */}
                 <h1>Calculate your budget!</h1>
@@ -23,7 +34,8 @@ export default function() {
                             <label htmlFor="">How much is each paycheck? (Amount after taxes are taken)</label>
                             <div>
                                 <span>$</span>
-                                <input type="number" placeholder="0" min='0' />
+                                <input type="number" placeholder="0" min='0' onInput={handleChange}
+                                />
                             </div>
                         </div>
                     </section>

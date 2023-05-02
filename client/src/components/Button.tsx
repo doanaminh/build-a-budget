@@ -6,7 +6,7 @@ interface Props {
   children?: React.ReactNode;
   fontSize: string;
   height: string;
-  onClick: () => void;
+  onClick?: () => any;
   width: string;
 }
 

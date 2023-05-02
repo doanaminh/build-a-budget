@@ -1,4 +1,9 @@
+
+
+// IMPORT COMPONENTS
 import Button from "../components/Button";
+
+// IMPORTING SVGs 
 import home from '/svg/home.svg';
 import freedom from '/svg/freedom.svg';
 import travel from '/svg/travel.svg';
@@ -6,7 +11,7 @@ import emergency from '/svg/emergency.svg';
 import education from '/svg/education.svg';
 import creditCard from '/svg/creditCard.svg';
 import mortgage from '/svg/mortgage.svg';
-import BudgetCalculator from "./BudgetCalculator";
+
 
 export default function () {
     return(
@@ -30,7 +35,7 @@ export default function () {
                         fontSize="1.6rem"
                         height='80px'
                         width='200px'
-                        onClick={() => console.log('hello')}
+                        onClick={() => console.log('hehe')}
                     />
                 </main>
 
@@ -103,7 +108,7 @@ export default function () {
                         fontSize="1.5rem"
                         height='80px'
                         width='200px'
-                        onClick={() => console.log('hello')}
+                        onClick={() => console.log('hehe')}
                     />
                 </section>
 
