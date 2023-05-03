@@ -4,16 +4,57 @@ import Button from "../components/Button";
 
 export default function() {
 
-    const [val, setVal] = useState(0);
-    const handleChange = (event) => {
-        setVal(event.target.value);
+    // VARIABLES AND FORMULAS FOR CALCULATOR (LOGIC)
+
+
+    const [state, setState] = useState({
+        
+        // NEEDS 
+        checkFrequency: 1,
+        checkAmount: 0,
+        livingExpense: 0,
+        bills: 0,
+        groceries: 0,
+        transportation: 0,
+        childcare: 0,
+        insurance: 0,
+        studentLoans: 0,
+        otherDebt: 0,
+
+        //  WANTS
+        entertainment: 0,
+        diningOut: 0,
+        hobbies: 0,
+        
+        // SAVINGS
+        emergencyFund: 0,
+        retirementFund: 0,
+        vacation: 0,
+    });
+
+    const handleChange = (e:any) => {
+        const value = e.target.value;
+        setState({
+            ...state,
+            [e.target.name]: value,
+        })
     }
-    let monthlyIncome = val;
+    // const [freq, setFreq] = useState('1');
+    // const handleFreq = (e:any) => {
+    //     setFreq(e.target.value);
+    // }
+
+    // const [val, setVal] = useState(0);
+    // const handleVal = e => {
+    //     setVal(e.target.value);
+    // }
+
+    let monthlyIncome = Number(state.checkFrequency) * Number(state.checkAmount);
     
 
     return (
         <>
-            <button onClick={() => console.log(monthlyIncome)}></button>
+            <button onClick={() => console.log(monthlyIncome, state.checkFrequency)}></button>
             <section className='BudgetCalculator'>
                 {/*  */}
                 <h1>Calculate your budget!</h1>
@@ -24,17 +65,21 @@ export default function() {
                     <section>
                         <div>
                             <label htmlFor="">How often do you get paid?</label>
-                            <select name="" id="">
-                                <option value="">Weekly</option>
-                                <option value="">Every Two Weeks</option>
-                                <option value="">Monthly</option>
+                            <select 
+                                value={state.checkFrequency}
+                                name="checkFrequency" id=""
+                                onChange={handleChange}    
+                            >
+                                <option value={4}>Weekly</option>
+                                <option value={2}>Every Two Weeks</option>
+                                <option value={1}>Monthly</option>
                             </select>
                         </div>
                         <div>
                             <label htmlFor="">How much is each paycheck? (Amount after taxes are taken)</label>
                             <div>
                                 <span>$</span>
-                                <input type="number" placeholder="0" min='0' onInput={handleChange}
+                                <input name='checkAmount' type="number" placeholder="0" min='0' onInput={handleChange}
                                 />
                             </div>
                         </div>
@@ -159,7 +204,7 @@ export default function() {
                                     </div>
                                 </li>
                                 <li>
-                                    <label htmlFor="">Vaction/Travel</label>
+                                    <label htmlFor="">Vacation/Travel</label>
                                     <div>
                                         <span>$</span>
                                         <input type="number" placeholder="0" min='0' />
