@@ -9,9 +9,11 @@ export default function() {
 
     const [state, setState] = useState({
         
-        // NEEDS 
+        // INCOME
         checkFrequency: 1,
         checkAmount: 0,
+
+        // NEEDS 
         livingExpense: 0,
         bills: 0,
         groceries: 0,
@@ -39,22 +41,14 @@ export default function() {
             [e.target.name]: value,
         })
     }
-    // const [freq, setFreq] = useState('1');
-    // const handleFreq = (e:any) => {
-    //     setFreq(e.target.value);
-    // }
 
-    // const [val, setVal] = useState(0);
-    // const handleVal = e => {
-    //     setVal(e.target.value);
-    // }
-
+    let totalNeeds = Number(state.livingExpense) + Number(state.bills) + Number(state.groceries) + Number(state.transportation) + Number(state.childcare) + Number(state.insurance) + Number(state.studentLoans) + Number(state.otherDebt);
     let monthlyIncome = Number(state.checkFrequency) * Number(state.checkAmount);
     
 
     return (
         <>
-            <button onClick={() => console.log(monthlyIncome, state.checkFrequency)}></button>
+            <button onClick={() => console.log(monthlyIncome, state.livingExpense, state.bills, state.groceries)}></button>
             <section className='BudgetCalculator'>
                 {/*  */}
                 <h1>Calculate your budget!</h1>
@@ -95,56 +89,56 @@ export default function() {
                                     <label htmlFor="">Rent/Mortgage</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='livingExpense' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Utilities</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='bills' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Groceries</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='groceries' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Transportation</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='transportation' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Childcare</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='childcare' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Healthcare</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='insurance' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Student Loans</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='studentLoans' type="number" placeholder="0" min='0' />
                                     </div>                                   
                                 </li>
                                 <li>
                                     <label htmlFor="">Other Debt</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='otherDebt' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                             </ul>
@@ -158,28 +152,21 @@ export default function() {
                                     <label htmlFor="">Entertainment</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='entertainment' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Dining Out</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='diningOut' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Hobbies</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
-                                    </div>
-                                </li>
-                                <li>
-                                    <label htmlFor="">Splurges</label>
-                                    <div>
-                                        <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='hobbies' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                             </ul>
@@ -193,28 +180,21 @@ export default function() {
                                     <label htmlFor="">Emergency Fund</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='emergencyFund' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Retirement</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='retirementFund' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Vacation/Travel</label>
                                     <div>
                                         <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
-                                    </div>
-                                </li>
-                                <li>
-                                    <label htmlFor="">Splurges</label>
-                                    <div>
-                                        <span>$</span>
-                                        <input type="number" placeholder="0" min='0' />
+                                        <input name='vacation' type="number" placeholder="0" min='0' />
                                     </div>
                                 </li>
                             </ul>
