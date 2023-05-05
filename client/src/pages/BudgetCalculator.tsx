@@ -38,17 +38,17 @@ export default function() {
         const value = e.target.value;
         setState({
             ...state,
-            [e.target.name]: value,
+            [e.target.name]: Number(value),
         })
     }
 
-    let totalNeeds = Number(state.livingExpense) + Number(state.bills) + Number(state.groceries) + Number(state.transportation) + Number(state.childcare) + Number(state.insurance) + Number(state.studentLoans) + Number(state.otherDebt);
-    let monthlyIncome = Number(state.checkFrequency) * Number(state.checkAmount);
+    let totalNeeds = state.livingExpense + state.bills + state.groceries + state.transportation + state.childcare + state.insurance + state.studentLoans + state.otherDebt;
+    let monthlyIncome = state.checkFrequency * state.checkAmount;
     
 
     return (
         <>
-            <button onClick={() => console.log(monthlyIncome, state.livingExpense, state.bills, state.groceries)}></button>
+            <button onClick={() => console.log('do something')}>debug</button>
             <section className='BudgetCalculator'>
                 {/*  */}
                 <h1>Calculate your budget!</h1>
@@ -62,7 +62,7 @@ export default function() {
                             <select 
                                 value={state.checkFrequency}
                                 name="checkFrequency" id=""
-                                onChange={handleChange}    
+                                onInput={handleChange}    
                             >
                                 <option value={4}>Weekly</option>
                                 <option value={2}>Every Two Weeks</option>
@@ -89,56 +89,56 @@ export default function() {
                                     <label htmlFor="">Rent/Mortgage</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='livingExpense' type="number" placeholder="0" min='0' />
+                                        <input name='livingExpense' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Utilities</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='bills' type="number" placeholder="0" min='0' />
+                                        <input name='bills' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Groceries</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='groceries' type="number" placeholder="0" min='0' />
+                                        <input name='groceries' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Transportation</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='transportation' type="number" placeholder="0" min='0' />
+                                        <input name='transportation' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Childcare</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='childcare' type="number" placeholder="0" min='0' />
+                                        <input name='childcare' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Healthcare</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='insurance' type="number" placeholder="0" min='0' />
+                                        <input name='insurance' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Student Loans</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='studentLoans' type="number" placeholder="0" min='0' />
+                                        <input name='studentLoans' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>                                   
                                 </li>
                                 <li>
                                     <label htmlFor="">Other Debt</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='otherDebt' type="number" placeholder="0" min='0' />
+                                        <input name='otherDebt' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                             </ul>
@@ -152,21 +152,21 @@ export default function() {
                                     <label htmlFor="">Entertainment</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='entertainment' type="number" placeholder="0" min='0' />
+                                        <input name='entertainment' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Dining Out</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='diningOut' type="number" placeholder="0" min='0' />
+                                        <input name='diningOut' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Hobbies</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='hobbies' type="number" placeholder="0" min='0' />
+                                        <input name='hobbies' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                             </ul>
@@ -180,21 +180,21 @@ export default function() {
                                     <label htmlFor="">Emergency Fund</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='emergencyFund' type="number" placeholder="0" min='0' />
+                                        <input name='emergencyFund' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Retirement</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='retirementFund' type="number" placeholder="0" min='0' />
+                                        <input name='retirementFund' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                                 <li>
                                     <label htmlFor="">Vacation/Travel</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='vacation' type="number" placeholder="0" min='0' />
+                                        <input name='vacation' type="number" placeholder="0" min='0' onInput={handleChange} />
                                     </div>
                                 </li>
                             </ul>
