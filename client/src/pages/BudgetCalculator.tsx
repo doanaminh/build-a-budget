@@ -41,15 +41,17 @@ export default function() {
             [e.target.name]: Number(value),
         })
     }
-
+    
+    let monthlyIncome = state.checkFrequency * state.checkAmount;
     let totalNeeds = state.livingExpense + state.bills + state.groceries + state.transportation + state.childcare + state.insurance + state.studentLoans + state.otherDebt;
     let totalWants = state.entertainment + state.diningOut + state.hobbies;
-    let monthlyIncome = state.checkFrequency * state.checkAmount;
+    let totalSavings = state.emergencyFund + state.retirementFund + state.vacation;
+    let remainder = monthlyIncome - totalNeeds - totalWants;
     
 
     return (
         <>
-            <button style={{color:'white'}} onClick={() => console.log(state.entertainment, state.diningOut, state.hobbies, totalWants)}>debug</button>
+            <button style={{color:'white'}} onClick={() => console.log(monthlyIncome, totalNeeds, totalSavings, remainder)}>debug</button>
             <section className='BudgetCalculator'>
                 {/*  */}
                 <h1>Calculate your budget!</h1>
