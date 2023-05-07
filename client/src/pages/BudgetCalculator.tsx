@@ -51,7 +51,7 @@ export default function() {
 
     return (
         <>
-            <button style={{color:'white'}} onClick={() => console.log(monthlyIncome, totalNeeds, totalSavings, remainder)}>debug</button>
+            <button style={{color:'white'}} onClick={() => console.log(monthlyIncome, totalNeeds, totalSavings, totalWants, remainder)}>debug</button>
             <section className='BudgetCalculator'>
                 {/*  */}
                 <h1>Calculate your budget!</h1>
