@@ -1,12 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Button from "../components/Button";
 
 
 export default function() {
 
     // VARIABLES AND FORMULAS FOR CALCULATOR (LOGIC)
-
-
     const [state, setState] = useState({
         
         // INCOME
@@ -47,11 +45,17 @@ export default function() {
     let totalWants = state.entertainment + state.diningOut + state.hobbies;
     let totalSavings = state.emergencyFund + state.retirementFund + state.vacation;
     let remainder = monthlyIncome - totalNeeds - totalWants;
+
+    useEffect(() => {
+        localStorage.setItem('userBudget', JSON.stringify(state));
+    }, [state])
+    const userBudget = JSON.parse(localStorage.getItem('userBudget'));
+    const [budget, setBudget] = useState(userBudget);
     
 
     return (
         <>
-            <button style={{color:'white'}} onClick={() => console.log(monthlyIncome, totalNeeds, totalSavings, totalWants, remainder)}>debug</button>
+            <button style={{color:'white'}} onClick={() => console.log(userBudget)}>debug</button>
             <section className='BudgetCalculator'>
                 {/*  */}
                 <h1>Calculate your budget!</h1>
@@ -59,27 +63,30 @@ export default function() {
                 {/* FORM THAT WILL SUBMIT WITH ALL THE NUMBERS FOR A BUDGET */}
                 <form action="">
                     {/* INCOME */}
-                    <section>
-                        <div>
-                            <label htmlFor="">How often do you get paid?</label>
-                            <select 
-                                value={state.checkFrequency}
-                                name="checkFrequency" id=""
-                                onInput={handleChange}    
-                            >
-                                <option value={4}>Weekly</option>
-                                <option value={2}>Every Two Weeks</option>
-                                <option value={1}>Monthly</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label htmlFor="">How much is each paycheck? (Amount after taxes are taken)</label>
-                            <div>
-                                <span>$</span>
-                                <input name='checkAmount' type="number" placeholder="0" min='0' onInput={handleChange}
-                                />
-                            </div>
-                        </div>
+                    <section>                        
+                        <ul>
+                            <li>
+                                <label htmlFor="">How often do you get paid?</label>
+                                <select 
+                                    value={state.checkFrequency}
+                                    name="checkFrequency" id=""
+                                    onInput={handleChange}    
+                                >
+                                    <option value={4}>Weekly</option>
+                                    <option value={2}>Every Two Weeks</option>
+                                    <option value={1}>Monthly</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label htmlFor="">How much is each paycheck? (Amount after taxes are taken)</label>
+                                <div>
+                                    <span>$</span>
+                                    <input name='checkAmount' type="number" placeholder="0" min='0' onInput={handleChange}
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+                        
                     </section>
 
                     {/* MONTHLY EXPENSES */}
