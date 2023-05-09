@@ -5,54 +5,86 @@ import Button from "../components/Button";
 export default function() {
 
     // VARIABLES AND FORMULAS FOR CALCULATOR (LOGIC)
-    const [state, setState] = useState({
+    // const [state, setState] = useState({
         
-        // INCOME
-        checkFrequency: 1,
-        checkAmount: 0,
+    //     // INCOME
+    //     checkFrequency: 1,
+    //     checkAmount: 0,
 
-        // NEEDS 
-        livingExpense: 0,
-        bills: 0,
-        groceries: 0,
-        transportation: 0,
-        childcare: 0,
-        insurance: 0,
-        studentLoans: 0,
-        otherDebt: 0,
+    //     // NEEDS 
+    //     livingExpense: 0,
+    //     bills: 0,
+    //     groceries: 0,
+    //     transportation: 0,
+    //     childcare: 0,
+    //     insurance: 0,
+    //     studentLoans: 0,
+    //     otherDebt: 0,
 
-        //  WANTS
-        entertainment: 0,
-        diningOut: 0,
-        hobbies: 0,
+    //     //  WANTS
+    //     entertainment: 0,
+    //     diningOut: 0,
+    //     hobbies: 0,
         
-        // SAVINGS
-        emergencyFund: 0,
-        retirementFund: 0,
-        vacation: 0,
-    });
+    //     // SAVINGS
+    //     emergencyFund: 0,
+    //     retirementFund: 0,
+    //     vacation: 0,
+    // });
+
+    // const handleChange = (e:any) => {
+    //     const value = e.target.value;
+    //     setState({
+    //         ...state,
+    //         [e.target.name]: Number(value),
+    //     })
+    // }
+    
+    
+    const userBudget = JSON.parse(localStorage.getItem('userBudget')) || {
+         // INCOME
+         checkFrequency: 1,
+         checkAmount: 0,
+         
+         // NEEDS 
+         livingExpense: 0,
+         bills: 0,
+         groceries: 0,
+         transportation: 0,
+         childcare: 0,
+         insurance: 0,
+         studentLoans: 0,
+         otherDebt: 0,
+ 
+         //  WANTS
+         entertainment: 0,
+         diningOut: 0,
+         hobbies: 0,
+         
+         // SAVINGS
+         emergencyFund: 0,
+         retirementFund: 0,
+         vacation: 0,
+    };
+    const [budget, setBudget] = useState(userBudget);
 
     const handleChange = (e:any) => {
-        const value = e.target.value;
-        setState({
-            ...state,
-            [e.target.name]: Number(value),
-        })
+        setBudget({
+            ...budget,
+            [e.target.name]: Number(e.target.value),
+        });
     }
-    
-    let monthlyIncome = state.checkFrequency * state.checkAmount;
-    let totalNeeds = state.livingExpense + state.bills + state.groceries + state.transportation + state.childcare + state.insurance + state.studentLoans + state.otherDebt;
-    let totalWants = state.entertainment + state.diningOut + state.hobbies;
-    let totalSavings = state.emergencyFund + state.retirementFund + state.vacation;
-    let remainder = monthlyIncome - totalNeeds - totalWants;
-
     useEffect(() => {
-        localStorage.setItem('userBudget', JSON.stringify(state));
-    }, [state])
-    const userBudget = JSON.parse(localStorage.getItem('userBudget'));
-    const [budget, setBudget] = useState(userBudget);
+        localStorage.setItem('userBudget', JSON.stringify(budget));
+    }, [budget])
     
-
+    
+    let monthlyIncome = budget.checkFrequency * budget.checkAmount;
+    let totalNeeds = budget.livingExpense + budget.bills + budget.groceries + budget.transportation + budget.childcare + budget.insurance + budget.studentLoans + budget.otherDebt;
+    let totalWants = budget.entertainment + budget.diningOut + budget.hobbies;
+    let totalSavings = budget.emergencyFund + budget.retirementFund + budget.vacation;
+    let remainder = monthlyIncome - totalNeeds - totalWants;
+    
     return (
         <>
             <button style={{color:'white'}} onClick={() => console.log(userBudget)}>debug</button>
@@ -67,8 +99,9 @@ export default function() {
                         <ul>
                             <li>
                                 <label htmlFor="">How often do you get paid?</label>
+
                                 <select 
-                                    value={state.checkFrequency}
+                                    value={userBudget.checkFrequency}
                                     name="checkFrequency" id=""
                                     onInput={handleChange}    
                                 >
@@ -81,7 +114,13 @@ export default function() {
                                 <label htmlFor="">How much is each paycheck? (Amount after taxes are taken)</label>
                                 <div>
                                     <span>$</span>
-                                    <input name='checkAmount' type="number" placeholder="0" min='0' onInput={handleChange}
+                                    <input 
+                                    name='checkAmount' 
+                                    type="number" 
+                                    placeholder="0" 
+                                    min='0' 
+                                    onInput={handleChange}
+                                    defaultValue={userBudget.checkAmount}
                                     />
                                 </div>
                             </li>
@@ -99,7 +138,14 @@ export default function() {
                                     <label htmlFor="">Rent/Mortgage</label>
                                     <div>
                                         <span>$</span>
-                                        <input name='livingExpense' type="number" placeholder="0" min='0' onInput={handleChange} />
+                                        <input 
+                                        name='livingExpense' 
+                                        type="number" 
+                                        placeholder="0" 
+                                        min='0' 
+                                        onInput={handleChange} 
+                                        
+                                        />
                                     </div>
                                 </li>
                                 <li>
