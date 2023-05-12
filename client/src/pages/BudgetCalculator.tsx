@@ -5,43 +5,9 @@ import Button from "../components/Button";
 export default function() {
 
     // VARIABLES AND FORMULAS FOR CALCULATOR (LOGIC)
-    // const [state, setState] = useState({
-        
-    //     // INCOME
-    //     checkFrequency: 1,
-    //     checkAmount: 0,
-
-    //     // NEEDS 
-    //     livingExpense: 0,
-    //     bills: 0,
-    //     groceries: 0,
-    //     transportation: 0,
-    //     childcare: 0,
-    //     insurance: 0,
-    //     studentLoans: 0,
-    //     otherDebt: 0,
-
-    //     //  WANTS
-    //     entertainment: 0,
-    //     diningOut: 0,
-    //     hobbies: 0,
-        
-    //     // SAVINGS
-    //     emergencyFund: 0,
-    //     retirementFund: 0,
-    //     vacation: 0,
-    // });
-
-    // const handleChange = (e:any) => {
-    //     const value = e.target.value;
-    //     setState({
-    //         ...state,
-    //         [e.target.name]: Number(value),
-    //     })
-    // }
     
-    
-    const userBudget = JSON.parse(localStorage.getItem('userBudget')) || {
+    // CREATING AN OBJECT FROM LOCALSTORAGE IF USER HAS USED SITE BEFORE
+    let userBudget = JSON.parse(localStorage.getItem('userBudget')) || {
          // INCOME
          checkFrequency: 1,
          checkAmount: 0,
@@ -65,6 +31,15 @@ export default function() {
          emergencyFund: 0,
          retirementFund: 0,
          vacation: 0,
+
+        // FORMULAS
+        getIncome() {
+            return this.checkFrequency * this.checkAmount;
+        },
+        getNeeds() {
+            this.livingExpense + this.bills + this.groceries + this.transportation + this.childcare + this.insurance + this.studentLoans + this.otherDebt;
+        }
+
     };
     const [budget, setBudget] = useState(userBudget);
 
@@ -83,7 +58,7 @@ export default function() {
     let totalNeeds = budget.livingExpense + budget.bills + budget.groceries + budget.transportation + budget.childcare + budget.insurance + budget.studentLoans + budget.otherDebt;
     let totalWants = budget.entertainment + budget.diningOut + budget.hobbies;
     let totalSavings = budget.emergencyFund + budget.retirementFund + budget.vacation;
-    let remainder = monthlyIncome - totalNeeds - totalWants;
+    let remainder = monthlyIncome - totalNeeds - totalWants - totalSavings;
     
     return (
         <>
@@ -207,7 +182,7 @@ export default function() {
                                     <div>
                                         <span>$</span>
                                         <input 
-                                        name='childcare' 
+                                        name='insurance' 
                                         type="number" 
                                         placeholder="0" 
                                         min='0' 
@@ -221,7 +196,7 @@ export default function() {
                                     <div>
                                         <span>$</span>
                                         <input 
-                                        name='childcare' 
+                                        name='studentLoans' 
                                         type="number" 
                                         placeholder="0" 
                                         min='0' 
@@ -235,7 +210,7 @@ export default function() {
                                     <div>
                                         <span>$</span>
                                         <input 
-                                        name='childcare' 
+                                        name='otherDebt' 
                                         type="number" 
                                         placeholder="0" 
                                         min='0' 
@@ -256,7 +231,7 @@ export default function() {
                                     <div>
                                         <span>$</span>
                                         <input 
-                                        name='childcare' 
+                                        name='entertainment' 
                                         type="number" 
                                         placeholder="0" 
                                         min='0' 
@@ -270,7 +245,7 @@ export default function() {
                                     <div>
                                         <span>$</span>
                                         <input 
-                                        name='childcare' 
+                                        name='diningOut' 
                                         type="number" 
                                         placeholder="0" 
                                         min='0' 
@@ -284,7 +259,7 @@ export default function() {
                                     <div>
                                         <span>$</span>
                                         <input 
-                                        name='childcare' 
+                                        name='hobbies' 
                                         type="number" 
                                         placeholder="0" 
                                         min='0' 
@@ -305,7 +280,7 @@ export default function() {
                                     <div>
                                         <span>$</span>
                                         <input 
-                                        name='childcare' 
+                                        name='emergencyFund' 
                                         type="number" 
                                         placeholder="0" 
                                         min='0' 
@@ -319,7 +294,7 @@ export default function() {
                                     <div>
                                         <span>$</span>
                                         <input 
-                                        name='childcare' 
+                                        name='retirementFund' 
                                         type="number" 
                                         placeholder="0" 
                                         min='0' 
@@ -333,7 +308,7 @@ export default function() {
                                     <div>
                                         <span>$</span>
                                         <input 
-                                        name='childcare' 
+                                        name='vacation' 
                                         type="number" 
                                         placeholder="0" 
                                         min='0' 
@@ -353,7 +328,7 @@ export default function() {
                             fontSize="1rem"
                             height="3rem"
                             width="10rem"
-                            onClick={() => console.log(budget, remainder)}
+                            onClick={() => console.log(budget, userBudget, remainder)}
                         >Calculate</Button>
                         <div></div>
                     </div>
