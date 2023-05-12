@@ -353,7 +353,7 @@ export default function() {
                             fontSize="1rem"
                             height="3rem"
                             width="10rem"
-                            onClick={() => console.log(budget, userBudget)}
+                            onClick={() => console.log(budget, remainder)}
                         >Calculate</Button>
                         <div></div>
                     </div>
