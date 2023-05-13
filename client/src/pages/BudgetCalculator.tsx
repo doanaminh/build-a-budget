@@ -33,13 +33,23 @@ export default function() {
          vacation: 0,
 
         // FORMULAS
-        getIncome() {
-            return this.checkFrequency * this.checkAmount;
-        },
-        getNeeds() {
-            this.livingExpense + this.bills + this.groceries + this.transportation + this.childcare + this.insurance + this.studentLoans + this.otherDebt;
-        }
 
+        // LOCALSTORAGE CANNOT STORE FUNCTIONS ONLY KEY VALUE PAIRS
+        // getIncome() {
+        //     return (this.checkFrequency * this.checkAmount);
+        // },
+        // getNeeds() {
+        //     return (this.livingExpense + this.bills + this.groceries + this.transportation + this.childcare + this.insurance + this.studentLoans + this.otherDebt);
+        // },
+        // getWants() {
+        //     return (this.entertainment + this.diningOut + this.hobbies);
+        // },
+        // getSavings() {
+        //     return (this.emergencyFund + this.retirementFund + this.vacation);
+        // },
+        // getRemainder() {
+        //     return (this.getIncome() - (this.getNeeds() + this.getWants() + this.getSavings()));
+        // },
     };
     const [budget, setBudget] = useState(userBudget);
 
@@ -328,7 +338,15 @@ export default function() {
                             fontSize="1rem"
                             height="3rem"
                             width="10rem"
-                            onClick={() => console.log(budget, userBudget, remainder)}
+                            onClick={() => console.log(
+                                budget,
+                                // budget.getIncome(),
+                                // budget.getNeeds(),
+                                // budget.getWants(),
+                                // budget.getSavings(),
+                                // budget.getRemainder(),
+                                // remainder
+                                )}
                         >Calculate</Button>
                         <div></div>
                     </div>
