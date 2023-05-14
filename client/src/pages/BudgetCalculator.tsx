@@ -3,8 +3,6 @@ import Button from "../components/Button";
 
 
 export default function() {
-
-    // VARIABLES AND FORMULAS FOR CALCULATOR (LOGIC)
     
     // CREATING AN OBJECT FROM LOCALSTORAGE IF USER HAS USED SITE BEFORE
     let userBudget = JSON.parse(localStorage.getItem('userBudget')) || {
@@ -51,19 +49,24 @@ export default function() {
         //     return (this.getIncome() - (this.getNeeds() + this.getWants() + this.getSavings()));
         // },
     };
+
+    // CREATING A STATE VARIABLE TO HOLD ALL VALUES OF INPUT FIELDS
     const [budget, setBudget] = useState(userBudget);
 
+    // EVENT LISTENER FOR ANY CHANGES FOR INPUT FIELDS
     const handleChange = (e:any) => {
         setBudget({
             ...budget,
             [e.target.name]: Number(e.target.value),
         });
     }
+    // EVENT LISTENER FOR ANY CHANGES TO BUDGET OBJECT
     useEffect(() => {
         localStorage.setItem('userBudget', JSON.stringify(budget));
     }, [budget])
     
 
+    // VARIABLES AND FORMULAS FOR CALCULATOR (LOGIC)
     let monthlyIncome = budget.checkFrequency * budget.checkAmount;
     let totalNeeds = budget.livingExpense + budget.bills + budget.groceries + budget.transportation + budget.childcare + budget.insurance + budget.studentLoans + budget.otherDebt;
     let totalWants = budget.entertainment + budget.diningOut + budget.hobbies;
