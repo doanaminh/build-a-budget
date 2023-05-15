@@ -1,8 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, createElement } from 'react';
 import Button from "../components/Button";
+import Modal from '../components/Modal';
 
 
 export default function() {
+
+    const [modalOpen, setModalOpen] = useState(false);
     
     // CREATING AN OBJECT FROM LOCALSTORAGE IF USER HAS USED SITE BEFORE
     let userBudget = JSON.parse(localStorage.getItem('userBudget')) || {
@@ -341,19 +344,25 @@ export default function() {
                             fontSize="1rem"
                             height="3rem"
                             width="10rem"
-                            onClick={() => console.log(
-                                budget,
-                                // budget.getIncome(),
-                                // budget.getNeeds(),
-                                // budget.getWants(),
-                                // budget.getSavings(),
-                                // budget.getRemainder(),
-                                // remainder
-                                )}
+                            onClick={() => {
+                                setModalOpen(true);
+                            }}
                         >Calculate</Button>
+                        <Button
+                            backgroundColor="#9d7868"
+                            color="white"
+                            fontSize="1rem"
+                            height="3rem"
+                            width="10rem"
+                            onClick={() => {
+                                setModalOpen(false);
+                                localStorage.clear();
+                            }}
+                        >Clear</Button>
                         <div></div>
                     </div>
                 </form>
+                {modalOpen && <Modal setOpenModal={setModalOpen} />}
             </section>
         </>
     )
