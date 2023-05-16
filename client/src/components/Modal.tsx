@@ -1,3 +1,5 @@
+import "./Modal.css"
+
 interface Props {
     setOpenModal: any;
     children?:React.ReactNode;
@@ -19,16 +21,16 @@ const Modal: React.FC<Props> = ({
 
     return (
         <>
-            <section>
+            <section className="modalBody">
                 <button
                 onClick={() => {
                     setOpenModal(false);
                 }}
                 >X</button>
-                <section>
-                    <main>
+                <section className="modalBreakdown">
+                    <section>
                         <h4>{title}</h4>
-                    </main>
+                    </section>
                     <article>
                         <p>{a1Msg}</p>
                     </article>

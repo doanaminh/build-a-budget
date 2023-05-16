@@ -362,7 +362,15 @@ export default function() {
                         <div></div>
                     </div>
                 </form>
-                {modalOpen && <Modal setOpenModal={setModalOpen} />}
+                {modalOpen && 
+                <Modal 
+                    setOpenModal={setModalOpen}
+                    title={`you have ${remainder}`}
+                    a1Msg='wow'
+                    a2Msg='nice'
+                    a3Msg='awesome'
+                    conclusion='great job'
+                />}
             </section>
         </>
     )
