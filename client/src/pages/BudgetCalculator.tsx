@@ -349,7 +349,7 @@ export default function() {
                             }}
                         >Calculate</Button>
                         <Button
-                            backgroundColor="#9d7868"
+                            backgroundColor="#FF6961"
                             color="white"
                             fontSize="1rem"
                             height="3rem"
