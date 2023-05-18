@@ -251,7 +251,8 @@ main p {
 .BudgetCalculator form {
   background-color: #d6c4ac;
   padding: 1.5rem;
-  border-radius: .5rem;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
 }
 .BudgetCalculator ul {
   list-style: none;

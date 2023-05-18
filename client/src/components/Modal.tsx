@@ -21,26 +21,23 @@ const Modal: React.FC<Props> = ({
 
     return (
         <>
-            <section className="modalBody">
-                <button
-                onClick={() => {
-                    setOpenModal(false);
-                }}
-                >X</button>
-                <section className="modalBreakdown">
-                    <section>
+            <section className="budgetBody">
+                <section className="budgetBreakdown">
+                    <section className="budgetRemainder">
                         <h4>{title}</h4>
                     </section>
-                    <article>
-                        <p>{a1Msg}</p>
-                    </article>
-                    <article>
-                        <p>{a2Msg}</p>
-                    </article>
-                    <article>
-                        <p>{a3Msg}</p>
-                    </article>
-                    <section>
+                    <section className="budgetSections">
+                        <article>
+                            <p>{a1Msg}</p>
+                        </article>
+                        <article>
+                            <p>{a2Msg}</p>
+                        </article>
+                        <article>
+                            <p>{a3Msg}</p>
+                        </article>
+                    </section>
+                    <section className="budgetConclusion">
                         <p>{conclusion}</p>
                     </section>
                 </section>

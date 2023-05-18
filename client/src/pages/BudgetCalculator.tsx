@@ -1,4 +1,4 @@
-import { useState, useEffect, createElement } from 'react';
+import { useState, useEffect } from 'react';
 import Button from "../components/Button";
 import Modal from '../components/Modal';
 
@@ -32,6 +32,11 @@ export default function() {
          emergencyFund: 0,
          retirementFund: 0,
          vacation: 0,
+
+        // TAGS
+        hasNeeds: false,
+        hasWants: false,
+        hasSavings: false,
 
         // FORMULAS
 
@@ -75,6 +80,17 @@ export default function() {
     let totalWants = budget.entertainment + budget.diningOut + budget.hobbies;
     let totalSavings = budget.emergencyFund + budget.retirementFund + budget.vacation;
     let remainder = monthlyIncome - totalNeeds - totalWants - totalSavings;
+    const conclusionPool = {
+        under: {
+
+        },
+        even: {
+
+        },
+        over: {
+
+        },
+    }
     
     return (
         <>
@@ -365,10 +381,10 @@ export default function() {
                 {modalOpen && 
                 <Modal 
                     setOpenModal={setModalOpen}
-                    title={`you have ${remainder}`}
-                    a1Msg='wow'
-                    a2Msg='nice'
-                    a3Msg='awesome'
+                    title={`Your monthly remainder: $${remainder}`}
+                    a1Msg={`You are spending a total of $${totalNeeds} for necessities.`}
+                    a2Msg={`You are spending a total of $${totalWants} for things you like.`}
+                    a3Msg={`You are saving a total of $${totalSavings}.`}
                     conclusion='great job'
                 />}
             </section>
