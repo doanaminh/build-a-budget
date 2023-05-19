@@ -10,6 +10,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Credits from './pages/Credits';
 import BudgetCalculator from './pages/BudgetCalculator';
+import Learn from './pages/Learn';
+import LearnBudget from './pages/Learn-Budget';
 
 export default function App() {
 
@@ -22,6 +24,8 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/credits" element={<Credits />} />
             <Route path='/budget-calculator' element={<BudgetCalculator />} />
+            <Route path='/learn' element={<Learn />} />
+            <Route path='/learn-budget' element={<LearnBudget />} />
           </Routes>
           <Footer />
         </div>
