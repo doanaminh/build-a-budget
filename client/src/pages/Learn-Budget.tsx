@@ -45,6 +45,10 @@ export default function () {
                             <h4>Minimum Payments on All Debts & Loans</h4>
                             <p>This includes: student loans, credit cards, etc. The only time you should strive to pay off a debt faster is: when you can decrease the interest rate through refinancing. This is a complicated topic with complicated calculations and you should ask your lendor about options about this topic. Most of the time you want to pay the absolute minimum so you can put the rest of your income towards something else if needed.</p>
                         </li>
+                        <li>
+                            <h4>Build a Small Emergency Fund</h4>
+                            <p>A good starting point should be the bigger amount between $1,000 or one month's worth of expenses. (Refer to your budget for this amount). Using a high-yield savings account can earn you a tiny amount of extra money over time. The alternative is a checking account with a trusted bank.</p>
+                        </li>
                         
                     </ol>
                 </section>
