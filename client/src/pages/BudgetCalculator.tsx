@@ -75,11 +75,11 @@ export default function() {
     
 
     // VARIABLES AND FORMULAS FOR CALCULATOR (LOGIC)
-    let monthlyIncome = budget.checkFrequency * budget.checkAmount;
-    let totalNeeds = budget.livingExpense + budget.bills + budget.groceries + budget.transportation + budget.childcare + budget.insurance + budget.studentLoans + budget.otherDebt;
-    let totalWants = budget.entertainment + budget.diningOut + budget.hobbies;
-    let totalSavings = budget.emergencyFund + budget.retirementFund + budget.vacation;
-    let remainder = monthlyIncome - totalNeeds - totalWants - totalSavings;
+    budget.monthlyIncome = budget.checkFrequency * budget.checkAmount;
+    budget.totalNeeds = budget.livingExpense + budget.bills + budget.groceries + budget.transportation + budget.childcare + budget.insurance + budget.studentLoans + budget.otherDebt;
+    budget.totalWants = budget.entertainment + budget.diningOut + budget.hobbies;
+    budget.totalSavings = budget.emergencyFund + budget.retirementFund + budget.vacation;
+    budget.remainder = budget.monthlyIncome - budget.totalNeeds - budget.totalWants - budget.totalSavings;
     const conclusionPool = {
         under: {
 
@@ -381,10 +381,10 @@ export default function() {
                 {modalOpen && 
                 <Modal 
                     setOpenModal={setModalOpen}
-                    title={`Your monthly remainder: $${remainder}`}
-                    a1Msg={`You are spending a total of $${totalNeeds} for necessities.`}
-                    a2Msg={`You are spending a total of $${totalWants} for things you like.`}
-                    a3Msg={`You are saving a total of $${totalSavings}.`}
+                    title={`Your monthly remainder: $${budget.remainder}`}
+                    a1Msg={`You are spending a total of $${budget.totalNeeds} for necessities.`}
+                    a2Msg={`You are spending a total of $${budget.totalWants} for things you want.`}
+                    a3Msg={`You are saving a total of $${budget.totalSavings} monthly.`}
                     conclusion='great job'
                 />}
             </section>
