@@ -80,6 +80,7 @@ export default function() {
     budget.totalWants = budget.entertainment + budget.diningOut + budget.hobbies;
     budget.totalSavings = budget.emergencyFund + budget.retirementFund + budget.vacation;
     budget.remainder = budget.monthlyIncome - budget.totalNeeds - budget.totalWants - budget.totalSavings;
+    
     const conclusionPool = {
         under: {
 
