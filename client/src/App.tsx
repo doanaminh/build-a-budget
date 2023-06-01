@@ -13,6 +13,7 @@ import BudgetCalculator from './pages/BudgetCalculator';
 import Learn from './pages/Learn';
 import LearnBudget from './pages/Learn-Budget';
 import LearnSavingsEF from './pages/Learn-Savings-EF';
+import LearnEmployerIntro from './pages/Learn-Employer-Intro';
 
 export default function App() {
 
@@ -28,6 +29,7 @@ export default function App() {
             <Route path='/learn' element={<Learn />} />
             <Route path='/learn-budget' element={<LearnBudget />} />
             <Route path='/learn-savings-ef' element={<LearnSavingsEF />} />
+            <Route path='/learn-employer-intro' element={<LearnEmployerIntro />} />
           </Routes>
           <Footer />
         </div>
