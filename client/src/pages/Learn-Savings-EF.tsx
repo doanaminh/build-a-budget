@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+import Button from "../components/Button";
+
 export default function () {
+    const navigate = useNavigate();
     return (
         <>
             <section>
@@ -16,7 +20,27 @@ export default function () {
                         </li>
                     </ol>
                 </article>
-                <p>If you have completed the steps above, most people will now consider you financially stable. You may still have debt, but you are able to pay it off in a timely manner along with all of your other bills. Hopefully you now understand where your money is coming in and where it's going out. The next step will be to plan for retirement.</p>
+                <p>
+                    If you have completed the steps above, most people will now consider you financially stable. You may still have debt, but you are able to pay it off in a timely manner along with all of your other bills. Hopefully you now understand where your money is coming in and where it's going out. The next step will be to plan for retirement.
+                </p>
+                <article style={{display: 'flex', justifyContent: 'end'}}>
+                    <Button 
+                        backgroundColor="#535337"
+                        color="beige"
+                        fontSize="1rem"
+                        height="3rem"
+                        width="8rem"
+                        onClick={() => navigate('/learn-budget')}
+                    >Previous</Button>
+                    <Button 
+                        backgroundColor="#535337"
+                        color="beige"
+                        fontSize="1rem"
+                        height="3rem"
+                        width="8rem"
+                        onClick={() => navigate('/learn-employer-intro')}
+                    >Next</Button>
+                </article>
             </section>
         </>
     )
