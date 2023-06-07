@@ -42,6 +42,16 @@ export default function () {
                         fontSize=".9rem"
                         height="3rem"
                         width="8rem"
+                        onClick={() => navigate('/glossary')}
+                    >
+                        Glossary
+                    </Button>
+                    <Button
+                        backgroundColor="#535337"
+                        color="beige"
+                        fontSize=".9rem"
+                        height="3rem"
+                        width="8rem"
                         onClick={() => navigate('/learn-budget')}
                     >
                         Start Learning!

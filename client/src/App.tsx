@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Credits from './pages/Credits';
 import BudgetCalculator from './pages/BudgetCalculator';
+import Glossary from './pages/Glossary';
 import Learn from './pages/Learn';
 import LearnBudget from './pages/Learn-Budget';
 import LearnSavingsEF from './pages/Learn-Savings-EF';
@@ -26,6 +27,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/credits" element={<Credits />} />
             <Route path='/budget-calculator' element={<BudgetCalculator />} />
+            <Route path='/glossary' element={<Glossary />} />
             <Route path='/learn' element={<Learn />} />
             <Route path='/learn-budget' element={<LearnBudget />} />
             <Route path='/learn-savings-ef' element={<LearnSavingsEF />} />
