@@ -1,4 +1,10 @@
+import { useState } from "react";
+import Term from "../components/Term";
+
 export default function () {
+
+    const [modalOpen, setModalOpen] = useState(false);
+
     return (
         <>
             <section>
@@ -16,7 +22,15 @@ export default function () {
                         <li>
                             <h6>debt</h6>
                             <p>
-                                An amount that is owed. Usually with an interest rate.
+                                An amount that is owed. Usually with an 
+                                <a onClick={() => setModalOpen(!modalOpen)}>
+                                    interest rate
+                                </a>. {modalOpen && 
+                                <Term
+                                    setOpenModal={setModalOpen}
+                                    term="interest rate"
+                                    definition="A percentage of the total amount borrowed that is owed on top the the borrowed sum. This is usually an annual rate, but could be monthly, weekly, or daily depending on the type of loan."
+                                ></Term>}
                             </p>
                         </li>
                         <li>

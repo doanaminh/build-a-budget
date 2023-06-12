@@ -7,7 +7,7 @@ interface Props {
     definition: string;
 }
 
-const Modal: React.FC<Props> = ({
+const Term: React.FC<Props> = ({
     setOpenModal,
     term,
     definition,
@@ -29,4 +29,4 @@ const Modal: React.FC<Props> = ({
     )
 }
 
-export default Modal;
+export default Term;
