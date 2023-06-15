@@ -270,3 +270,15 @@ main p {
   border: beige solid 1px;
   border-radius: .2rem;
 }
+
+/* 
+|| GLOSSARY ===========================================
+*/
+#tooltip span {
+  display:none;
+}
+#tooltip:hover span {
+  display:block;
+  position:fixed;
+  overflow:hidden;
+}

@@ -1,30 +1,35 @@
+import { useState } from "react";
+import "./Term.css"
 
 
 interface Props {
-    setOpenModal: any;
     children?:React.ReactNode;
     term: string;
     definition: string;
 }
 
 const Term: React.FC<Props> = ({
-    setOpenModal,
     term,
     definition,
 }) => {
 
+    const [modalOpen, setModalOpen] = useState(false);
+
     return (
         <>
-            <section className="budgetBody">
-                <section className="budgetBreakdown">
-                    <section className="budgetRemainder">
-                        <h4>{term}</h4>
-                    </section>
-                    <section className="budgetSections">
+            <a
+                onMouseEnter={() => setModalOpen(true)}
+                onMouseLeave={() => setModalOpen(false)}
+            >
+                {term}
+            </a>
+            {modalOpen && 
+                <section className="termModal">
+                    <section className="termDefinition">
                         <p>{definition}</p>
                     </section>
                 </section>
-            </section>
+            }
         </>
     )
 }

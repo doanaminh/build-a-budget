@@ -1,0 +1,10 @@
+a {
+    cursor: pointer;
+}
+.termModal {
+    width: 90%;
+    position: absolute;
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: #649dff;
+}
