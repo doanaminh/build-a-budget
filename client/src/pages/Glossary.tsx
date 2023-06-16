@@ -33,31 +33,47 @@ export default function () {
                         <li>
                             <h6>debt avalanche</h6>
                             <p>
-                                Debt-paying strategy that prioritizes paying off the high-interest debt first after making minimum payments on all other debts.
+                                Debt-paying strategy that prioritizes paying off the high- 
+                                <Term
+                                    term="interest"
+                                    definition="A percentage of the total amount borrowed that is owed on top the the borrowed sum. This is usually an annual rate, but could be monthly, weekly, or daily depending on the type of loan."
+                                />
+                                {' '}debt first after making minimum payments on all other debts.
                             </p>
                         </li>
                         <li>
                             <h6>debt snowball</h6>
                             <p>
-                                Debt-paying strategy that prioritizes paying off the smallest debt first after making minimum payments on all other debts.
+                                Debt-paying strategy that prioritizes paying off the smallest amount debt first after making minimum payments on all other debts.
                             </p>
                         </li>
                         <li>
                             <h6>interest rate</h6>
                             <p>
-                                A percentage of the total amount borrowed that is owed on top the the borrowed sum. This is usually an annual rate, but could be monthly, weekly, or daily depending on the type of loan.
+                                A percentage of the total amount borrowed that is owed on top the the borrowed sum. This is usually an annual rate, but could be monthly, weekly, or daily depending on the type of {' '}
+                                <Term 
+                                    term="loan"
+                                    definition="A borrowed amount of money."
+                                />
+                                .
+                            </p>
+                        </li>
+                        <li>
+                            <h6>loan</h6>
+                            <p>
+                                A borrowed amount of money.
                             </p>
                         </li>
                         <li>
                             <h6>retirement account</h6>
                             <p>
-                                A money account that allows you to invest in stocks, index funds, etc. These accounts usually have benefits that could help generate more money.
+                                A money account that allows you to invest in stocks, index funds, etc. These accounts usually have benefits that could help generate more money. With such powerful benefits, they almost always come with restrictions. The most common restriction being that you cannot withdraw profits from the account, until the age of retirement, without being penalized. Your retirement age is determined upon when you were born.
                             </p>
                         </li>
                         <li>
                             <h6>Roth retirement account</h6>
                             <p>
-                                Retirement account that allows you to contribute with after-tax money. This means with the money that's left after income taxes has been deducted from your paycheck. This allows you to withdraw any profits free of taxes.
+                                Retirement account that allows you to contribute with after-tax money. This means with the money left after taxes have been deducted from your paycheck. This allows you to withdraw any profits free of taxes.
                             </p>
                         </li>
                         <li>
