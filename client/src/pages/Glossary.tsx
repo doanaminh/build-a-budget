@@ -1,10 +1,6 @@
-import { useState } from "react";
 import Term from "../components/Term";
 
 export default function () {
-
-    const [modalOpen, setModalOpen] = useState(false);
-
 
     return (
         <>
@@ -33,18 +29,19 @@ export default function () {
                         <li>
                             <h6>debt avalanche</h6>
                             <p>
-                                Debt-paying strategy that prioritizes paying off the high- 
-                                <Term
-                                    term="interest"
-                                    definition="A percentage of the total amount borrowed that is owed on top the the borrowed sum. This is usually an annual rate, but could be monthly, weekly, or daily depending on the type of loan."
-                                />
-                                {' '}debt first after making minimum payments on all other debts.
+                                Debt-paying strategy that prioritizes paying off the high-interest debt first after making minimum payments on all other debts.
                             </p>
                         </li>
                         <li>
                             <h6>debt snowball</h6>
                             <p>
                                 Debt-paying strategy that prioritizes paying off the smallest amount debt first after making minimum payments on all other debts.
+                            </p>
+                        </li>
+                        <li>
+                            <h6>income</h6>
+                            <p>
+                                The amount of money you generate by time.
                             </p>
                         </li>
                         <li>
@@ -67,7 +64,7 @@ export default function () {
                         <li>
                             <h6>retirement account</h6>
                             <p>
-                                A money account that allows you to invest in stocks, index funds, etc. These accounts usually have benefits that could help generate more money. With such powerful benefits, they almost always come with restrictions. The most common restriction being that you cannot withdraw profits from the account, until the age of retirement, without being penalized. Your retirement age is determined upon when you were born.
+                                A money account that allows you to invest in stocks, index funds, etc. These accounts usually have benefits that could help generate more money. With such powerful benefits, they almost always come with restrictions. The most common restriction being that you cannot withdraw profits from the account, until a certain age, without being penalized. This age is dependent on when you were born. All of these details are dependent on your exact account. It is strongly recommended that you read over the terms of the ones available to you.
                             </p>
                         </li>
                         <li>
@@ -79,19 +76,19 @@ export default function () {
                         <li>
                             <h6>tax</h6>
                             <p>
-                                A mandatory contribution of funds to government revenue
+                                A mandatory contribution of funds to government revenue.
                             </p>
                         </li>
                         <li>
                             <h6>tax bracket</h6>
                             <p>
-                                A range of income amounts which a certain percentage of income tax is applied to
+                                A range of income amounts which a certain percentage of income tax is applied. The brackets change yearly to adjust for inflation.
                             </p>
                         </li>
                         <li>
                             <h6>traditional retirement account</h6>
                             <p>
-                                Retirement account that allows you to contribute with money before the income tax deduction of your paycheck. This will lower your monthly income and possibly affect your placement in the tax bracket. Because of this, you will be taxed when you withdraw any profits. The amount withdrawn will be added to your income and taxed accordingly to your tax bracket of that year.
+                                Retirement account that allows you to contribute with money from your paycheck before any deductions. This will lower your income and possibly affect your placement in the tax bracket. Because of this, you will be taxed when you withdraw any profits from the account. The amount withdrawn will be added to your income and taxed accordingly to your tax bracket of that year.
                             </p>
                         </li>
                     </ul>
