@@ -4,7 +4,7 @@ export default function () {
 
     return (
         <>
-            <section>
+            <section className="Glossary">
                 <article>
                     <h3>Glossary</h3>
                 </article>

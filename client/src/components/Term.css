@@ -2,9 +2,10 @@ a {
     cursor: pointer;
 }
 .termModal {
-    width: 90%;
+    width: 85%;
     position: absolute;
     border-radius: .5rem;
     padding: .5rem;
-    background-color: #649dff;
+    background-color: #96b7f0;
+    box-shadow: 5px 5px 5px gray;
 }
