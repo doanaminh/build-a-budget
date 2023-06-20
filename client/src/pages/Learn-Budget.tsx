@@ -7,7 +7,7 @@ export default function () {
 
     return (
         <>
-            <section>
+            <section className="Learn Budgeting">
                 <h3>Build a budget!</h3>
                 <p>The most important and basic thing you can do is create a monthly budget. Knowing where your money is coming in and going out is fundamental to being financially stable. No matter how stressful it is to look at these numbers, it is always better to know about the problem rather than ignoring it. That is the first step of devising a plan to fix the problem.</p>
                 <Button 
