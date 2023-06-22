@@ -286,3 +286,14 @@ main p {
 .Learn {
   padding: 1rem;
 }
+
+.Page {
+  margin-left: 3vw;
+}
+
+/* 
+||| LEARN-BUDGETING 
+*/
+.Budgeting {
+  display: flex;
+}

@@ -1,0 +1,13 @@
+.Sidebar {
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: -27vw;
+    width: 30vw;
+    height: 90vh;
+    transition: left .5s ease;
+}
+.Sidebar:hover {
+    left: 0;
+}
