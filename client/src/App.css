@@ -51,6 +51,9 @@ COMPONENTS
 || FOOTER ==============================================
  */
  .Footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
   background-color: blanchedalmond;
   display: flex;
   justify-content: space-between;
@@ -73,6 +76,9 @@ COMPONENTS
 || NAVBAR =============================================
 */
 .Navbar {
+  position: relative;
+  z-index: 1;
+  width: 100%;
   background-color: blanchedalmond;
   display: flex;
   justify-content: space-between;

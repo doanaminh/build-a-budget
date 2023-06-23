@@ -1,13 +1,29 @@
 .Sidebar {
-    background-color: gainsboro;
+    background-color: #535337;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    padding-top: 10vh;
     position: fixed;
+    top: 0;
     left: -27vw;
     width: 30vw;
-    height: 90vh;
+    height: 100vh;
     transition: left .5s ease;
 }
 .Sidebar:hover {
     left: 0;
+}
+.Sidebar section {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+.Sidebar .tableContent {
+    align-items: start;
+}
+.tableContent ol {
+    margin: 0;
+}
+.tableContent ol h4 {
+    margin-top: 0;
 }
