@@ -1,14 +1,15 @@
 .Sidebar {
-    background-color: #535337;
+    opacity: 98%;
+    background: linear-gradient(to right, #535337 98%, transparent);
     display: flex;
     justify-content: space-around;
     padding-top: 10vh;
     position: fixed;
     top: 0;
-    left: -27vw;
-    width: 30vw;
+    left: -30vw;
     height: 100vh;
     transition: left .5s ease;
+    color: gainsboro;
 }
 .Sidebar:hover {
     left: 0;
@@ -16,14 +17,24 @@
 .Sidebar section {
     display: flex;
     align-items: center;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 .Sidebar .tableContent {
     align-items: start;
+    width: 30vw;
 }
 .tableContent ol {
     margin: 0;
 }
 .tableContent ol h4 {
+    font-size: 1.5rem;
     margin-top: 0;
 }
+.tableContent li , .tableContent li a{
+    padding: 1rem 0;
+    color: gainsboro;
+}
+.sidebarIcon {
+    margin: 0 .5rem;
+}
+

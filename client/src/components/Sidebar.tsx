@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Sidebar.css"
 
 interface Props {
@@ -6,8 +5,6 @@ interface Props {
 }
 
 const Sidebar: React.FC<Props> = () => {
-
-    const [modalOpen, setModalOpen] = useState(false);
 
     return (
         <>
@@ -39,8 +36,6 @@ const Sidebar: React.FC<Props> = () => {
                         </li>
                     </ol>
                 </section>
-
-                <div></div>
 
                 <section className="sidebarIcon">
                     <span>{'>'}</span>
