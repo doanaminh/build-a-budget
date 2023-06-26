@@ -30,11 +30,17 @@
     font-size: 1.5rem;
     margin-top: 0;
 }
-.tableContent li , .tableContent li a{
+.tableContent li {
     padding: 1rem 0;
+}
+.tableContent li a{
     color: gainsboro;
 }
 .sidebarIcon {
     margin: 0 .5rem;
+}
+.sidebarIcon span {
+    font-size: 2rem;
+    color: #88885b;
 }
 
