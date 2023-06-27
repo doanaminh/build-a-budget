@@ -14,18 +14,29 @@ export default function () {
                 </section>
                 <section>
                     <section>
-                        <h3>Build a budget!</h3>
-                        <p>The most important and basic thing you can do is create a monthly budget. Knowing where your money is coming in and going out is fundamental to being financially stable. No matter how stressful it is to look at these numbers, it is always better to know about the problem rather than ignoring it. That is the first step of devising a plan to fix the problem.</p>
-                        <Button 
-                            backgroundColor="black"
-                            color="white"
-                            fontSize="1rem"
-                            height="4rem"
-                            width="10rem"
-                            onClick={() => navigate("/budget-calculator")}
-                        >Create a budget here</Button>
-                        <section>
-                            <p>Good job! So now that you have your budget, let's move on to the next steps. The most immediate thing you can do next, is start moving around the numbers in your budget. The priority of where your money is going every month should be as follows (from most important first):</p>
+                        <article>
+                            <h3>Build a budget!</h3>
+                            <p>The most important, and basic, thing you can do is create a monthly budget. Knowing where your money is coming in and going out is fundamental to being financially successful. No matter how stressful it is to look at these numbers, it is always better to know about the problem rather than ignoring it. That is the first step of devising a plan to fix the problem.</p>
+                        </article>
+
+
+                        <article className="action">
+                            <span>If you haven't made one yet, let's make one now. After you've created one, come on back to this page.</span>
+                            <div>
+                                <Button 
+                                    backgroundColor="black"
+                                    color="white"
+                                    fontSize="1rem"
+                                    height="4rem"
+                                    width="10rem"
+                                    onClick={() => navigate("/budget-calculator")}
+                                >Create a budget here</Button>
+                            </div>
+
+                        </article>
+                        
+                        <article>
+                            <p>Good job! So now that you have your budget, let's move on to the next steps. The most immediate thing you can do next, is start moving around the numbers in your budget. The priority of where your money should be going every month should be as follows (from most important first):</p>
                             <ol>
                                 <li>
                                     <h4>Rent/Mortgage</h4>
@@ -52,7 +63,7 @@ export default function () {
                                     <p>This includes: student loans, credit cards, etc. The only time you should strive to pay off a debt faster is: when you can decrease the interest rate through refinancing. This is a complicated topic with complicated calculations and you should ask your lendor about options about this topic. Most of the time you want to pay the absolute minimum so you can put the rest of your income towards something else if needed.</p>
                                 </li>
                             </ol>
-                        </section>
+                        </article>
                         <article>
                             <p>If you have completed all the steps listed above, you are officially ready to start planning your savings! Awesome job! Let's keep moving.</p>
                         </article>

@@ -303,3 +303,13 @@ main p {
 .Budgeting {
   display: flex;
 }
+.Budgeting .action {
+  display: flex;
+  justify-content: space-around;
+}
+.Budgeting .action span {
+  width: 45%;
+}
+.Budgeting .action div {
+  align-items: center;
+}
