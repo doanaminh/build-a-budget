@@ -34,6 +34,9 @@ const Sidebar: React.FC<Props> = () => {
                         <li>
                             <a href="">Save for other goals & advanced methods</a>
                         </li>
+                        <li>
+                            <a href="/glossary">Glossary</a>
+                        </li>
                     </ol>
                 </section>
 

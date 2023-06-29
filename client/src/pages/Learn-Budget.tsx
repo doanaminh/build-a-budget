@@ -67,7 +67,15 @@ export default function () {
                         <article>
                             <p>If you have completed all the steps listed above, you are officially ready to start planning your savings! Awesome job! Let's keep moving.</p>
                         </article>
-                        <article style={{display: 'flex', justifyContent: 'end'}}>
+                        <article className="buttons">
+                            <Button 
+                                backgroundColor="#535337"
+                                color="beige"
+                                fontSize="1rem"
+                                height="3rem"
+                                width="8rem"
+                                onClick={() => navigate('/learn')}
+                            >Overview</Button>
                             <Button 
                                 backgroundColor="#535337"
                                 color="beige"

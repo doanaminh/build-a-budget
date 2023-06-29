@@ -41,63 +41,6 @@
   color: #888;
 }
 
-
-/* 
-=======================================================
-COMPONENTS
-=======================================================
-*/
-/* 
-|| FOOTER ==============================================
- */
- .Footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  background-color: blanchedalmond;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.Footer h2 a {
-  padding: 0 0.5rem;
-  color: #ad8e60;
-}
-.Footer ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-.Footer li a {
-  padding: 0 0.5rem;
-  color: #ad8e60;
-}
-/* 
-|| NAVBAR =============================================
-*/
-.Navbar {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  background-color: blanchedalmond;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.Navbar h2 a {
-  padding: 0 0.5rem;
-  color: #ad8e60;
-}
-.Navbar ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-.Navbar li a {
-  padding: 0 0.5rem;
-  color: #ad8e60;
-}
-
 /* 
 =======================================================
 PAGES
@@ -297,11 +240,18 @@ main p {
   margin-left: 3vw;
 }
 
+.Page .buttons {
+  display: flex;
+  justify-content: space-between;
+}
 /* 
 ||| LEARN-BUDGETING 
 */
 .Budgeting {
   display: flex;
+}
+.Budgeting h3 {
+  font-size: 2rem;
 }
 .Budgeting .action {
   display: flex;
@@ -310,6 +260,7 @@ main p {
 .Budgeting .action span {
   width: 45%;
 }
-.Budgeting .action div {
-  align-items: center;
+.Budgeting .buttons {
+  display: flex;
+  justify-content: space-between;
 }
