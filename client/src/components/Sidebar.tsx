@@ -23,7 +23,7 @@ const Sidebar: React.FC<Props> = () => {
                             <a href="/learn-employer-intro">Employer-sponsored matching funds</a>
                         </li>
                         <li>
-                            <a href="">Focus on paying high/moderate debts off</a>
+                            <a href="/learn-debt">Focus on paying high/moderate debts off</a>
                         </li>
                         <li>
                             <a href="">Save for retirement in an IRA & other higher education expenses</a>

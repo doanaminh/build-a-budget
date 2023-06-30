@@ -374,6 +374,7 @@ export default function() {
                             onClick={() => {
                                 setModalOpen(false);
                                 localStorage.clear();
+                                location.reload();
                             }}
                         >Clear</Button>
                         <div></div>
