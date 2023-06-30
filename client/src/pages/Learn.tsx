@@ -54,7 +54,7 @@ export default function () {
                     </ul>
                 </section>
                 
-                <article>
+                <article className="buttons">
                     <Button
                         backgroundColor="#535337"
                         color="beige"
