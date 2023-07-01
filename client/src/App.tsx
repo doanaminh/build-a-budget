@@ -18,6 +18,7 @@ import LearnSavingsEF from './pages/Learn-Savings-EF';
 import LearnEmployerIntro from './pages/Learn-Employer-Intro';
 import LearnDebt from './pages/Learn-Debt';
 import About from './pages/About';
+import LearnIra from './pages/Learn-Ira';
 
 export default function App() {
 
@@ -36,6 +37,7 @@ export default function App() {
             <Route path='/learn-savings-ef' element={<LearnSavingsEF />} />
             <Route path='/learn-employer-intro' element={<LearnEmployerIntro />} />
             <Route path='/learn-debt' element={<LearnDebt />} />
+            <Route path='/learn-ira' element={<LearnIra />} />
             <Route path='/about' element={<About />} />
           </Routes>
           <Footer />
