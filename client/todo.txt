@@ -1,4 +1,2 @@
 LAST LEFT OFF:
-create a sidebar for the learning section pages so that user can click it and it will expand and show the table of contents
-
 create a compound interest calculator
