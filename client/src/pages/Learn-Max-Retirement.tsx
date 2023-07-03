@@ -25,12 +25,12 @@ export default function () {
                                 <li>
                                     <h4>Employer-Matched Retirement Account</h4>
                                     <p>
-                                        If you are self employed, move on to the next step. If you do not have a 401(k), or any employer retirement plan, then you should start one. You should be contributing 15% of your pre-tax income.
+                                        If you are self-employed, move on to the next step. If you do not have a 401(k), or any employer retirement plan, then you should start one. You should be contributing 15% of your pre-tax income.
                                     </p>
                                 </li>
                                 <li>
                                     <h4>Self-Employed Retirement Acount</h4>
-                                    <p></p>
+                                    <p>If you are self-employed, then look into an Individual 401(k), SEP-IRA, or SIMPLE IRA. Open your account of choice and strive to contribute 15% of your pre-tax income.</p>
                                 </li>
                             </ol>
                         </article>
@@ -43,7 +43,7 @@ export default function () {
                             fontSize="1rem"
                             height="3rem"
                             width="8rem"
-                            onClick={() => navigate('/learn-debt')}
+                            onClick={() => navigate('/learn-ira')}
                         >Previous</Button>
                         <Button 
                             backgroundColor="#535337"
@@ -51,7 +51,7 @@ export default function () {
                             fontSize="1rem"
                             height="3rem"
                             width="8rem"
-                            onClick={() => navigate('/')}
+                            onClick={() => navigate('/learn-long-term-goals')}
                         >Next</Button>
                     </article>
 

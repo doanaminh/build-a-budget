@@ -41,7 +41,7 @@ export default function () {
                             fontSize="1rem"
                             height="3rem"
                             width="8rem"
-                            onClick={() => navigate('/')}
+                            onClick={() => navigate('/learn-max-retirement')}
                         >Next</Button>
                     </article>
 

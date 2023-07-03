@@ -19,6 +19,8 @@ import LearnEmployerIntro from './pages/Learn-Employer-Intro';
 import LearnDebt from './pages/Learn-Debt';
 import About from './pages/About';
 import LearnIra from './pages/Learn-Ira';
+import LearnMaxRetirement from './pages/Learn-Max-Retirement';
+import LearnLongTermGoals from './pages/Learn-Long-Term-Goals';
 
 export default function App() {
 
@@ -38,6 +40,8 @@ export default function App() {
             <Route path='/learn-employer-intro' element={<LearnEmployerIntro />} />
             <Route path='/learn-debt' element={<LearnDebt />} />
             <Route path='/learn-ira' element={<LearnIra />} />
+            <Route path='/learn-max-retirement' element={<LearnMaxRetirement />} />
+            <Route path='/learn-long-term-goals' element={<LearnLongTermGoals />} />
             <Route path='/about' element={<About />} />
           </Routes>
           <Footer />
