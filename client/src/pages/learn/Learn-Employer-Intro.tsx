@@ -1,6 +1,6 @@
-import Button from "../components/Button";
+import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../../components/Sidebar";
 
 export default function () {
 
@@ -14,8 +14,8 @@ export default function () {
                 </section>
                 <section>
                     <article>
-                        <h3>Paying Off Debts</h3>
-                        <p>This section deals with the difficult matters of handling and eliminating debt. Although at times it may seem impossible, there is a way to eliminate it altogether. It takes time, but with a solid plan, you can maximize the efficiency at which you can pay them off.</p>
+                        <h3>Build an Employer-Matched Retirement Account</h3>
+                        <p>If your employer does NOT offer a retirement account WITH a match, you can skip this step. Alright! So, you're quite in control over your finances at this point! You're doing amazing. However, there is much more you can do to become more financially grounded. Do you now have more money remaining even after distributing the minimum required amounts from the previous two steps? Are you ready to start thinking about retirement?</p>
                         <article>
                             <ol>
                                 <li>
@@ -33,7 +33,7 @@ export default function () {
                             fontSize="1rem"
                             height="3rem"
                             width="8rem"
-                            onClick={() => navigate('/learn-employer-intro')}
+                            onClick={() => navigate('/learn-savings-ef')}
                         >Previous</Button>
                         <Button 
                             backgroundColor="#535337"
@@ -41,7 +41,7 @@ export default function () {
                             fontSize="1rem"
                             height="3rem"
                             width="8rem"
-                            onClick={() => navigate('/learn-ira')}
+                            onClick={() => navigate('/learn-debt')}
                         >Next</Button>
                     </article>
 

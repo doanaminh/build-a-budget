@@ -12,15 +12,15 @@ import Home from './pages/Home';
 import Credits from './pages/Credits';
 import BudgetCalculator from './pages/BudgetCalculator';
 import Glossary from './pages/Glossary';
-import Learn from './pages/Learn';
-import LearnBudget from './pages/Learn-Budget';
-import LearnSavingsEF from './pages/Learn-Savings-EF';
-import LearnEmployerIntro from './pages/Learn-Employer-Intro';
-import LearnDebt from './pages/Learn-Debt';
+import Learn from './pages/learn/Learn';
+import LearnBudget from './pages/learn/Learn-Budget';
+import LearnSavingsEF from './pages/learn/Learn-Savings-EF';
+import LearnEmployerIntro from './pages/learn/Learn-Employer-Intro';
+import LearnDebt from './pages/learn/Learn-Debt';
 import About from './pages/About';
-import LearnIra from './pages/Learn-Ira';
-import LearnMaxRetirement from './pages/Learn-Max-Retirement';
-import LearnLongTermGoals from './pages/Learn-Long-Term-Goals';
+import LearnIra from './pages/learn/Learn-Ira';
+import LearnMaxRetirement from './pages/learn/Learn-Max-Retirement';
+import LearnLongTermGoals from './pages/learn/Learn-Long-Term-Goals';
 
 export default function App() {
 
