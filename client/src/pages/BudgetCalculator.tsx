@@ -108,7 +108,7 @@ export default function() {
                                 <label htmlFor="">How often do you get paid?</label>
 
                                 <select 
-                                    value={userBudget.checkFrequency}
+                                    defaultValue={userBudget.checkFrequency}
                                     name="checkFrequency" id=""
                                     onInput={handleChange}    
                                 >

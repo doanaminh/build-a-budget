@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Credits from './pages/Credits';
 import BudgetCalculator from './pages/BudgetCalculator';
+import CompoundCalculator from './pages/CompoundCalculator';
 import Glossary from './pages/Glossary';
 import Learn from './pages/learn/Learn';
 import LearnBudget from './pages/learn/Learn-Budget';
@@ -33,6 +34,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/credits" element={<Credits />} />
             <Route path='/budget-calculator' element={<BudgetCalculator />} />
+            <Route path='/compound-calculator' element={<CompoundCalculator />} />
             <Route path='/glossary' element={<Glossary />} />
             <Route path='/learn' element={<Learn />} />
             <Route path='/learn-budget' element={<LearnBudget />} />
