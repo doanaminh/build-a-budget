@@ -12,7 +12,7 @@ export default function() {
         initialInvestment: 1000,
         monthlyContribution: 100,
         yearsInvesting: 5,
-        interestRate: 0,
+        interestRate: 1,
         compoundFrequency: 12,
     });
     const handleChange = (e:any) => {
@@ -22,8 +22,9 @@ export default function() {
         });
     }
 
+
     // Using the formula A = P(1 + r/n)**(nt)
-    investments.A += investments.initialInvestment * ((1 + (investments.interestRate / investments.compoundFrequency)) ** (investments.compoundFrequency * investments.yearsInvesting))
+    investments.A = investments.initialInvestment * ((1 + (investments.interestRate / investments.compoundFrequency)) ** (investments.compoundFrequency * investments.yearsInvesting))
     return (
         <>
             <section className='CompoundCalculator'>
@@ -87,7 +88,7 @@ export default function() {
                                     placeholder="0" 
                                     min='0' 
                                     onInput={handleChange}
-                                    defaultValue={0}
+                                    defaultValue={1}
                                     />
                                 </div>
                             </li>
@@ -140,7 +141,7 @@ export default function() {
                         a2Msg=''
                         a3Msg=''
                         setOpenModal={modalOpen}
-                        conclusion={investments}
+                        conclusion={`$${investments.A}`}
                     />
                 }
             </section>
