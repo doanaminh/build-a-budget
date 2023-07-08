@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Button from "../components/Button";
 import Modal from '../components/Modal';
 
@@ -12,7 +12,7 @@ export default function() {
         initialInvestment: 1000,
         monthlyContribution: 100,
         yearsInvesting: 5,
-        interestRate: 1,
+        interestRate: .01,
         compoundFrequency: 12,
     });
     const handleChange = (e:any) => {
@@ -22,9 +22,22 @@ export default function() {
         });
     }
 
-
     // Using the formula A = P(1 + r/n)**(nt)
-    investments.A = investments.initialInvestment * ((1 + (investments.interestRate / investments.compoundFrequency)) ** (investments.compoundFrequency * investments.yearsInvesting))
+    // investments.A = investments.initialInvestment * ((1 + (investments.interestRate / investments.compoundFrequency)) ** (investments.compoundFrequency * investments.yearsInvesting))
+   
+    // investments.A = (investments.initialInvestment + investments.monthlyContribution * investments.compoundFrequency) * ((1 + (investments.interestRate / investments.compoundFrequency)) ** (investments.compoundFrequency * investments.yearsInvesting))
+    
+    // (initial + monthly * 12) * (1 + interest/12) ** (12t)
+    const calculateCompound = (P:number, r:number, n:number, t:number, m:number) => {
+        let init = P;
+        for (let i = 0; i < t; i++) {
+            init = init * (1 + r);
+            init = init + (m * 12);
+        }
+        return init;
+    }
+
+
     return (
         <>
             <section className='CompoundCalculator'>
@@ -67,7 +80,6 @@ export default function() {
                             <li>
                                 <label htmlFor="">Years of Investment</label>
                                 <div>
-                                    <span>$</span>
                                     <input 
                                     name='yearsInvesting' 
                                     type="number" 
@@ -76,20 +88,21 @@ export default function() {
                                     onInput={handleChange}
                                     defaultValue={5}
                                     />
+                                    <span>Years</span>
                                 </div>
                             </li>
                             <li>
                                 <label htmlFor="">Estimated Interest Rate</label>
                                 <div>
-                                    <span>$</span>
                                     <input 
                                     name='interestRate' 
                                     type="number" 
-                                    placeholder="0" 
+                                    placeholder="1" 
                                     min='0' 
                                     onInput={handleChange}
-                                    defaultValue={1}
+                                    defaultValue={.01}
                                     />
+                                    <span>%</span>
                                 </div>
                             </li>
                             <li>
@@ -118,6 +131,8 @@ export default function() {
                             width="10rem"
                             onClick={() => {
                                 setModalOpen(true);
+                                investments.A = calculateCompound(investments.initialInvestment, investments.interestRate, investments.compoundFrequency, investments.yearsInvesting, investments.monthlyContribution);
+                                console.log(investments.A, investments.compoundFrequency, investments.initialInvestment, investments.interestRate, investments.monthlyContribution, investments.yearsInvesting)
                             }}
                         >Calculate</Button>
                         <Button
@@ -137,7 +152,7 @@ export default function() {
                 {modalOpen && 
                     <Modal
                         title="Ending Balance"
-                        a1Msg=''
+                        a1Msg={''}
                         a2Msg=''
                         a3Msg=''
                         setOpenModal={modalOpen}
