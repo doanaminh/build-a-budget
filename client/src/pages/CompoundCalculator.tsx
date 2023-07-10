@@ -28,11 +28,11 @@ export default function() {
     // investments.A = (investments.initialInvestment + investments.monthlyContribution * investments.compoundFrequency) * ((1 + (investments.interestRate / investments.compoundFrequency)) ** (investments.compoundFrequency * investments.yearsInvesting))
     
     // (initial + monthly * 12) * (1 + interest/12) ** (12t)
-    const calculateCompound = (P:number, r:number, n:number, t:number, m:number) => {
-        let init = P;
-        for (let i = 0; i < t; i++) {
-            init = init * (1 + r);
-            init = init + (m * 12);
+    const calculateCompound = () => {
+        let init = investments.initialInvestment;
+        for (let i = 0; i < investments.yearsInvesting; i++) {
+            init = init * (1 + investments.interestRate);
+            init = init + (investments.monthlyContribution * 12);
         }
         return init;
     }
@@ -131,8 +131,6 @@ export default function() {
                             width="10rem"
                             onClick={() => {
                                 setModalOpen(true);
-                                investments.A = calculateCompound(investments.initialInvestment, investments.interestRate, investments.compoundFrequency, investments.yearsInvesting, investments.monthlyContribution);
-                                console.log(investments.A, investments.compoundFrequency, investments.initialInvestment, investments.interestRate, investments.monthlyContribution, investments.yearsInvesting)
                             }}
                         >Calculate</Button>
                         <Button
@@ -156,7 +154,7 @@ export default function() {
                         a2Msg=''
                         a3Msg=''
                         setOpenModal={modalOpen}
-                        conclusion={`$${investments.A}`}
+                        conclusion={`$${calculateCompound()}`}
                     />
                 }
             </section>
