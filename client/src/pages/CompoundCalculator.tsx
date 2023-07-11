@@ -12,7 +12,7 @@ export default function() {
         initialInvestment: 1000,
         monthlyContribution: 100,
         yearsInvesting: 5,
-        interestRate: .01,
+        interestRate: 1,
         compoundFrequency: 12,
     });
     const handleChange = (e:any) => {
@@ -31,10 +31,10 @@ export default function() {
     const calculateCompound = () => {
         let init = investments.initialInvestment;
         for (let i = 0; i < investments.yearsInvesting; i++) {
-            init = init * (1 + investments.interestRate);
+            init = init * (1 + (investments.interestRate/100));
             init = init + (investments.monthlyContribution * 12);
         }
-        return init;
+        return Math.round((init + Number.EPSILON) * 100) / 100;
     }
 
 
@@ -100,7 +100,7 @@ export default function() {
                                     placeholder="1" 
                                     min='0' 
                                     onInput={handleChange}
-                                    defaultValue={.01}
+                                    defaultValue={1}
                                     />
                                     <span>%</span>
                                 </div>
