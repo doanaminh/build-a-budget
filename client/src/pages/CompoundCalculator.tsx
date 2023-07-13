@@ -8,17 +8,25 @@ export default function() {
     const [modalOpen, setModalOpen] = useState(false);
 
     const [investments, setInvestments] = useState({
-        A: 0,
         initialInvestment: 1000,
         monthlyContribution: 100,
         yearsInvesting: 5,
         interestRate: 1,
         compoundFrequency: 12,
     });
+
+    // remove leading 0s in input field
+    const trimZero = (n:string) => {
+        return parseInt(n);
+    }
     const handleChange = (e:any) => {
+        console.log(e.target.value, typeof(e.target.value), investments);
+
+
+
         setInvestments({
             ...investments,
-            [e.target.name]: Number(e.target.value),
+            [e.target.name]: trimZero(e.target.value),
         });
     }
 
@@ -36,6 +44,7 @@ export default function() {
         }
         return Math.round((init + Number.EPSILON) * 100) / 100;
     }
+
 
 
     return (
@@ -59,7 +68,7 @@ export default function() {
                                     placeholder="0" 
                                     min='0' 
                                     onInput={handleChange}
-                                    defaultValue={1000}
+                                    value={trimZero(investments.initialInvestment.toString())}
                                     />
                                 </div>
                             </li>

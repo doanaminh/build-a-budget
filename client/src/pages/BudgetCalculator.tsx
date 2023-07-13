@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Button from "../components/Button";
 import Modal from '../components/Modal';
+import CalculatorSlider from '../components/Calculator-Slider';
 
 
 export default function() {
@@ -97,6 +98,7 @@ export default function() {
         <>
             <section className='BudgetCalculator'>
                 {/*  */}
+                <CalculatorSlider />
                 <h1>Calculate your budget!</h1>
                 <p>To make this process easier, it would help to collect recent bills that you pay monthly to have at hand.</p>
                 {/* FORM THAT WILL SUBMIT WITH ALL THE NUMBERS FOR A BUDGET */}
