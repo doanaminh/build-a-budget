@@ -47,37 +47,60 @@ PAGES
 =======================================================
 */
 /* 
-|| BUDGET CALCULATOR ==================================
+|| CALCULATOR ==================================
 */
-.BudgetCalculator {
+.Calculator {
   padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.BudgetCalculator form {
+.Calculator h1 {
+  text-align: center;
+}
+.Calculator form {
   background-color: #d6c4ac;
   padding: 1.5rem;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
 }
-.BudgetCalculator ul {
+.Calculator ul {
   list-style: none;
 }
-.BudgetCalculator div, .BudgetCalculator li {
+.Calculator div, .Calculator li {
   display: flex;
   justify-content: space-between;
   padding: 0.25rem 0;
 }
-.BudgetCalculator label {
+.Calculator label {
   width: 50%;
 }
-.BudgetCalculator input {
+.Calculator input {
   text-align: end;
   border: beige solid 1px;
   border-radius: .2rem;
 }
-
+.slider {
+  display: flex;
+}
+.slider button {
+  color: white;
+  background-color: grey;
+}
+.sliderButton1 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.sliderButton2 {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.on {
+  background-color: #43718b !important;
+}
+.Budget, .Compound {
+  padding-top: 0;
+}
 /* 
 || GLOSSARY ===========================================
 */

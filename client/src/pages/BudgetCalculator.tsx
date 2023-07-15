@@ -1,63 +1,64 @@
 import { useState, useEffect } from 'react';
 import Button from "../components/Button";
 import Modal from '../components/Modal';
-import CalculatorSlider from '../components/Calculator-Slider';
 
 
 export default function() {
 
     const [modalOpen, setModalOpen] = useState(false);
+
+    const defaultBudget = {
+        // INCOME
+        checkFrequency: 1,
+        checkAmount: 0,
+        
+        // NEEDS 
+        livingExpense: 0,
+        bills: 0,
+        groceries: 0,
+        transportation: 0,
+        childcare: 0,
+        insurance: 0,
+        studentLoans: 0,
+        otherDebt: 0,
+
+        //  WANTS
+        entertainment: 0,
+        diningOut: 0,
+        hobbies: 0,
+        
+        // SAVINGS
+        emergencyFund: 0,
+        retirementFund: 0,
+        vacation: 0,
+
+       // TAGS
+       hasNeeds: false,
+       hasWants: false,
+       hasSavings: false,
+
+       // FORMULAS
+
+       // LOCALSTORAGE CANNOT STORE FUNCTIONS ONLY KEY VALUE PAIRS
+       // getIncome() {
+       //     return (this.checkFrequency * this.checkAmount);
+       // },
+       // getNeeds() {
+       //     return (this.livingExpense + this.bills + this.groceries + this.transportation + this.childcare + this.insurance + this.studentLoans + this.otherDebt);
+       // },
+       // getWants() {
+       //     return (this.entertainment + this.diningOut + this.hobbies);
+       // },
+       // getSavings() {
+       //     return (this.emergencyFund + this.retirementFund + this.vacation);
+       // },
+       // getRemainder() {
+       //     return (this.getIncome() - (this.getNeeds() + this.getWants() + this.getSavings()));
+       // },
+    }
     
     // CREATING AN OBJECT FROM LOCALSTORAGE IF USER HAS USED SITE BEFORE
-    let userBudget = JSON.parse(localStorage.getItem('userBudget')) || {
-         // INCOME
-         checkFrequency: 1,
-         checkAmount: 0,
-         
-         // NEEDS 
-         livingExpense: 0,
-         bills: 0,
-         groceries: 0,
-         transportation: 0,
-         childcare: 0,
-         insurance: 0,
-         studentLoans: 0,
-         otherDebt: 0,
- 
-         //  WANTS
-         entertainment: 0,
-         diningOut: 0,
-         hobbies: 0,
-         
-         // SAVINGS
-         emergencyFund: 0,
-         retirementFund: 0,
-         vacation: 0,
-
-        // TAGS
-        hasNeeds: false,
-        hasWants: false,
-        hasSavings: false,
-
-        // FORMULAS
-
-        // LOCALSTORAGE CANNOT STORE FUNCTIONS ONLY KEY VALUE PAIRS
-        // getIncome() {
-        //     return (this.checkFrequency * this.checkAmount);
-        // },
-        // getNeeds() {
-        //     return (this.livingExpense + this.bills + this.groceries + this.transportation + this.childcare + this.insurance + this.studentLoans + this.otherDebt);
-        // },
-        // getWants() {
-        //     return (this.entertainment + this.diningOut + this.hobbies);
-        // },
-        // getSavings() {
-        //     return (this.emergencyFund + this.retirementFund + this.vacation);
-        // },
-        // getRemainder() {
-        //     return (this.getIncome() - (this.getNeeds() + this.getWants() + this.getSavings()));
-        // },
-    };
+    let userBudget = JSON.parse(localStorage.getItem('userBudget')) || defaultBudget;
 
     // CREATING A STATE VARIABLE TO HOLD ALL VALUES OF INPUT FIELDS
     const [budget, setBudget] = useState(userBudget);
@@ -93,18 +94,18 @@ export default function() {
 
         },
     }
-    
+
     return (
         <>
-            <section className='BudgetCalculator'>
-                {/*  */}
-                <CalculatorSlider />
-                <h1>Calculate your budget!</h1>
+            <section className='Budget Calculator'>
+                
+                <h1>Budget Calculator</h1>
                 <p>To make this process easier, it would help to collect recent bills that you pay monthly to have at hand.</p>
                 {/* FORM THAT WILL SUBMIT WITH ALL THE NUMBERS FOR A BUDGET */}
                 <form action="">
                     {/* INCOME */}
-                    <section>                        
+                    <section>
+                        <h4>Income</h4>                      
                         <ul>
                             <li>
                                 <label htmlFor="">How often do you get paid?</label>
@@ -375,8 +376,7 @@ export default function() {
                             width="10rem"
                             onClick={() => {
                                 setModalOpen(false);
-                                localStorage.clear();
-                                location.reload();
+                                setBudget(defaultBudget);
                             }}
                         >Clear</Button>
                         <div></div>

@@ -49,7 +49,7 @@ export default function() {
 
     return (
         <>
-            <section className='CompoundCalculator'>
+            <section className='Compound Calculator'>
                 {/*  */}
                 <h1>Compound Interest Calculator</h1>
                 <p>To make this process easier, it would help to collect recent bills that you pay monthly to have at hand.</p>

@@ -4,15 +4,18 @@ import './CalculatorSlider.css';
 export default function () {
     
     const [isOn, setIsOn] = React.useState([true, false]);
+    console.log(isOn);
 
     return (
-        <>
+        <section className='slider'>
             <button 
-                onClick={() => setIsOn([!isOn[0], !isOn[1]])}
+                className={`sliderButton1 ${isOn[0] ? 'on' : ''}`}
+                onClick={() => setIsOn([true, false])}
             >Budget</button>
             <button 
-                onClick={() => setIsOn([!isOn[0], !isOn[1]])}
+                className={`sliderButton2 ${isOn[1] ? 'on' : ''}`}
+                onClick={() => setIsOn([false, true])}
             >Compound</button>
-        </>
+        </section>
     )
 }
