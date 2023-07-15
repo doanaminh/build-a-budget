@@ -34,6 +34,11 @@ body {
   min-height: 100vh; */
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;

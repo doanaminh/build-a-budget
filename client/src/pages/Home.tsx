@@ -1,5 +1,3 @@
-
-
 // IMPORT COMPONENTS
 import Button from "../components/Button";
 

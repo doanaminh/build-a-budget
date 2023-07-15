@@ -1,11 +1,15 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Button from "../components/Button";
 import Modal from '../components/Modal';
 
 
 export default function() {
 
+    // States to open modal
     const [modalOpen, setModalOpen] = useState(false);
+
+    // State to reset input fields
+    
 
     const [investments, setInvestments] = useState({
         initialInvestment: 1000,
@@ -63,12 +67,13 @@ export default function() {
                                 <div>
                                     <span>$</span>
                                     <input 
+                                    className='input'
                                     name='initialInvestment' 
                                     type="number" 
                                     placeholder="0" 
                                     min='0' 
                                     onInput={handleChange}
-                                    value={trimZero(investments.initialInvestment.toString())}
+                                    value={Number(trimZero(investments.initialInvestment.toString()))}
                                     />
                                 </div>
                             </li>
@@ -150,7 +155,6 @@ export default function() {
                             width="10rem"
                             onClick={() => {
                                 setModalOpen(false);
-                                location.reload();
                             }}
                         >Clear</Button>
                         <div></div>
