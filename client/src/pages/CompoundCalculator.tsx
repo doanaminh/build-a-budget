@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import Button from "../components/Button";
 import Modal from '../components/Modal';
 
@@ -8,16 +8,16 @@ export default function() {
     // States to open modal
     const [modalOpen, setModalOpen] = useState(false);
 
-    // State to reset input fields
-    
-
-    const [investments, setInvestments] = useState({
+    // Default values for investment
+    const defaultInvestment = {
         initialInvestment: 1000,
         monthlyContribution: 100,
         yearsInvesting: 5,
         interestRate: 1,
         compoundFrequency: 12,
-    });
+    }
+
+    const [investments, setInvestments] = useState(defaultInvestment);
 
     // remove leading 0s in input field
     const trimZero = (n:string) => {
@@ -82,6 +82,7 @@ export default function() {
                                 <div>
                                     <span>$</span>
                                     <input 
+                                    className='input'
                                     name='monthlyContribution' 
                                     type="number" 
                                     placeholder="0" 
@@ -95,6 +96,7 @@ export default function() {
                                 <label htmlFor="">Years of Investment</label>
                                 <div>
                                     <input 
+                                    className='input'
                                     name='yearsInvesting' 
                                     type="number" 
                                     placeholder="0" 
@@ -108,7 +110,8 @@ export default function() {
                             <li>
                                 <label htmlFor="">Estimated Interest Rate</label>
                                 <div>
-                                    <input 
+                                    <input
+                                    className='input'
                                     name='interestRate' 
                                     type="number" 
                                     placeholder="1" 
