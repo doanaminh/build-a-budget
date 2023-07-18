@@ -1,5 +1,16 @@
 
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 .budgetBody {
+    position: fixed;
+    top: 40vh;
+    left: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -8,7 +19,6 @@
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
     background-color: #43718b;
-    width: 90%;
     padding: 0 .9rem;
 }
 .budgetSections {

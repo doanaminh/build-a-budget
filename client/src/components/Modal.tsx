@@ -21,7 +21,9 @@ const Modal: React.FC<Props> = ({
 
     return (
         <>
+            <div className="modalBackdrop"></div>
             <section className="budgetBody">
+                <div><button>X</button></div>
                 <section className="budgetBreakdown">
                     <section className="budgetRemainder">
                         <h4>{title}</h4>
