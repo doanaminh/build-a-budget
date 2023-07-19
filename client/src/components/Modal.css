@@ -16,10 +16,19 @@
     flex-direction: column;
     align-items: center;
     color: gainsboro;
-    border-bottom-left-radius: .5rem;
-    border-bottom-right-radius: .5rem;
+    border-radius: .5rem;
     background-color: #43718b;
     padding: 0 .9rem;
+    padding-bottom: 1rem;
+}
+.budgetBody div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.modalButton {
+    background-color: transparent;
+    color: white;
 }
 .budgetSections {
     display: flex;
@@ -27,4 +36,7 @@
 }
 .budgetSections article {
     width: 31%;
+}
+.none {
+    visibility: hidden;
 }

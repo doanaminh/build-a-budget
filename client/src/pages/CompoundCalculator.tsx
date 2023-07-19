@@ -140,39 +140,19 @@ export default function() {
 
                     <div>
                         <div></div>
-                        <Button
-                            backgroundColor="#43718b"
-                            color="white"
-                            fontSize="1rem"
-                            height="3rem"
-                            width="10rem"
-                            onClick={() => {
-                                setModalOpen(true);
-                            }}
-                        >Calculate</Button>
-                        <Button
-                            backgroundColor="#FF6961"
-                            color="white"
-                            fontSize="1rem"
-                            height="3rem"
-                            width="10rem"
-                            onClick={() => {
-                                setModalOpen(false);
-                            }}
-                        >Clear</Button>
+                        <div>
+                            <Modal
+                            title="Ending Balance"
+                            a1Msg={''}
+                            a2Msg=''
+                            a3Msg=''
+                            setOpenModal={modalOpen}
+                            conclusion={`$${calculateCompound()}`}
+                            />                            
+                        </div>
                         <div></div>
                     </div>
                 </form>
-                {modalOpen && 
-                    <Modal
-                        title="Ending Balance"
-                        a1Msg={''}
-                        a2Msg=''
-                        a3Msg=''
-                        setOpenModal={modalOpen}
-                        conclusion={`$${calculateCompound()}`}
-                    />
-                }
             </section>
         </>
     )

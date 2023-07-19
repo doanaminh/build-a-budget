@@ -358,39 +358,19 @@ export default function() {
                     </section>
                     <div>
                         <div></div>
-                        <Button
-                            backgroundColor="#43718b"
-                            color="white"
-                            fontSize="1rem"
-                            height="3rem"
-                            width="10rem"
-                            onClick={() => {
-                                setModalOpen(true);
-                            }}
-                        >Calculate</Button>
-                        <Button
-                            backgroundColor="#FF6961"
-                            color="white"
-                            fontSize="1rem"
-                            height="3rem"
-                            width="10rem"
-                            onClick={() => {
-                                setModalOpen(false);
-                                setBudget(defaultBudget);
-                            }}
-                        >Clear</Button>
+                        <div>
+                            <Modal 
+                            setOpenModal={setModalOpen}
+                            title={`Your monthly remainder: $${budget.remainder}`}
+                            a1Msg={`You are spending a total of $${budget.totalNeeds} for necessities.`}
+                            a2Msg={`You are spending a total of $${budget.totalWants} for things you want.`}
+                            a3Msg={`You are saving a total of $${budget.totalSavings} monthly.`}
+                            conclusion='great job'
+                            />
+                        </div>
                         <div></div>
                     </div>
                 </form>
-                {modalOpen && 
-                <Modal 
-                    setOpenModal={setModalOpen}
-                    title={`Your monthly remainder: $${budget.remainder}`}
-                    a1Msg={`You are spending a total of $${budget.totalNeeds} for necessities.`}
-                    a2Msg={`You are spending a total of $${budget.totalWants} for things you want.`}
-                    a3Msg={`You are saving a total of $${budget.totalSavings} monthly.`}
-                    conclusion='great job'
-                />}
             </section>
         </>
     )
