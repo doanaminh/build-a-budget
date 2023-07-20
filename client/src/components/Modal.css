@@ -9,8 +9,10 @@
 }
 .budgetBody {
     position: fixed;
-    top: 40vh;
-    left: 0;
+    height: 80vh;
+    width: 80vw;
+    top: 10vh;
+    left: 10vw;
     text-align: center;
     display: flex;
     flex-direction: column;
