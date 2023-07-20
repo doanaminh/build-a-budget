@@ -5,8 +5,6 @@ import Modal from '../components/Modal';
 
 export default function() {
 
-    const [modalOpen, setModalOpen] = useState(false);
-
     const defaultBudget = {
         // INCOME
         checkFrequency: 1,
@@ -360,7 +358,6 @@ export default function() {
                         <div></div>
                         <div>
                             <Modal 
-                            setOpenModal={setModalOpen}
                             title={`Your monthly remainder: $${budget.remainder}`}
                             a1Msg={`You are spending a total of $${budget.totalNeeds} for necessities.`}
                             a2Msg={`You are spending a total of $${budget.totalWants} for things you want.`}

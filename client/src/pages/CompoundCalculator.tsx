@@ -1,12 +1,8 @@
 import { useState } from 'react';
-import Button from "../components/Button";
 import Modal from '../components/Modal';
 
 
 export default function() {
-
-    // States to open modal
-    const [modalOpen, setModalOpen] = useState(false);
 
     // Default values for investment
     const defaultInvestment = {
@@ -146,7 +142,6 @@ export default function() {
                             a1Msg={''}
                             a2Msg=''
                             a3Msg=''
-                            setOpenModal={modalOpen}
                             conclusion={`$${calculateCompound()}`}
                             />                            
                         </div>

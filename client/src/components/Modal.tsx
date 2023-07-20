@@ -3,7 +3,6 @@ import "./Modal.css"
 import Button from './Button';
 
 interface Props {
-    setOpenModal: any;
     children?:React.ReactNode;
     title: string;
     a1Msg: string;
@@ -13,7 +12,6 @@ interface Props {
 }
 
 const Modal: React.FC<Props> = ({
-    setOpenModal,
     title,
     a1Msg,
     a2Msg,
