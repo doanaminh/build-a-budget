@@ -20,7 +20,7 @@ const Modal: React.FC<Props> = ({
 }) => {
 
     const [open, setOpen] = useState(false);
-    const preventRefresh = e => {
+    const preventRefresh = (e:any) => {
         e.preventDefault();
     }
 
