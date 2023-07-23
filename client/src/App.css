@@ -61,8 +61,7 @@ PAGES
 .Calculator form {
   background-color: #d6c4ac;
   padding: 1.5rem;
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
+  border-radius: .5rem;
 }
 .Calculator ul {
   list-style: none;
@@ -100,6 +99,14 @@ PAGES
 }
 .Budget, .Compound {
   padding-top: 0;
+}
+.Compound .yearsInvesting input {
+  text-align: start;
+}
+.Compound .yearsInvesting span {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
 }
 /* 
 || GLOSSARY ===========================================

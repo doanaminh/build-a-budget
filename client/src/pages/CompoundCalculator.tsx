@@ -49,7 +49,7 @@ export default function() {
 
     return (
         <>
-            <section className='Compound Calculator'>
+            <section className='Compound'>
                 {/*  */}
                 <h1>Compound Interest Calculator</h1>
                 <p>To make this process easier, have your investment budget at hand.</p>
@@ -90,7 +90,7 @@ export default function() {
                             </li>
                             <li>
                                 <label htmlFor="">Years of Investment</label>
-                                <div>
+                                <div className='yearsInvesting'>
                                     <input 
                                     className='input'
                                     name='yearsInvesting' 

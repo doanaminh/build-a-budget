@@ -94,7 +94,7 @@ export default function() {
 
     return (
         <>
-            <section className='Budget Calculator'>
+            <section className='Budget'>
                 
                 <h1>Budget Calculator</h1>
                 <p>To make this process easier, it would help to collect recent bills that you pay monthly to have at hand.</p>
