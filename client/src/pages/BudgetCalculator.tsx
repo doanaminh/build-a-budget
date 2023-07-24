@@ -119,7 +119,7 @@ export default function() {
                             </li>
                             <li>
                                 <label htmlFor="">How much is each paycheck? (Amount after taxes are taken)</label>
-                                <div>
+                                <div className='input'>
                                     <span>$</span>
                                     <input 
                                     name='checkAmount' 
@@ -143,7 +143,7 @@ export default function() {
                             <ul>
                                 <li>
                                     <label htmlFor="">Rent/Mortgage</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='livingExpense' 
@@ -157,7 +157,7 @@ export default function() {
                                 </li>
                                 <li>
                                     <label htmlFor="">Utilities</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='bills' 
@@ -171,7 +171,7 @@ export default function() {
                                 </li>
                                 <li>
                                     <label htmlFor="">Groceries</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='groceries' 
@@ -185,7 +185,7 @@ export default function() {
                                 </li>
                                 <li>
                                     <label htmlFor="">Transportation</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='transportation' type="number" 
@@ -198,7 +198,7 @@ export default function() {
                                 </li>
                                 <li>
                                     <label htmlFor="">Childcare</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='childcare' 
@@ -212,7 +212,7 @@ export default function() {
                                 </li>
                                 <li>
                                     <label htmlFor="">Healthcare</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='insurance' 
@@ -226,7 +226,7 @@ export default function() {
                                 </li>
                                 <li>
                                     <label htmlFor="">Student Loans</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='studentLoans' 
@@ -240,7 +240,7 @@ export default function() {
                                 </li>
                                 <li>
                                     <label htmlFor="">Other Debt</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='otherDebt' 
@@ -261,7 +261,7 @@ export default function() {
                             <ul>
                                 <li>
                                     <label htmlFor="">Entertainment</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='entertainment' 
@@ -275,7 +275,7 @@ export default function() {
                                 </li>
                                 <li>
                                     <label htmlFor="">Dining Out</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='diningOut' 
@@ -289,7 +289,7 @@ export default function() {
                                 </li>
                                 <li>
                                     <label htmlFor="">Hobbies</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='hobbies' 
@@ -310,7 +310,7 @@ export default function() {
                             <ul>
                                 <li>
                                     <label htmlFor="">Emergency Fund</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='emergencyFund' 
@@ -324,7 +324,7 @@ export default function() {
                                 </li>
                                 <li>
                                     <label htmlFor="">Retirement</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='retirementFund' 
@@ -338,7 +338,7 @@ export default function() {
                                 </li>
                                 <li>
                                     <label htmlFor="">Vacation/Travel</label>
-                                    <div>
+                                    <div className='input'>
                                         <span>$</span>
                                         <input 
                                         name='vacation' 

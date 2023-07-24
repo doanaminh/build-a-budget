@@ -60,7 +60,7 @@ export default function() {
                         <ul>
                             <li>
                                 <label htmlFor="">Initial Investment</label>
-                                <div>
+                                <div className='input'>
                                     <span>$</span>
                                     <input 
                                     className='input'
@@ -75,7 +75,7 @@ export default function() {
                             </li>
                             <li>
                                 <label htmlFor="">Monthly Contribution</label>
-                                <div>
+                                <div className='input'>
                                     <span>$</span>
                                     <input 
                                     className='input'
@@ -90,7 +90,7 @@ export default function() {
                             </li>
                             <li>
                                 <label htmlFor="">Years of Investment</label>
-                                <div className='yearsInvesting'>
+                                <div className='input'>
                                     <input 
                                     className='input'
                                     name='yearsInvesting' 
@@ -105,7 +105,7 @@ export default function() {
                             </li>
                             <li>
                                 <label htmlFor="">Estimated Interest Rate</label>
-                                <div>
+                                <div className='input percent'>
                                     <input
                                     className='input'
                                     name='interestRate' 

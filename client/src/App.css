@@ -100,13 +100,21 @@ PAGES
 .Budget, .Compound {
   padding-top: 0;
 }
-.Compound .yearsInvesting input {
+/* .Compound .yearsInvesting input {
   text-align: start;
-}
-.Compound .yearsInvesting span {
+} */
+.input span {
   background-color: transparent;
   position: absolute;
-  right: 0;
+  opacity: 70%;
+}
+.percent input {
+  text-align: start;
+}
+.percent span {
+  width: 0;
+  position: relative;
+  right: 15px;
 }
 /* 
 || GLOSSARY ===========================================
