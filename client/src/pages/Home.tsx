@@ -1,3 +1,6 @@
+// Import react
+import { useNavigate } from 'react-router-dom';
+
 // IMPORT COMPONENTS
 import Button from "../components/Button";
 
