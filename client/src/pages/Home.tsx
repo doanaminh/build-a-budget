@@ -15,6 +15,8 @@ import mortgage from '/svg/mortgage.svg';
 
 
 export default function () {
+
+    const navigate = useNavigate();
     return(
         <>
 
@@ -36,7 +38,7 @@ export default function () {
                         fontSize="1.6rem"
                         height='80px'
                         width='200px'
-                        onClick={() => console.log('hehe')}
+                        onClick={() => navigate(`/calculator`)}
                     />
                 </main>
 
