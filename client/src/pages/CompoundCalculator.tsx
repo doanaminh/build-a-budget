@@ -20,10 +20,6 @@ export default function() {
         return parseInt(n);
     }
     const handleChange = (e:any) => {
-        console.log(e.target.value, typeof(e.target.value), investments);
-
-
-
         setInvestments({
             ...investments,
             [e.target.name]: trimZero(e.target.value),

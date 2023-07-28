@@ -111,7 +111,7 @@ export default function () {
                         fontSize="1.5rem"
                         height='80px'
                         width='200px'
-                        onClick={() => console.log('hehe')}
+                        onClick={() => navigate('/learn')}
                     />
                 </section>
 
