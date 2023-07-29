@@ -73,7 +73,7 @@ export default function () {
                         width="8rem"
                         onClick={() => navigate('/learn-budget')}
                     >
-                        Start Learning!
+                        Start
                     </Button>
                 </article>
             </section>

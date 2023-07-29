@@ -118,7 +118,7 @@ export default function() {
                                 </select>
                             </li>
                             <li>
-                                <label htmlFor="">How much is each paycheck? (Amount after taxes are taken)</label>
+                                <label htmlFor="">How much is each paycheck?</label>
                                 <div className='input'>
                                     <span>$</span>
                                     <input 

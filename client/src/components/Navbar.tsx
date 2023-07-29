@@ -9,6 +9,7 @@ export default function () {
                     <li><a href="/calculator">Calculator</a></li>
                     <li><a href="/learn">Learn</a></li>
                     <li><a href="/about">About</a></li>
+                    <li><a href="/glossary">Glossary</a></li>
                 </ul>
             </div>
         </>
