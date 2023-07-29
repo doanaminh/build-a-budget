@@ -86,7 +86,7 @@ export default function() {
                             </li>
                             <li>
                                 <label htmlFor="">Years of Investment</label>
-                                <div className='input'>
+                                <div className='input years'>
                                     <input 
                                     className='input'
                                     name='yearsInvesting' 
@@ -96,7 +96,7 @@ export default function() {
                                     onInput={handleChange}
                                     defaultValue={5}
                                     />
-                                    <span>Years</span>
+                                    <span>years</span>
                                 </div>
                             </li>
                             <li>
