@@ -105,9 +105,9 @@ export default function () {
                 <section className='takeAction'>
                     <p>Educate yourself and take control of your finances!</p>
                     <Button 
-                        backgroundColor="blanchedalmond"
-                        children='Get Started'
-                        color='#ad8e60'
+                        backgroundColor="#535337"
+                        children='Learn More'
+                        color='beige'
                         fontSize="1.5rem"
                         height='80px'
                         width='200px'

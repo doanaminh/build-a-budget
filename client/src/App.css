@@ -280,6 +280,7 @@ main p {
 */
 .Learn {
   padding: 1rem;
+  min-height: 84vh;
 }
 
 .Page {
@@ -287,6 +288,7 @@ main p {
 }
 
 .Learn .buttons {
+  padding-top: 1rem;
   display: flex;
   justify-content: space-between;
 }

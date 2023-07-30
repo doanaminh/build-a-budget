@@ -38,7 +38,7 @@ export default function () {
                 <section>
                     <h4>Preface</h4>
                     <p>
-                        This is a quick overview of the flowchart of personal finance. This learning portion should be nothing more than a basic introduction to personal finance. It is strongly recommended to supplement these readings with other sources to verify the correct numbers and rules for where you live. This whole website was written from the perspective of someone living in the United States and should be taken as only an opinion. This website does NOT provide professional advice; take action at your own risks. This portion only serves to help you learn how to think for yourself and educate you on basic financial terms and strategies. With that being said, I am confident that no matter what your financial situation is, there should be something helpful for you here. Remember, it is probably not possible to finish any of these steps within a week, let alone a day. These things take time; so, it's all the more important to create a plan. The first step of fixing a problem is identifying it!
+                        This is a quick overview of the flowchart of personal finance. This learning portion should be nothing more than a basic introduction to personal finance. It is strongly recommended to supplement these readings with other sources to verify the correct numbers and rules for where you live. This whole website was written from the perspective of someone living in the United States and should be taken as only an opinion. This website does NOT provide professional advice; take action at your own risk. This portion only serve to help you learn how to think for yourself and educate you on basic financial terms and strategies. With that being said, I am confident that no matter what your financial situation is, there should be something helpful for you here. Remember, it is probably not possible to finish any of these steps within a week, let alone a day. These things take time; so, it's all the more important to create a plan. The first step of fixing a problem is identifying it!
                     </p>
                 </section>
 
@@ -46,10 +46,13 @@ export default function () {
                     <h4>Tips</h4>
                     <ul>
                         <li>
-                            Have Google search ready to look up/verify anything you're unsure about
+                            Google is your best friend
                         </li>
                         <li>
-                            something
+                            Numbers and statistics vary depending on location
+                        </li>
+                        <li>
+                            Not everything can be changed in a day; take your time
                         </li>
                     </ul>
                 </section>
