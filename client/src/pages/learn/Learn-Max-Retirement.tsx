@@ -12,7 +12,7 @@ export default function () {
                 <section className="sidebar">
                     <Sidebar />
                 </section>
-                <section>
+                <section className="body">
                     <article>
                         <h3>Maximizing for Retirement</h3>
                         <p>Let's take a minute to check how much you are invested into your own retirement.</p>
@@ -54,7 +54,6 @@ export default function () {
                             onClick={() => navigate('/learn-long-term-goals')}
                         >Next</Button>
                     </article>
-
                 </section>
             </section>
 

@@ -12,7 +12,7 @@ export default function () {
                 <section className="sidebar">
                     <Sidebar />
                 </section>
-                <section>
+                <section className="body">
                     <section>
                         <article>
                             <h3>Build a budget!</h3>

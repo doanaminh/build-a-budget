@@ -12,7 +12,7 @@ export default function () {
                 <section className="sidebar">
                     <Sidebar />
                 </section>
-                <section>
+                <section className="body">
                     <article>
                         <h3>Build an Emergency Fund</h3>
                         <p>Good job on moving your money around your budget! At this point you should have extra money monthly and are looking to distribute it into a savings account of some sort.</p>
@@ -50,7 +50,6 @@ export default function () {
                             onClick={() => navigate('/learn-employer-intro')}
                         >Next</Button>
                     </article>
-
                 </section>
             </section>
 

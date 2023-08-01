@@ -12,7 +12,7 @@ export default function () {
                 <section className="sidebar">
                     <Sidebar />
                 </section>
-                <section>
+                <section className="body">
                     <article>
                         <h3>Paying Off Debts</h3>
                         <p>This section deals with the difficult matters of handling and eliminating debt. Although at times it may seem impossible, there is a way to eliminate it altogether. It takes time, but with a solid plan, you can maximize the efficiency at which you can pay them off.</p>

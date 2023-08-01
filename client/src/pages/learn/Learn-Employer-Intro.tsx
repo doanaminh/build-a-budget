@@ -12,7 +12,7 @@ export default function () {
                 <section className="sidebar">
                     <Sidebar />
                 </section>
-                <section>
+                <section className="body">
                     <article>
                         <h3>Build an Employer-Matched Retirement Account</h3>
                         <p>If your employer does NOT offer a retirement account WITH a match, you can skip this step. Alright! So, you're quite in control over your finances at this point! You're doing amazing. However, there is much more you can do to become more financially grounded. Do you now have more money remaining even after distributing the minimum required amounts from the previous two steps? Are you ready to start thinking about retirement?</p>

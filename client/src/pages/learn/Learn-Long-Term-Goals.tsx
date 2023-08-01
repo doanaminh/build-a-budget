@@ -12,7 +12,7 @@ export default function () {
                 <section className="sidebar">
                     <Sidebar />
                 </section>
-                <section>
+                <section className="body">
                     <article>
                         <h3>Preparing for the Future</h3>
                         <p>If you are at this step in your personal finance journey, I just want to say: congratulations! This is a huge achievement and you should be very proud of yourself! Finances are probably not an immediate burden anymore in your daily life. This section will be covering ways to maximize your efforts to save for the far future.</p>

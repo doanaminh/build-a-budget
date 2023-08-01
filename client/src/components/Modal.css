@@ -17,9 +17,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: gainsboro;
+    color: white;
     border-radius: .5rem;
-    background-color: #43718b;
+    background-color: #554941;
     padding: 0 .9rem;
     padding-bottom: 1rem;
 }

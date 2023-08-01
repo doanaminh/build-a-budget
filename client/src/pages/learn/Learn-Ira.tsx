@@ -12,7 +12,7 @@ export default function () {
                 <section className="sidebar">
                     <Sidebar />
                 </section>
-                <section>
+                <section className="body">
                     <article>
                         <h3>IRA & Higher Education</h3>
                         <p>This page will cover the basics of IRAs (individual retirement accounts).</p>
