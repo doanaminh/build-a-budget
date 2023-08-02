@@ -10,7 +10,7 @@
 .budgetBody {
     position: fixed;
     height: 80vh;
-    width: 80vw;
+    width: 77vw;
     top: 10vh;
     left: 10vw;
     text-align: center;
@@ -27,6 +27,11 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+.budgetBreakdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .modalButton {
     background-color: transparent;

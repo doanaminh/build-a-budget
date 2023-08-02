@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Modal from '../components/Modal';
+import InputField from '../components/InputField';
 
 
 export default function() {
@@ -80,17 +81,17 @@ export default function() {
     budget.totalSavings = budget.emergencyFund + budget.retirementFund + budget.vacation;
     budget.remainder = budget.monthlyIncome - budget.totalNeeds - budget.totalWants - budget.totalSavings;
     
-    const conclusionPool = {
-        under: {
+    // const conclusionPool = {
+    //     under: {
 
-        },
-        even: {
+    //     },
+    //     even: {
 
-        },
-        over: {
+    //     },
+    //     over: {
 
-        },
-    }
+    //     },
+    // }
 
     return (
         <>
@@ -104,6 +105,16 @@ export default function() {
                     <section>
                         <h4>Income</h4>                      
                         <ul>
+                            <li>
+                                <InputField
+                                    title='test'
+                                    symbol='$'
+                                    inputName='test'
+                                    nameClass='input'
+                                    handleValue={handleChange}
+                                    loadedValue={userBudget.test}
+                                />
+                            </li>
                             <li>
                                 <label htmlFor="">How often do you get paid?</label>
 

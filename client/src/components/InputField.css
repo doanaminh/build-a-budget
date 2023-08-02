@@ -1,0 +1,29 @@
+.Calculator label {
+    width: 50%;
+}
+.Calculator input {
+  text-align: end;
+  border: beige solid 1px;
+  border-radius: .2rem;
+}
+.input span {
+  background-color: transparent;
+  position: absolute;
+  opacity: 70%;
+}
+.percent input {
+  text-align: start;
+}
+.percent span {
+  width: 0;
+  position: relative;
+  right: 30px;
+}
+.years span {
+  width: 0;
+  position: relative;
+  right: 55px;
+}
+.years input {
+  text-align: start;
+}
