@@ -1,2 +1,2 @@
 LAST LEFT OFF:
-create a compound interest calculator
+replace each input on calculator page with input component
