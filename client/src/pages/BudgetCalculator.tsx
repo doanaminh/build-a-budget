@@ -106,16 +106,6 @@ export default function() {
                         <h4>Income</h4>                      
                         <ul>
                             <li>
-                                <InputField
-                                    title='test'
-                                    symbol='$'
-                                    inputName='test'
-                                    nameClass='input'
-                                    handleValue={handleChange}
-                                    loadedValue={userBudget.test}
-                                />
-                            </li>
-                            <li>
                                 <label htmlFor="">How often do you get paid?</label>
 
                                 <select 
@@ -129,18 +119,14 @@ export default function() {
                                 </select>
                             </li>
                             <li>
-                                <label htmlFor="">How much is each paycheck?</label>
-                                <div className='input'>
-                                    <span>$</span>
-                                    <input 
-                                    name='checkAmount' 
-                                    type="number" 
-                                    placeholder="0" 
-                                    min='0' 
-                                    onInput={handleChange}
-                                    defaultValue={userBudget.checkAmount}
-                                    />
-                                </div>
+                                <InputField
+                                    title='How much is each paycheck?'
+                                    symbol='$'
+                                    inputName='checkAmount'
+                                    nameClass='input'
+                                    handleValue={handleChange}
+                                    loadedValue={userBudget.checkAmount}
+                                />
                             </li>
                         </ul>
                         
@@ -153,115 +139,84 @@ export default function() {
                             <h4>Needs</h4>
                             <ul>
                                 <li>
-                                    <label htmlFor="">Rent/Mortgage</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='livingExpense' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.livingExpense}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Rent/Mortgage'
+                                        symbol='$'
+                                        inputName='livingExpense'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.livingExpense}
+                                    />
                                 </li>
                                 <li>
-                                    <label htmlFor="">Utilities</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='bills' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.bills}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Utilities'
+                                        symbol='$'
+                                        inputName='bills'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.bills}
+                                    />
                                 </li>
                                 <li>
-                                    <label htmlFor="">Groceries</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='groceries' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.groceries}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Groceries'
+                                        symbol='$'
+                                        inputName='groceries'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.groceries}
+                                    />
                                 </li>
                                 <li>
-                                    <label htmlFor="">Transportation</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='transportation' type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.transportation}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Transportation'
+                                        symbol='$'
+                                        inputName='transportation'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.transportation}
+                                    />
                                 </li>
                                 <li>
-                                    <label htmlFor="">Childcare</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='childcare' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.childcare}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Childcare'
+                                        symbol='$'
+                                        inputName='childcare'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.childcare}
+                                    />
                                 </li>
                                 <li>
-                                    <label htmlFor="">Healthcare</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='insurance' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.insurance}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Healthcare'
+                                        symbol='$'
+                                        inputName='insurance'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.insurance}
+                                    />
                                 </li>
                                 <li>
-                                    <label htmlFor="">Student Loans</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='studentLoans' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.studentLoans}
-                                        />
-                                    </div>                                   
+                                    <InputField
+                                        title='Student Loans'
+                                        symbol='$'
+                                        inputName='studentLoans'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.studentLoans}
+                                    />
                                 </li>
                                 <li>
-                                    <label htmlFor="">Other Debt</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='otherDebt' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.otherDebt}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Other Debt'
+                                        symbol='$'
+                                        inputName='otherDebt'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.otherDebt}
+                                    />
                                 </li>
                             </ul>
                         </article>
@@ -271,46 +226,34 @@ export default function() {
                             <h4>Wants</h4>
                             <ul>
                                 <li>
-                                    <label htmlFor="">Entertainment</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='entertainment' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.entertainment}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Entertainment'
+                                        symbol='$'
+                                        inputName='entertainment'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.entertainment}
+                                    />
                                 </li>
                                 <li>
-                                    <label htmlFor="">Dining Out</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='diningOut' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.diningOut}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Dining Out'
+                                        symbol='$'
+                                        inputName='diningOut'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.diningOut}
+                                    />
                                 </li>
                                 <li>
-                                    <label htmlFor="">Hobbies</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='hobbies' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.hobbies}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Hobbies'
+                                        symbol='$'
+                                        inputName='hobbies'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.hobbies}
+                                    />
                                 </li>
                             </ul>
                         </article>
@@ -320,46 +263,34 @@ export default function() {
                             <h4>Savings</h4>
                             <ul>
                                 <li>
-                                    <label htmlFor="">Emergency Fund</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='emergencyFund' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.emergencyFund}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Emergency Fund'
+                                        symbol='$'
+                                        inputName='emergencyFund'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.emergencyFund}
+                                    />
                                 </li>
                                 <li>
-                                    <label htmlFor="">Retirement</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='retirementFund' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.retirementFund}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Retirement'
+                                        symbol='$'
+                                        inputName='retirementFund'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.retirementFund}
+                                    />
                                 </li>
                                 <li>
-                                    <label htmlFor="">Vacation/Travel</label>
-                                    <div className='input'>
-                                        <span>$</span>
-                                        <input 
-                                        name='vacation' 
-                                        type="number" 
-                                        placeholder="0" 
-                                        min='0' 
-                                        onInput={handleChange} 
-                                        defaultValue={userBudget.vacation}
-                                        />
-                                    </div>
+                                    <InputField
+                                        title='Vacation/Travel'
+                                        symbol='$'
+                                        inputName='vacation'
+                                        nameClass='input'
+                                        handleValue={handleChange}
+                                        loadedValue={userBudget.vacation}
+                                    />
                                 </li>
                             </ul>
                         </article>

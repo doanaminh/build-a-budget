@@ -11,19 +11,17 @@
   position: absolute;
   opacity: 70%;
 }
-.percent input {
+.years input, .percent input {
   text-align: start;
 }
 .percent span {
   width: 0;
   position: relative;
-  right: 30px;
+  left: 160px;
+
 }
 .years span {
   width: 0;
   position: relative;
-  right: 55px;
-}
-.years input {
-  text-align: start;
+  left: 125px;
 }

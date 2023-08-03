@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Modal from '../components/Modal';
+import InputField from '../components/InputField';
 
 
 export default function() {
@@ -55,49 +56,44 @@ export default function() {
                     <section>                        
                         <ul>
                             <li>
-                                <label htmlFor="">Initial Investment</label>
-                                <div className='input'>
-                                    <span>$</span>
-                                    <input 
-                                    className='input'
-                                    name='initialInvestment' 
-                                    type="number" 
-                                    placeholder="0" 
-                                    min='0' 
-                                    onInput={handleChange}
-                                    value={Number(trimZero(investments.initialInvestment.toString()))}
-                                    />
-                                </div>
+                                <InputField
+                                    title='Initial Investment'
+                                    symbol='$'
+                                    inputName='initialInvestment'
+                                    nameClass='input'
+                                    handleValue={handleChange}
+                                    loadedValue={Number(trimZero(investments.initialInvestment.toString()))}
+                                />
                             </li>
                             <li>
-                                <label htmlFor="">Monthly Contribution</label>
-                                <div className='input'>
-                                    <span>$</span>
-                                    <input 
-                                    className='input'
-                                    name='monthlyContribution' 
-                                    type="number" 
-                                    placeholder="0" 
-                                    min='0' 
-                                    onInput={handleChange}
-                                    defaultValue={100}
-                                    />
-                                </div>
+                                <InputField
+                                    title='Monthly Contribution'
+                                    symbol='$'
+                                    inputName='monthlyContribution'
+                                    nameClass='input'
+                                    handleValue={handleChange}
+                                    loadedValue={100}
+                                />
                             </li>
                             <li>
-                                <label htmlFor="">Years of Investment</label>
-                                <div className='input years'>
-                                    <input 
-                                    className='input'
-                                    name='yearsInvesting' 
-                                    type="number" 
-                                    placeholder="0" 
-                                    min='0' 
-                                    onInput={handleChange}
-                                    defaultValue={5}
-                                    />
-                                    <span>years</span>
-                                </div>
+                                <InputField
+                                    title='Years of Investment'
+                                    symbol='years'
+                                    inputName='yearsInvesting'
+                                    nameClass='input years'
+                                    handleValue={handleChange}
+                                    loadedValue={5}
+                                />
+                            </li>
+                            <li>
+                                <InputField
+                                    title='Estimated Interest Rate'
+                                    symbol='$'
+                                    inputName='interestRate'
+                                    nameClass='input percent'
+                                    handleValue={handleChange}
+                                    loadedValue={1}
+                                />
                             </li>
                             <li>
                                 <label htmlFor="">Estimated Interest Rate</label>
@@ -117,6 +113,7 @@ export default function() {
                             <li>
                                 <label htmlFor="">Compound Frequency</label>
                                 <select 
+                                    disabled={true}
                                     defaultValue={1}
                                     name="compoundFrequency" id=""
                                     onInput={handleChange}    
