@@ -3,7 +3,7 @@ export default function () {
         <>
             <section>
                 <article>
-                    <h6>Personal Finance Idealogy Inspired by: <a href="https://i.imgur.com/u0ocDRI.png">this flowchart</a></h6>
+                    <h6>Personal Finance Idealogy Inspired by: <a href="https://i.imgur.com/u0ocDRI.png" target="blank">this flowchart</a></h6>
                 </article>
                 <article>
                     <h6>Icons/Images</h6>
