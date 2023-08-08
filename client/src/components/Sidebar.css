@@ -3,13 +3,14 @@
     background: linear-gradient(to right, #535337 98%, transparent);
     display: flex;
     justify-content: space-around;
-    padding-top: 10vh;
+    padding-top: 90px;
     position: fixed;
     top: 0;
     left: -30vw;
     height: 100vh;
     transition: left .5s ease;
     color: gainsboro;
+    overflow: scroll;
 }
 .Sidebar:hover {
     left: 0;
