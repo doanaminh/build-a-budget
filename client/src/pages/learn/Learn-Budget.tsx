@@ -16,27 +16,27 @@ export default function () {
                     <section>
                         <article>
                             <h3>Build a budget!</h3>
-                            <p>The most important, and basic, thing you can do is create a monthly budget. Knowing where your money is coming in and going out is fundamental to being financially successful. No matter how stressful it is to look at these numbers, it is always better to know about the problem rather than ignoring it. That is the first step of devising a plan to fix the problem.</p>
+                            <p>The most important, and basic, thing you can do is create a monthly budget. Knowing where your money is coming in and going out is fundamental to being financially successful.</p>
                         </article>
 
 
                         <article className="action">
-                            <span>If you haven't made one yet, let's make one now. After you've created one, come on back to this page.</span>
+                            <span>If you haven't made one yet; let's make one now. After you've created one, come on back to this page.</span>
                             <div>
                                 <Button 
-                                    backgroundColor="black"
+                                    backgroundColor="#43718B"
                                     color="white"
                                     fontSize="1rem"
                                     height="4rem"
                                     width="10rem"
-                                    onClick={() => navigate("/budget-calculator")}
-                                >Create a budget here</Button>
+                                    onClick={() => navigate("/calculator")}
+                                >Create a budget</Button>
                             </div>
 
                         </article>
                         
                         <article>
-                            <p>Good job! So now that you have your budget, let's move on to the next steps. The most immediate thing you can do next, is start moving around the numbers in your budget. The priority of where your money should be going every month should be as follows (from most important first):</p>
+                            <p>Great! So now that you have your budget, let's move on to the next steps. The most immediate thing you can do next, is start moving around the numbers in your budget. The priority of where your money should be going every month should be as follows (from most immediate first):</p>
                             <ol>
                                 <li>
                                     <h4>Rent/Mortgage</h4>

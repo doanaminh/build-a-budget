@@ -303,7 +303,7 @@ export default function() {
                             a1Msg={`You are spending a total of $${budget.totalNeeds} for necessities.`}
                             a2Msg={`You are spending a total of $${budget.totalWants} for things you want.`}
                             a3Msg={`You are saving a total of $${budget.totalSavings} monthly.`}
-                            conclusion='great job'
+                            conclusion={`Learn what you can do next here.`}
                             />
                         </div>
                         <div></div>
