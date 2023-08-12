@@ -29,7 +29,7 @@ export default function () {
                             </ol>
                         </article>
                         <p>
-                            Hopefully you now understand where your money is coming in and where it's going out. The next step will be to plan for future goals or retirement.
+                            Hopefully you now understand where your money is coming in and where it's going out. The next step will be to plan for retirement.
                         </p>
                     </article>
                     <article className="buttons">
