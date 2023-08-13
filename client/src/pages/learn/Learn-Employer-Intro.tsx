@@ -1,6 +1,7 @@
 import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
+import Term from "../../components/Term";
 
 export default function () {
 
@@ -20,11 +21,21 @@ export default function () {
                             <ol>
                                 <li>
                                     <h4>Enroll in Employer-Matched Retirement Account</h4>
-                                    <p>After you've asked your employer about what kind of retirement plans they offer, it's time to choose one and start contributing a part of your income towards it. The most common one is probably the 401(k) and it comes in either a Traditional or a Roth version. In plain terms, a Traditional 401(k) can be contributed to with money that HAS NOT been taxed, but will be taxed when you withdraw the profits in the future. This effectively does two things simultaneously: lowers your overall income which will potentially lower how much you will be taxed and allows you to potentially invest more per paycheck. This is a great option if you think you will have a lower income in the future. A Roth 401(k) could be considered the opposite. You contribute money that is already taxed, but you will not have to pay taxes on the profits when you withdraw it at a later date. This a good option if you plan to make MORE income in the future.</p>
+                                    <p>After you've asked your employer about what kind of retirement plans they offer, it's time to choose one and start contributing a part of your income towards it. This could be a pension or a 401(k). The most common one is probably a 401(k) retirement account and it comes in either a{' '}
+                                    <Term 
+                                    term="Traditional"
+                                    definition="Retirement account that allows you to contribute with money from your paycheck before any deductions. This will lower your income and possibly affect your placement in the tax bracket. Because of this, you will be taxed when you withdraw any profits from the account. The amount withdrawn will be added to your income and taxed accordingly to your tax bracket of that year."
+                                    />
+                                    {' '}or a{' '}
+                                    <Term 
+                                    term="Roth"
+                                    definition="Retirement account that allows you to contribute with after-tax money. This means with the money left after taxes have been deducted from your paycheck. This allows you to withdraw any profits free of taxes."
+                                    />
+                                    {' '}version.</p>
                                 </li>
                             </ol>
                         </article>
-                        <p>Good job on taking your first step into investing in yourself and creating a future where you potentially don't have to work every single day just to survive. This section was the first step into a very complicated topic. It's okay to not remember everything. There are free resources in every corner of the internet that you can check when you have doubts about anything. Take a deep breath and push forward when you're ready.</p>
+                        <p>Good job on investing in your future. Remember to invest the money you contributed in your retirement account and not just let it sit there.</p>
                     </article>
                     <article className="buttons">
                         <Button 
