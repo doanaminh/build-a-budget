@@ -15,12 +15,12 @@ export default function () {
                 <section className="body">
                     <article>
                         <h3>IRA & Higher Education</h3>
-                        <p>This page will cover the basics of IRAs (individual retirement accounts).</p>
+                        <p>You should be have no debt or are paying the minimum amounts on all debts monthly with more money to allocate. This page will cover the basics of IRAs (individual retirement accounts).</p>
                         <article>
                             <ol>
                                 <li>
                                     <h4>Traditional vs Roth</h4>
-                                    <p>You will likely be facing the decision to either open a traditional or Roth IRA. Similarly to the 401k types from last chapter, taditional and Roth are different types of retirement accounts with unique contribution and withdrawal rules. As a quick reminder: Traditional accounts allow you to contribute money after it has been taxed and withdraw any profits tax-free. & Roth accounts allow you to contribute with money before taxes are deducted, but withdrawing profits will be taxed.</p>
+                                    <p>There are mulitple types of IRAs, but we will be covering only two: traditional or Roth IRA. Read between the two and decide which is better for your position. Open an account with a brokerage firm with low trading fees like Fidelity or Vanguard if you're in the United States.</p>
                                 </li>
                             </ol>
                         </article>

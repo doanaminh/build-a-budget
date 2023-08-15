@@ -20,11 +20,11 @@ export default function () {
                             <ol>
                                 <li>
                                     <h4>Make Minimum Payments on All Debts/Loans</h4>
-                                    <p>Make the minimum payments on all amounts that you owe. You should prioritize the ones with the highest interest rates first. The goal is to make the minimum payment for all amounts due.</p>
+                                    <p>Make the minimum payments on all amounts that you owe. The goal is to make the minimum payment for all amounts due.</p>
                                 </li>
                             </ol>
                         </article>
-                        <p>Great work getting a grasp on your debts!</p>
+                        <p>Great work tackling your debts!</p>
                     </article>
                     <article className="buttons">
                         <Button 

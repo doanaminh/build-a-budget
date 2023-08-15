@@ -16,7 +16,7 @@ export default function () {
                 <section className="body">
                     <article>
                         <h3>Build an Employer-Matched Retirement Account</h3>
-                        <p>If your employer does NOT offer a retirement account WITH a match, you can skip this step. Alright! You should have your debt under control or paid off. This will leave you with remainder money to reallocate.</p>
+                        <p>If your employer does NOT offer a retirement account WITH a match, you can skip this step. Alright! You should have your bills under control at this point.</p>
                         <article>
                             <ol>
                                 <li>
@@ -31,11 +31,11 @@ export default function () {
                                     term="Roth"
                                     definition="Retirement account that allows you to contribute with after-tax money. This means with the money left after taxes have been deducted from your paycheck. This allows you to withdraw any profits free of taxes."
                                     />
-                                    {' '}version.</p>
+                                    {' '}version. Sign up for your preferred employer-matched retirement account and ONLY contribute up to the amount needed to get the full employer match. For example: if your employer matches 5% of your annual income, contribute 5% of your paycheck to your 401(k). DON'T let your money sit in the account. You should be offered options in what kind of stocks/fund you want to invest your money in. Choose a plan and sign up to contribute a set amount every paycheck.</p>
                                 </li>
                             </ol>
                         </article>
-                        <p>Good job on investing in your future. Remember to invest the money you contributed in your retirement account and not just let it sit there.</p>
+                        <p>Good job on investing in your future. Remember to invest the money you contributed in your retirement account and let it sit idle.</p>
                     </article>
                     <article className="buttons">
                         <Button 
