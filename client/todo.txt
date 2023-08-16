@@ -1,2 +1,2 @@
 LAST LEFT OFF:
-replace each input on calculator page with input component
+create a page that will explain how/what to invest in within a broker account

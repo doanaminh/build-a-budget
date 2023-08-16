@@ -1,6 +1,7 @@
 import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
+import Term from "../../components/Term";
 
 export default function () {
 
@@ -15,12 +16,21 @@ export default function () {
                 <section className="body">
                     <article>
                         <h3>Paying Off Debts</h3>
-                        <p>If you don't have debt, you can skip this section. You should have a lofty emergency fund at this point. This section deals with handling and eliminating debt. Although, at times it may seem impossible, there's always a way. It takes time, but with a solid plan, you can accelerate at which you can pay them off.</p>
+                        <p>If you don't have debt, you can skip this section. You should have a lofty emergency fund at this point. This section deals with handling and eliminating debt.</p>
                         <article>
                             <ol>
                                 <li>
-                                    <h4>Make Minimum Payments on All Debts/Loans</h4>
-                                    <p>Make the minimum payments on all amounts that you owe. The goal is to make the minimum payment for all amounts due.</p>
+                                    <h4>High Interest Debt</h4>
+                                    <p>If you have debts with an interest rate of 10% or higher, consider using the{' '}
+                                    <Term 
+                                    term="Avalanche"
+                                    definition=""
+                                    />{' '} or
+                                    <Term 
+                                    term=""
+                                    definition="Snowball"
+                                    />{' '} methods.
+                                    </p>
                                 </li>
                             </ol>
                         </article>

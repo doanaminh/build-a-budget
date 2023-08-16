@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./Term.css"
 
+export const Terms = {
+    budget: 'A financial plan. A visual representation of where your money is coming in and going out.',
+    
+}
+
 
 interface Props {
     children?:React.ReactNode;
