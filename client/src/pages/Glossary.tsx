@@ -47,7 +47,7 @@ export default function () {
                         <li>
                             <h6>interest rate</h6>
                             <p>
-                                A percentage of the total amount borrowed that is owed on top the the borrowed sum. This is usually an annual rate, but could be monthly, weekly, or daily depending on the type of {' '}
+                                A percentage of the total amount borrowed that is owed on top of the the borrowed sum. This is usually an annual rate, but could be monthly, weekly, or daily depending on the type of {' '}
                                 <Term 
                                     term="loan"
                                     definition="A borrowed amount of money."
