@@ -1,5 +1,6 @@
-a {
+.term {
     cursor: pointer;
+    color: green;
 }
 .termModal {
     width: 85%;

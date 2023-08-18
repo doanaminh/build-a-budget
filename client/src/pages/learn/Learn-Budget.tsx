@@ -1,6 +1,8 @@
 import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
+import Term from "../../components/Term";
+import { Terms } from "../../components/Term";
 
 export default function () {
 
@@ -16,7 +18,12 @@ export default function () {
                     <section>
                         <article>
                             <h3>Build a budget!</h3>
-                            <p>The most important, and basic, thing you can do is create a monthly budget. Knowing where your money is coming in and going out is fundamental to being financially successful.</p>
+                            <p>The most important, and basic, thing you can do is create a monthly{' '}
+                            <Term 
+                            term='budget'
+                            definition={Terms.budget}
+                            />
+                            . Knowing where your money is coming in and going out is fundamental to being financially successful.</p>
                         </article>
 
 

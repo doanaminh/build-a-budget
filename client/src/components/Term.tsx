@@ -31,12 +31,12 @@ const Term: React.FC<Props> = ({
 
     return (
         <>
-            <a
+            <span className="term"
                 onMouseEnter={() => setModalOpen(true)}
                 onMouseLeave={() => setModalOpen(false)}
             >
                 {term}
-            </a>
+            </span>
             {modalOpen && 
                 <section className="termModal">
                     <section className="termDefinition">
