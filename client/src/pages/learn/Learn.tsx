@@ -31,7 +31,7 @@ export default function () {
                                     Numbers and statistics vary depending on location
                                 </li>
                                 <li>
-                                    You can click/hover on certain terms to view the definition
+                                    You can click/hover on green terms to view the definition
                                 </li>
                                 <li>
                                     Not everything can be changed in a day; take your time
