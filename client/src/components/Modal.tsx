@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./Modal.css"
 import Button from './Button';
 
@@ -9,6 +10,8 @@ interface Props {
     a2Msg: string;
     a3Msg: string;
     conclusion: string;
+    buttonText?: string;
+    route?: any;
 }
 
 const Modal: React.FC<Props> = ({
@@ -17,12 +20,16 @@ const Modal: React.FC<Props> = ({
     a2Msg,
     a3Msg,
     conclusion,
+    buttonText,
+    route,
 }) => {
 
     const [open, setOpen] = useState(false);
     const preventRefresh = (e:any) => {
         e.preventDefault();
     }
+
+    const navigate = useNavigate();
 
     return (
         <>
@@ -66,6 +73,10 @@ const Modal: React.FC<Props> = ({
                         <section className="budgetConclusion">
                             <p>{conclusion}</p>
                         </section>
+                        {route && <button className='modalButton2' onClick={() => {
+                            navigate(route);
+                            window.scrollTo(0, 0);
+                        }}>{buttonText}</button>}
                     </section>
                 </section>
             </div>

@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 import Sidebar from "../../components/Sidebar";
+import Term from "../../components/Term";
 
 export default function () {
     const navigate = useNavigate();
@@ -17,7 +18,7 @@ export default function () {
                         <section>
                             <h4>Preface</h4>
                             <p>
-                                This is NOT professional advice! This is a quick overview guide of this <a href="https://imgur.com/u0ocDRI" target="blank">personal finance flowchart</a>. Take action at your own risk. With that out of the way: with financial knowledge, you will be able to custom-tailor a financial plan.
+                                This is NOT professional advice! This is a quick overview guide of this <a href="https://imgur.com/u0ocDRI" target="blank">personal finance flowchart</a>. Take action at your own risk. With that out of the way: with financial knowledge, you will be able to custom-tailor a financial plan that will help you succeed!
                             </p>
                         </section>
 
@@ -31,7 +32,7 @@ export default function () {
                                     Numbers and statistics vary depending on location
                                 </li>
                                 <li>
-                                    You can click/hover green terms to view the definition
+                                    You can click/hover <Term term="green terms" definition="Just like this one!" /> to view the definition
                                 </li>
                                 <li>
                                     Not everything can be changed in a day; take your time

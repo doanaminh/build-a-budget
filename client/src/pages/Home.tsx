@@ -38,7 +38,10 @@ export default function () {
                         fontSize="1.6rem"
                         height='80px'
                         width='200px'
-                        onClick={() => navigate(`/calculator`)}
+                        onClick={() => {
+                            navigate(`/calculator`);
+                            window.scrollTo(0, 0);
+                        }}
                     />
                 </main>
 

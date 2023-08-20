@@ -37,6 +37,10 @@
     background-color: transparent;
     color: white;
 }
+.modalButton2 {
+    background-color: #43718B;
+    color: beige;
+}
 .budgetSections {
     display: flex;
     justify-content: space-between;

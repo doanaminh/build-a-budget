@@ -36,7 +36,10 @@ export default function () {
                                     fontSize="1rem"
                                     height="4rem"
                                     width="10rem"
-                                    onClick={() => navigate("/calculator")}
+                                    onClick={() => {
+                                        navigate("/calculator");
+                                        window.scrollTo(0, 0);
+                                    }}
                                 >Create a budget</Button>
                             </div>
 

@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Modal from '../components/Modal';
 import InputField from '../components/InputField';
 
 
 export default function() {
 
+    // Template budget object for new users
     const defaultBudget = {
         // INCOME
         checkFrequency: 1,
@@ -92,6 +94,9 @@ export default function() {
 
     //     },
     // }
+
+    // Navigate hook from react router
+    const navigate = () => useNavigate();
 
     return (
         <>
@@ -303,7 +308,9 @@ export default function() {
                             a1Msg={`You are spending a total of $${budget.totalNeeds} for necessities.`}
                             a2Msg={`You are spending a total of $${budget.totalWants} for things you want.`}
                             a3Msg={`You are saving a total of $${budget.totalSavings} monthly.`}
-                            conclusion={`Learn what you can do next here.`}
+                            conclusion={`Save your results above and use the button below to see what you can do next!`}
+                            buttonText='Optimize Budget'
+                            route={'/learn-budget'}
                             />
                         </div>
                         <div></div>
