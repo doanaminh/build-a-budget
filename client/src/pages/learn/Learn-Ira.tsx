@@ -15,7 +15,7 @@ export default function () {
                 <section className="body">
                     <article>
                         <h3>IRA & Higher Education</h3>
-                        <p>You should be have no debt or are paying the minimum amounts on all debts monthly with more money to allocate. This page will cover the basics of IRAs (individual retirement accounts).</p>
+                        <p>You should have no debt or are paying the minimum amounts on all debts monthly with more money to allocate. This page will cover the basics of IRAs (individual retirement accounts).</p>
                         <article>
                             <ol>
                                 <li>

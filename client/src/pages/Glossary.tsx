@@ -62,6 +62,12 @@ export default function () {
                             </p>
                         </li>
                         <li>
+                            <h6>refinance</h6>
+                            <p>
+                                Process of replacing an old loan contract with a new one; preferably with better terms and conditions.
+                            </p>
+                        </li>
+                        <li>
                             <h6>retirement account</h6>
                             <p>
                                 A money account that allows you to invest in stocks, index funds, etc. These accounts usually have benefits that could help generate more money. With such powerful benefits, they almost always come with restrictions. The most common restriction being that you cannot withdraw profits from the account, until a certain age, without being penalized. This age is dependent on when you were born. All of these details are dependent on your exact account. It is strongly recommended that you read over the terms of the ones available to you.

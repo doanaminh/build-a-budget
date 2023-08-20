@@ -51,7 +51,7 @@ export default function () {
                                 </li>
                                 <li>
                                     <h4>Food/Groceries</h4>
-                                    <p>Every single human being on this earth needs to eat. Eating gives you energy and will impact your health greatly. **In extreme cases, bills and utilities may need to be prioritized over food. Sadly, snacks are not included in this category.</p>
+                                    <p>Everybody needs to eat. Eating gives you energy and will impact your health greatly. **In extreme cases, bills and utilities may need to be prioritized over food. Sadly, snacks are not included in this category.</p>
                                 </li>
                                 <li>
                                     <h4>Essential Items</h4>
@@ -67,7 +67,12 @@ export default function () {
                                 </li>
                                 <li>
                                     <h4>Minimum Payments on All Debts & Loans</h4>
-                                    <p>This includes: student loans, credit cards, etc. The only time you should strive to pay off a debt faster is: when you can decrease the interest rate through refinancing. This is a complicated topic with complicated calculations and you should ask your lendor about options about this topic. Most of the time you want to pay the absolute minimum so you can put the remainder to necessities or generate more income.</p>
+                                    <p>This includes: student loans, credit cards, etc. The only time you should strive to pay off a debt faster is: when you can decrease the interest rate through{' '}
+                                    <Term 
+                                    term="refinancing"
+                                    definition={Terms.refinance}
+                                    /> 
+                                    . This is a complicated topic with complicated calculations and you should ask your lendor about the available options in your situation. Most of the time you want to pay the absolute minimum so you can put the remainder elsewhere.</p>
                                 </li>
                             </ol>
                         </article>

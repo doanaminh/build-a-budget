@@ -8,6 +8,7 @@ export const Terms = {
     income: 'The amount of money you generate by time.',
     interest_rate: 'A percentage of the total amount borrowed that is owed on top of the the borrowed sum. This is usually an annual rate, but could be monthly, weekly, or daily depending on the type of loan',
     loan: 'A borrowed amount of money.',
+    refinance: 'Process of replacing an old loan contract with a new one; preferably with better terms and conditions.',
     retirement_account: 'A money account that allows you to invest in stocks, index funds, etc. These accounts usually have benefits that could help generate more money. With such powerful benefits, they almost always come with restrictions. The most common restriction being that you cannot withdraw profits from the account, until a certain age, without being penalized. This age is dependent on when you were born. All of these details are dependent on your exact account. It is strongly recommended that you read over the terms of the ones available to you.',
     roth_retirement_account: 'Retirement account that allows you to contribute with after-tax money. This means with the money left after taxes have been deducted from your paycheck. This allows you to withdraw any profits free of taxes.',
     tax: 'A mandatory contribution of funds to government revenue.',

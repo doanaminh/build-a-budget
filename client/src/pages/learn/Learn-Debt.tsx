@@ -2,6 +2,7 @@ import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
 import Term from "../../components/Term";
+import { Terms } from "../../components/Term";
 
 export default function () {
 
@@ -24,11 +25,11 @@ export default function () {
                                     <p>If you have debts with an interest rate of 10% or higher, consider using the{' '}
                                     <Term 
                                     term="Avalanche"
-                                    definition=""
-                                    />{' '} or
+                                    definition={Terms.debt_avalanche}
+                                    />{' '} or {' '}
                                     <Term 
-                                    term=""
-                                    definition="Snowball"
+                                    term="Snowball"
+                                    definition={Terms.debt_snowball}
                                     />{' '} methods.
                                     </p>
                                 </li>
