@@ -19,6 +19,13 @@ export default function () {
                         <h3>Build an Employer-Matched Retirement Account</h3>
                         <p>If your employer does NOT offer a retirement account WITH a match, you can skip this step. Alright! You should have your bills under control at this point.</p>
                         <article>
+                            <ul>
+                                <h3>Prerequisites</h3>
+                                <li>Emergency Fund of 1 month's expenses</li>
+                                <li>All non-essential bills paid</li>
+                            </ul>
+                        </article>
+                        <article>
                             <ol>
                                 <li>
                                     <h4>Enroll in Employer-Matched Retirement Account</h4>

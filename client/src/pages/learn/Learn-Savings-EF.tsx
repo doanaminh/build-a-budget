@@ -14,8 +14,14 @@ export default function () {
                 </section>
                 <section className="body">
                     <article>
-                        <h3>Build an Emergency Fund</h3>
+                        <h3>Building an Emergency Fund</h3>
                         <p>At this point you should have money left over monthly after all necessities are paid.</p>
+                        <article>
+                            <ul>
+                                <h3>Prerequisites</h3>
+                                <li>budget</li>
+                            </ul>
+                        </article>
                         <article>
                             <ol>
                                 <li>
@@ -31,6 +37,11 @@ export default function () {
                         <p>
                             Hopefully you now understand where your money is coming in and where it's going out. The next step will be to plan for retirement.
                         </p>
+                        <ul>
+                            <h3>Checklist</h3>
+                            <li>Emergency fund</li>
+                            <li>Non-essential bills paid</li>
+                        </ul>
                     </article>
                     <article className="buttons">
                         <Button 

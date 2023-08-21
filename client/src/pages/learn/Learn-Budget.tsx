@@ -82,6 +82,12 @@ export default function () {
                         <article>
                             <p>If you have completed all the steps listed above, you are officially ready to start planning your savings! Let's keep moving.</p>
                         </article>
+                        <article>
+                            <label htmlFor="">Section Checklist</label>
+                            <ul className="checklist">
+                                <li>Optimized budget</li>
+                            </ul>
+                        </article>
                         <article className="buttons">
                             <Button 
                                 backgroundColor="#535337"

@@ -19,6 +19,12 @@ export default function () {
                         <h3>Paying Off Debts</h3>
                         <p>If you don't have debt, you can skip this section. You should have a lofty emergency fund at this point. This section deals with handling and eliminating debt.</p>
                         <article>
+                            <ul>
+                                <h3>Prerequisites</h3>
+                                <li>Monthly contributions to employer-matched 401(k) account up to matched amount with the contributions invested</li>
+                            </ul>
+                        </article>
+                        <article>
                             <ol>
                                 <li>
                                     <h4>High Interest Debt</h4>
@@ -30,12 +36,12 @@ export default function () {
                                     <Term 
                                     term="Snowball"
                                     definition={Terms.debt_snowball}
-                                    />{' '} methods.
+                                    />{' '} methods. 
+                                    The avalanche method focuses on paying off the higher interest debt first while the snowball method priotizes the smallest amount debt first.
                                     </p>
                                 </li>
                             </ol>
                         </article>
-                        <p>Goals Checklist</p>
                     </article>
                     <article className="buttons">
                         <Button 

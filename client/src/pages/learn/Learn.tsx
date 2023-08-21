@@ -37,6 +37,9 @@ export default function () {
                                 <li>
                                     Not everything can be changed in a day; take your time
                                 </li>
+                                <li>
+                                    Prerequisites Checklist shows what you should have completed before continuing and Goals Checklist shows what should be accomplished before moving on to the next step.
+                                </li>
                             </ul>
                         </section>
                     </article>
