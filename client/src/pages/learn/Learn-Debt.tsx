@@ -22,7 +22,7 @@ export default function () {
                             <ol>
                                 <li>
                                     <h4>High Interest Debt</h4>
-                                    <p>If you have debts with an interest rate of 10% or higher, consider using the{' '}
+                                    <p>If you have debt with an interest rate of 10% or higher, consider using the{' '}
                                     <Term 
                                     term="Avalanche"
                                     definition={Terms.debt_avalanche}
@@ -35,7 +35,7 @@ export default function () {
                                 </li>
                             </ol>
                         </article>
-                        <p>Great work tackling your debts!</p>
+                        <p>Goals Checklist</p>
                     </article>
                     <article className="buttons">
                         <Button 
