@@ -51,7 +51,12 @@ export default function () {
                                     />
                                     {' '}version. Sign up for your preferred employer-matched retirement account and ONLY contribute up to the amount needed to get the full employer match.</p>
                                     <p>Example: Your employer matches 100% of your contributions/dollar-for-dollar. They match up to a maximum of 3% of you annual income. You make $30,000 annually. Your employer will contribute up to $900 a year if you also contribute $900. This is a free $900 that your employer is giving you to invest with. Anything more than $900 will not be matched. To make things simple, you just need to contribute 3% of your paycheck to get maximum matching benefits. Work up to this amount every paycheck.<a href="https://www.investopedia.com/articles/personal-finance/112315/how-401k-matching-works.asp" target="blank">?</a></p>
-                                    <p>After sucessfully enrolling in your desired employer-matched retirement account, you will be offered plans to invest in the stock market. If you don't know anything about the stock market and want to safely invest, look into low cost <a href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4">index funds</a>. If you would like to play the stock market, feel free to do your research and invest as you like.</p>
+                                    <p>After sucessfully enrolling in your desired employer-matched retirement account, you will be offered plans to invest in the stock market. If you don't know anything about the stock market and want to safely invest, look into low cost <a href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4">index funds</a> like: total market index fund or S&P 500. If you would like to play the stock market, feel free to do your research and invest as you like.
+                                    <Term 
+                                    term="?"
+                                    definition="Employer retirement accounts may have limited stock options depending on which brokerage firm they are under."
+                                    />
+                                    </p>
                                 </li>
                             </ol>
                         </article>
