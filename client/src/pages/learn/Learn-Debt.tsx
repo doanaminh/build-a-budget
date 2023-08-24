@@ -42,6 +42,9 @@ export default function () {
                                 </li>
                             </ol>
                         </article>
+                        <article>
+                            <p>Good job on tackling your debt!</p>
+                        </article>
                     </article>
                     <article className="buttons">
                         <Button 

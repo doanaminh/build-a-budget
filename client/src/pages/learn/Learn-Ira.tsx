@@ -23,6 +23,12 @@ export default function () {
                         />
                         ).</p>
                         <article>
+                            <ul>
+                                <h3>Prerequisites</h3>
+                                <li>Monthly contributions to employer-matched 401(k) account up to matched amount with the contributions invested</li>
+                            </ul>
+                        </article>
+                        <article>
                             <ol>
                                 <li>
                                     <h4>Traditional vs Roth</h4>
@@ -30,7 +36,7 @@ export default function () {
                                 </li>
                             </ol>
                         </article>
-                        <p>outro</p>
+                        <p>This will be the second retirement account that you'll be investing in.</p>
                     </article>
                     <article className="buttons">
                         <Button 
