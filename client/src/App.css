@@ -313,7 +313,3 @@ main p {
 .Budgeting .action span {
   width: 45%;
 }
-.Budgeting .buttons {
-  display: flex;
-  justify-content: space-between;
-}

@@ -21,6 +21,7 @@
     background-color: #554941;
     padding: 0 .9rem;
     padding-bottom: 1rem;
+    overflow: scroll;
 }
 .budgetBody div {
     width: 100%;
