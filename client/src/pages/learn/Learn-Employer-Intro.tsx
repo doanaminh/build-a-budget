@@ -30,7 +30,8 @@ export default function () {
                         <article>
                             <ul>
                                 <h3>Prerequisites</h3>
-                                <li>Emergency Fund of 1 month's expenses</li>
+                                <li>Optimized budget</li>
+                                <li>1 month emergency fund</li>
                                 <li>All non-essential bills paid in full every month</li>
                             </ul>
                         </article>
@@ -60,7 +61,7 @@ export default function () {
                                 </li>
                             </ol>
                         </article>
-                        <p>Good job on investing in your future. Remember to invest the money you contributed in your retirement account and let it sit idle.</p>
+                        <p>Good job on investing in your future. Remember to invest the money you contributed in your retirement account; don't let it sit idle.</p>
                     </article>
                     <article className="buttons">
                         <Button 

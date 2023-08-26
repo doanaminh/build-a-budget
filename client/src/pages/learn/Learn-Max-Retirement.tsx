@@ -17,6 +17,18 @@ export default function () {
                         <h3>Maximizing for Retirement</h3>
                         <p>Let's take a minute to check how much you are invested into your own retirement.</p>
                         <article>
+                            <ul>
+                                <h3>Prerequisites</h3>
+                                <li>Optimized budget</li>
+                                <li>1 month emergency fund</li>
+                                <li>Bills paid in full</li>
+                                <li>Employer-matched retirement account</li>
+                                <li>Debt free</li>
+                                <li>IRA</li>
+                                <li>Savings account for big purchases</li>
+                            </ul>
+                        </article>
+                        <article>
                             <ol>
                                 <li>
                                     <h4>Are you currently at least 15% of your pre-tax income for retirement?</h4>

@@ -21,13 +21,17 @@ export default function () {
                         <article>
                             <ul>
                                 <h3>Prerequisites</h3>
-                                <li>Monthly contributions to employer-matched 401(k) account up to matched amount with the contributions invested</li>
+                                <li>Optimized budget</li>
+                                <li>1 month emergency fund</li>
+                                <li>Bills paid in full</li>
+                                <li>Employer-matched retirement account</li>
                             </ul>
                         </article>
                         <article>
                             <ol>
                                 <li>
                                     <h4>High Interest Debt</h4>
+                                    <p>Debt is a difficult matter to handle. It's mentally draining, but very simple to manage. It will take time, but with a consistent payment plan, you will be able to eliminate it.</p>
                                     <p>If you have debt with an interest rate of 10% or higher, consider using the{' '}
                                     <Term 
                                     term="Avalanche"
@@ -39,6 +43,7 @@ export default function () {
                                     />{' '} methods. 
                                     The avalanche method focuses on paying off the higher interest debt first while the snowball method priotizes the smallest amount debt first.
                                     </p>
+                                    <p>After selecting your preferred method, use it to pay back all your debt.</p>
                                 </li>
                             </ol>
                         </article>

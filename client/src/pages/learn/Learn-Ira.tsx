@@ -15,28 +15,36 @@ export default function () {
                 </section>
                 <section className="body">
                     <article>
-                        <h3>IRA & Higher Education</h3>
+                        <h3>IRA & Future Purchases</h3>
                         <p>You should have no debt at this point. This page will cover the basics of IRAs (individual{' '}
                         <Term 
                         term="retirement accounts"
                         definition={Terms.retirement_account}
                         />
-                        ).</p>
+                        ) and higher education accounts.</p>
                         <article>
                             <ul>
                                 <h3>Prerequisites</h3>
-                                <li>Monthly contributions to employer-matched 401(k) account up to matched amount with the contributions invested</li>
+                                <li>Optimized budget</li>
+                                <li>1 month emergency fund</li>
+                                <li>Bills paid in full</li>
+                                <li>Employer-matched retirement account</li>
+                                <li>Debt free</li>
                             </ul>
                         </article>
                         <article>
                             <ol>
                                 <li>
-                                    <h4>Traditional vs Roth</h4>
-                                    <p>There are mulitple types of IRAs, but we will be covering only two: traditional or Roth IRA. Read between the two and decide which is better for your position. Open an account with a brokerage firm with low trading fees like <a href="https://www.fidelity.com/retirement-ira/overview" target='blank'>Fidelity</a> or <a href="https://investor.vanguard.com/accounts-plans/iras">Vanguard</a> if you're in the United States.</p>
+                                    <h4>Individual Retirement Accounts</h4>
+                                    <p>There are mulitple types of IRAs, but we will be covering only two: traditional or Roth IRA. Read between the two and decide which is better for your position. Open an account with a brokerage firm with low trading fees like <a href="https://www.fidelity.com/retirement-ira/overview" target='blank'>Fidelity</a> or <a href="https://investor.vanguard.com/accounts-plans/iras">Vanguard</a> if you're in the United States. Remember to invest in low cost index funds or your stocks of choice.</p>
+                                </li>
+                                <li>
+                                    <h4>Future Purchases</h4>
+                                    <p>Are you expecting any large, required purchases or personal investments in the near future? This includes: college tuition, professional certificates, a car to get to work, etc. If yes, save the amount needed with the same high-yield savings account you created in the previous chapter or with a checking account. If not, you can continue on to the next chapter.</p>
                                 </li>
                             </ol>
                         </article>
-                        <p>This will be the second retirement account that you'll be investing in.</p>
+                        <p>You should begin thinking about accounts as mediums for purchases. You are putting money into retirement accounts now, but later down the line they will be the ones paying you.</p>
                     </article>
                     <article className="buttons">
                         <Button 
