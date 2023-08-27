@@ -1,6 +1,7 @@
 import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
+import Term from "../../components/Term";
 
 export default function () {
 
@@ -25,14 +26,14 @@ export default function () {
                                 <li>Employer-matched retirement account</li>
                                 <li>Debt free</li>
                                 <li>IRA</li>
-                                <li>Savings account for big purchases</li>
+                                <li>Savings account for future purchases</li>
                             </ul>
                         </article>
                         <article>
                             <ol>
                                 <li>
-                                    <h4>Are you currently at least 15% of your pre-tax income for retirement?</h4>
-                                    <p>This value is the total contributions to all retirement accounts. **If you are behind on retirement savings, you may want to consider increasing this amount.</p>
+                                    <h4>Are you currently at saving least 15% of your pre-tax income for retirement?</h4>
+                                    <p>This value is the total contributions to all retirement accounts. **If you are behind on retirement savings, you may want to consider increasing this amount. Increase your contributions until it reaches 15% of your pre-tax income.</p>
                                 </li>
                                 <li>
                                     <h4>Employer-Matched Retirement Account</h4>
@@ -46,7 +47,7 @@ export default function () {
                                 </li>
                             </ol>
                         </article>
-                        <p>outro</p>
+                        <p>These accounts will help you maintain a stable income when you decide to retire later down the line.</p>
                     </article>
                     <article className="buttons">
                         <Button 
