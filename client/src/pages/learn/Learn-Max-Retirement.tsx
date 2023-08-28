@@ -38,7 +38,7 @@ export default function () {
                                 <li>
                                     <h4>Employer-Matched Retirement Account</h4>
                                     <p>
-                                        If you are self-employed, move on to the next step. If you do not have a 401(k), or any employer retirement plan, then you should start one. You should be contributing 15% of your pre-tax income.
+                                        If you are self-employed, move on to step 3 below. If you do not have a 401(k), or any employer retirement plan, then you should start one. You should be contributing 15% of your pre-tax income.
                                     </p>
                                 </li>
                                 <li>
