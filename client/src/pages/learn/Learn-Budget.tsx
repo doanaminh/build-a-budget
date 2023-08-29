@@ -96,7 +96,7 @@ export default function () {
                             </ol>
                         </article>
                         <article>
-                            <p>Before continuing, you should have all the categories paid consistently every month in full. Moving forward, you can either make more income to open more options or optimize your budget further to decrease unnecessary costs.</p>
+                            <p>Before continuing, you should have all the categories fulfilled. If you are struggling to meet these requirements, I highly encourage you to cut out expenses that are not necessary. The takeaway of this chapter is to start thinking of your income as seperate categories that need to be filled accordingly to your budget.</p>
                         </article>
                         <article className="buttons">
                             <Button 

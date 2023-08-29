@@ -18,7 +18,7 @@ export default function () {
                         <section>
                             <h4>Preface</h4>
                             <p>
-                                This is NOT professional advice! This is a quick overview guide of this <a href="https://imgur.com/u0ocDRI" target="blank">personal finance flowchart</a>. Take action at your own risk. With that out of the way: with financial knowledge, you will be able to custom-tailor a financial plan that will help you succeed!
+                                This is NOT professional advice! This is a more in-depth guide of this <a href="https://imgur.com/u0ocDRI" target="blank">personal finance flowchart</a>. Take action at your own risk. With that out of the way: with financial knowledge, you will be able to custom-tailor a financial plan that will help you succeed!
                             </p>
                         </section>
 

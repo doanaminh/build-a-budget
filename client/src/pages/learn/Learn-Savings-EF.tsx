@@ -16,7 +16,7 @@ export default function () {
                 <section className="body">
                     <article>
                         <h3>Building an Emergency Fund</h3>
-                        <p>At this point you should have money left over monthly after all necessities are paid.</p>
+                        <p>After optimizing your budget from the previous chapter, let's look into creating a safety net.</p>
                         <article>
                             <ul>
                                 <h3>Prerequisites</h3>
