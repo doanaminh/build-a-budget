@@ -2,22 +2,28 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: #002349;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .Navbar h2 a {
+.Navbar h2 a {
     padding: 0 0.5rem;
-    color: #ad8e60;
+    color: white;
   }
-  .Navbar ul {
+.Navbar ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    margin-right: 5px;
   }
-  .Navbar li a {
+.Navbar li a {
     padding: 0 0.5rem;
-    color: #ad8e60;
+    color: white;
+    /* border: solid 1px red; */
   }
-  
+.Navbar li a:hover {
+  padding-bottom: 5px;
+  transition: border-bottom ease-in-out .1s;
+  border-bottom: solid 3px #957C3D;
+}
