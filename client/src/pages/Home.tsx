@@ -23,26 +23,21 @@ export default function () {
             {/* HERO SECTION */}
             <section className="Home">
                 <main>
-                    <h1>Build-a-Budget</h1>
-                    <p>
-                        What is a budget? 
-                        <br />
-                        In short: a financial plan.
-                        <br />
-                         Create your own and conquer your future!
-                    </p>
-                    <Button
-                        backgroundColor="blanchedalmond"
-                        children='Start Here'
-                        color='#ad8e60'
-                        fontSize="1.6rem"
-                        height='80px'
-                        width='200px'
-                        onClick={() => {
-                            navigate(`/calculator`);
-                            window.scrollTo(0, 0);
-                        }}
-                    />
+                    <div>
+                        <h1>Plan your financial future.</h1>
+                        <Button
+                            backgroundColor="#47586A"
+                            children='Start Here'
+                            color='white'
+                            fontSize="1.6rem"
+                            height='80px'
+                            width='200px'
+                            onClick={() => {
+                                navigate(`/calculator`);
+                                window.scrollTo(0, 0);
+                            }}
+                        />
+                    </div>
                 </main>
 
                 {/* STATISTICS PANEL SECTION */}

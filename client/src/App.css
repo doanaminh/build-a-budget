@@ -138,18 +138,17 @@ PAGES
 ||| MAIN
  */
 main {
-  background-image: url(/assets/pexels-picas-joe-11348123.jpg);
+  background-image: url(/assets/pexels-huỳnh-đạt-2098691.jpg);
   background-size: cover;
   padding: 1rem 0 0 1rem;
-  height: 90vh;
+  height: 92vh;
   
 }
-main h1 {
-  margin: 0;
-  color: white;
+main div {
+  padding: 50vh 40vw 0 0;
 }
-main p {
-  font-size: 1.4rem;
+main h1 {
+  margin: 0 0 3rem 0;
   color: white;
 }
 

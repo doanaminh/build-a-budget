@@ -19,7 +19,8 @@ const Button: React.FC<Props> = ({
   }) => { 
   return (
     <button 
-    type='button'
+      className="Button"
+      type='button'
       onClick={onClick}
       style={{
         backgroundColor,
