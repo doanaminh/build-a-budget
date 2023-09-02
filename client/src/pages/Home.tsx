@@ -62,12 +62,16 @@ export default function () {
                         </section>
                     </section>
 
+                    <div className='secBreak'></div>
+
                     {/* EMERGENCY */}
                     <section className="emergency">
                         <img src={emergency} alt="" />
                         <h4>EMERGENCIES</h4>
                         <p>Emergencies happen when we least expect it. Automotive, medical, natural; no matter how small or large the expense, will you be ready? A reported 22% of U.S. adults claim to have no emergency savings. <a href="https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/" target='_blank'>?</a></p>
                     </section>
+
+                    <div className='secBreak'></div>
 
                     {/* DEBT INFOGRAPHICS */}
                     <section className="debt">
@@ -92,12 +96,14 @@ export default function () {
 
                     {/* EDUCATION INFOGRAPHICS */}
                     <section className="education">
-                        <img src="assets\pexels-monstera-5849556.jpg" alt="" />
+                        <img src="\svg\trajectory-education.svg" alt="" />
                         <h4>EDUCATION</h4>
                         <p>To manage money better requires an understanding of how it actually works. The average American was only able to correctly answer about <b>48%</b> of the 2023 P-Fin Index financial literacy survey. This survey measures knowledge relating to financial situations encountered in the normal course of life. <a href="https://gflec.org/wp-content/uploads/2023/04/2023-P-Fin-Index-report-TIAA-Inst-and-GFLEC-Apr-2023.pdf" target='_blank'>?</a></p>
                     </section>
                     
                 </section>
+
+                <div className='secBreak'></div>
 
                 {/* TAKE ACTION */}
                 <section className='takeAction'>

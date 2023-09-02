@@ -22,6 +22,16 @@
   padding: 2em;
 }
 
+/* 
+=======================================================
+COMPONENTS
+=======================================================
+*/
+.secBreak {
+  content: '';
+  border: 1px solid #957C3D;
+  margin: 0 4rem;
+}
 
 /* 
 =======================================================
@@ -254,7 +264,7 @@ main h1 {
 ||| TAKE ACTION
 */
 .takeAction {
-  background-color: #ceae7f;
+  color: #9A9A9A;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
