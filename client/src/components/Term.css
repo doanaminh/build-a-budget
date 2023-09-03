@@ -1,15 +1,15 @@
 .term {
     font-weight: bold;
     cursor: pointer;
-    color: #88885b;
+    color: #957C3D;
 }
 .termModal {
     text-align: center;
-    color: beige;
+    color: white;
     width: 85%;
     position: absolute;
     border-radius: .5rem;
     padding: .5rem;
-    background-color: #6b6b48;
+    background-color: #957C3D;
     box-shadow: 5px 5px 5px gray;
 }

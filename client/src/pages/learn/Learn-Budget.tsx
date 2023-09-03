@@ -30,7 +30,7 @@ export default function () {
                             <span>If you haven't made one yet; let's make one now. After you've created one, come on back to this page.</span>
                             <div>
                                 <Button 
-                                    backgroundColor="#43718B"
+                                    backgroundColor="#47586A"
                                     color="white"
                                     fontSize="1rem"
                                     height="4rem"

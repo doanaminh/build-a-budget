@@ -94,6 +94,8 @@ export default function () {
                         </section>
                     </section>
 
+                    <div className='secBreak'></div>
+
                     {/* EDUCATION INFOGRAPHICS */}
                     <section className="education">
                         <img src="\svg\trajectory-education.svg" alt="" />
@@ -103,15 +105,13 @@ export default function () {
                     
                 </section>
 
-                <div className='secBreak'></div>
-
                 {/* TAKE ACTION */}
                 <section className='takeAction'>
                     <p>Educate yourself and take control of your finances!</p>
                     <Button 
-                        backgroundColor="#535337"
+                        backgroundColor="#47586A"
                         children='Learn More'
-                        color='beige'
+                        color='white'
                         fontSize="1.5rem"
                         height='80px'
                         width='200px'

@@ -256,8 +256,8 @@ main h1 {
   padding: 0 1rem;
 }
 .education img {
-  width: 100%;
-  padding-bottom: 1rem;
+  width: 60%;
+  margin: -55px -10px;
 }
 
 /* 

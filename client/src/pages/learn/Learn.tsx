@@ -32,7 +32,7 @@ export default function () {
                                     Numbers and statistics vary depending on location
                                 </li>
                                 <li>
-                                    You can click/hover <Term term="green terms" definition="Just like this one!" /> to view the definition
+                                    You can click/hover <Term term="gold terms" definition="Just like this one!" /> to view the definition
                                 </li>
                                 <li>
                                     Not everything can be changed in a day; take your time
@@ -47,7 +47,7 @@ export default function () {
 
                     <article className="buttons">
                         <Button
-                            backgroundColor="#535337"
+                            backgroundColor="#47586A"
                             color="beige"
                             fontSize=".9rem"
                             height="3rem"
@@ -57,7 +57,7 @@ export default function () {
                             Glossary
                         </Button>
                         <Button
-                            backgroundColor="#535337"
+                            backgroundColor="#47586A"
                             color="beige"
                             fontSize=".9rem"
                             height="3rem"
