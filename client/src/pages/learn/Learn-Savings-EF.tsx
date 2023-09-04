@@ -46,7 +46,7 @@ export default function () {
                     </article>
                     <article className="buttons">
                         <Button 
-                            backgroundColor="#535337"
+                            backgroundColor="#47586A"
                             color="beige"
                             fontSize="1rem"
                             height="3rem"
@@ -54,7 +54,7 @@ export default function () {
                             onClick={() => navigate('/learn-budget')}
                         >Previous</Button>
                         <Button 
-                            backgroundColor="#535337"
+                            backgroundColor="#47586A"
                             color="beige"
                             fontSize="1rem"
                             height="3rem"
