@@ -1,6 +1,6 @@
 .Sidebar {
     opacity: 98%;
-    background: linear-gradient(to right, #535337 98%, transparent);
+    background: linear-gradient(to right, #47586A 98%, transparent);
     display: flex;
     justify-content: space-around;
     padding-top: 90px;
@@ -42,6 +42,6 @@
 }
 .sidebarIcon span {
     font-size: 2rem;
-    color: #88885b;
+    color: white;
 }
 

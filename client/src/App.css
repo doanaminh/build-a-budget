@@ -46,6 +46,7 @@ PAGES
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 79vh;
 }
 .Calculator h1 {
   text-align: center;
@@ -283,12 +284,17 @@ main h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: #777777;
 }
-
+.body h3, .body h4 {
+  color: #47586A;
+}
+.body a {
+  color: #957C3D;
+}
 .Page {
   margin-left: 3vw;
 }
-
 .Learn .buttons {
   padding-top: 1rem;
   display: flex;
