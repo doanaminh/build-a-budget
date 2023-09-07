@@ -14,7 +14,7 @@
   transition: ease-in-out .25s;
 }
 .Navbar h2 a:hover {
-  color: #957C3D;
+  color: #FFCF27;
 }
 .Navbar ul {
   display: flex;

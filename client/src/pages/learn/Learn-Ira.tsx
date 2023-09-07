@@ -36,7 +36,7 @@ export default function () {
                             <ol>
                                 <li>
                                     <h4>Individual Retirement Accounts</h4>
-                                    <p>There are mulitple types of IRAs, but we will be covering only two: traditional or Roth IRA. Read between the two and decide which is better for your position. Open an account with a brokerage firm with low trading fees like <a href="https://www.fidelity.com/retirement-ira/overview" target='blank'>Fidelity</a> or <a href="https://investor.vanguard.com/accounts-plans/iras">Vanguard</a> if you're in the United States. Remember to invest in low cost index funds or your stocks of choice.</p>
+                                    <p>There are mulitple types of IRAs, but we will be covering only two: traditional or Roth IRA. Read between the two and decide which is better for your position. Open an account with a brokerage firm with low trading fees like <a href="https://www.fidelity.com/retirement-ira/overview" target='blank'>Fidelity</a> or <a href="https://investor.vanguard.com/accounts-plans/iras" target="blank">Vanguard</a> if you're in the United States. Remember to invest in low cost index funds or your stocks of choice.</p>
                                 </li>
                                 <li>
                                     <h4>Future Purchases</h4>

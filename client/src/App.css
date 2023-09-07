@@ -152,11 +152,11 @@ main {
   background-image: url(/assets/pexels-huỳnh-đạt-2098691.jpg);
   background-size: cover;
   padding: 1rem 0 0 1rem;
-  height: 92vh;
+  /* height: 92vh; */
   
 }
 main div {
-  padding: 50vh 40vw 0 0;
+  padding: 50% 40% 2rem 1rem;
 }
 main h1 {
   margin: 0 0 3rem 0;
@@ -278,6 +278,10 @@ main h1 {
 */
 .Learn {
   padding: 1rem;
+}
+.Learn a {
+  font-style: italic;
+  /* text-decoration: underline; */
 }
 .body {
   min-height: 84vh;
