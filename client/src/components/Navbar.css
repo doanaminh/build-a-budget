@@ -13,8 +13,11 @@
   color: white;
   transition: ease-in-out .25s;
 }
-.Navbar h2 a:hover {
-  color: #FFCF27;
+.asdf:hover span {
+  display: none;
+}
+.asdf:hover:before {
+  content: 'Build-a-Budget'
 }
 .Navbar ul {
   display: flex;

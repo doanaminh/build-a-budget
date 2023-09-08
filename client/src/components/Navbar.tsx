@@ -4,7 +4,7 @@ export default function () {
     return (
         <>
             <div className='Navbar'>
-                <h2><a href="/">BaB</a></h2>
+                <h2><a href="/" className="asdf"><span>BaB</span></a></h2>
                 <ul>
                     <li><a href="/calculator">Calculator</a></li>
                     <li><a href="/learn">Learn</a></li>
