@@ -11,13 +11,9 @@
   padding: 0 0.5rem;
   font-size: 1.5rem;
   color: white;
-  transition: ease-in-out .25s;
 }
-.asdf:hover span {
-  display: none;
-}
-.asdf:hover:before {
-  content: 'Build-a-Budget'
+.Navbar h2 a:hover {
+  color: #FFCF27;
 }
 .Navbar ul {
   display: flex;

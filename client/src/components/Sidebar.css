@@ -37,6 +37,9 @@
 .tableContent li a{
     color: gainsboro;
 }
+.tableContent li a:hover{
+    color: #957C3D;
+}
 .sidebarIcon {
     margin: 0 .5rem;
 }

@@ -1,4 +1,8 @@
 .Footer {
   font-size: 1rem;
   text-align: center;
+  color: #7a7a7a;
+}
+.Footer a {
+  color: #7a7a7a;
 }
