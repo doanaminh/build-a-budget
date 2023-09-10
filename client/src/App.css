@@ -30,7 +30,7 @@ COMPONENTS
 .secBreak {
   content: '';
   border: 1px solid #957C3D;
-  margin: 0 4rem;
+  margin: 3rem 4rem;
 }
 
 /* 
@@ -310,6 +310,9 @@ main h1 {
   padding-top: 1rem;
   display: flex;
   justify-content: space-between;
+}
+.Learn .overview {
+  justify-content: end;
 }
 /* 
 ||| LEARN-BUDGETING 

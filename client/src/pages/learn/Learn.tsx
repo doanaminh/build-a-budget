@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 import Sidebar from "../../components/Sidebar";
 import Term from "../../components/Term";
+import Break from "../../components/Break";
 
 export default function () {
   const navigate = useNavigate();
@@ -31,6 +32,8 @@ export default function () {
                 create a custom financial plan that will help you succeed!
               </p>
             </section>
+
+            <Break />
 
             <section>
               <h4>Tips</h4>
@@ -69,17 +72,7 @@ export default function () {
             </section>
           </article>
 
-          <article className="buttons">
-            <Button
-              backgroundColor="#47586A"
-              color="beige"
-              fontSize=".9rem"
-              height="3rem"
-              width="8rem"
-              onClick={() => navigate("/glossary")}
-            >
-              Glossary
-            </Button>
+          <article className="buttons overview">
             <Button
               backgroundColor="#47586A"
               color="beige"
