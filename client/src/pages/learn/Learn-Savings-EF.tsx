@@ -19,6 +19,9 @@ export default function () {
             <p>
               With an optimized budget, let's look into creating a safety net.
             </p>
+
+            <Break />
+
             <article>
               <ul>
                 <h3>Prerequisites</h3>
@@ -73,8 +76,8 @@ export default function () {
             <Break />
 
             <p>
-              It may take time to build up your emergency fund. Building it up
-              litte-by-little, will eventually get you to the goal.
+              It may take time to build up your emergency fund. Take your time
+              and go at your own pace.
             </p>
           </article>
           <article className="buttons">
