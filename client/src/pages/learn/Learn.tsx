@@ -16,9 +16,9 @@ export default function () {
                     <article>
                         <h3>Personal Finance Basics Overview</h3>
                         <section>
-                            <h4>Preface</h4>
+                            <h4>Disclaimer</h4>
                             <p>
-                                This is NOT professional advice! This is a more in-depth guide of this <a href="https://imgur.com/u0ocDRI" target="blank">personal finance flowchart</a>. This guide will mainly focus in the "safest" method to invest, but with any type of investment, success isn't 100% guaranteed. Take action at your own risk. With that out of the way: with financial knowledge, you will be able to custom-tailor a financial plan that will help you succeed!
+                                This is NOT professional advice! This is a more in-depth guide of this <a href="https://imgur.com/u0ocDRI" target="blank">personal finance flowchart</a>. This guide will mainly focus on the "safest" method to invest in the stock market, but with any type of investment, success isn't 100% guaranteed. Take action at your own risk. With that out of the way, this guide will teach you the basics of personal finance. With more financial knowledge, you will be able to create a custom financial plan that will help you succeed!
                             </p>
                         </section>
 
@@ -26,19 +26,26 @@ export default function () {
                             <h4>Tips</h4>
                             <ul>
                                 <li>
-                                    Remember you can Google any and everything!
+                                    You can Google any and everything
                                 </li>
                                 <li>
                                     Numbers and statistics vary depending on location
                                 </li>
                                 <li>
-                                    You can click/hover <Term term="gold terms" definition="Just like this one!" /> to view the definition
+                                    You can click/hover <Term term="gold terms" definition="I will help explain a word or term in more detail" /> to view the definition or <Term
+                                    term="?" definition="I will give helpful tips on certain topics" /> to see more helpful tips
                                 </li>
                                 <li>
-                                    Not everything can be changed in a day; take your time
+                                    The time period used in this guide will almost always be monthly
                                 </li>
                                 <li>
-                                    Prerequisites Checklist shows what you should have completed before continuing and Goals Checklist shows what should be accomplished before moving on to the next step.
+                                    Prerequisites Checklist shows what you should have completed before continuing
+                                </li>
+                                <li>
+                                    Use the sidebar to navigate through the chapters of this guide
+                                </li>
+                                <li>
+                                    Not everything can be done right away; take your time and move at your own pace
                                 </li>
                             </ul>
                         </section>

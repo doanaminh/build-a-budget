@@ -18,7 +18,7 @@ export default function () {
                     <section>
                         <article>
                             <h3>Build a budget!</h3>
-                            <p>The most important, and basic, thing you can do is create a monthly{' '}
+                            <p>The most important thing you can do is create a monthly{' '}
                             <Term 
                             term='budget'
                             definition={Terms.budget}
@@ -27,7 +27,7 @@ export default function () {
                         </article>
 
                         <article className="action">
-                            <span>If you haven't made one yet; let's make one now. After you've created one, come on back to this page.</span>
+                            <span>If you haven't made a budget yet, let's make one now. After you've created one, come on back to this page.</span>
                             <div>
                                 <Button 
                                     backgroundColor="#47586A"
@@ -45,15 +45,15 @@ export default function () {
                         </article>
                         
                         <article className="budgetList">
-                            <p>Great! So now that you have your budget, let's prioritize where your money should be going (from most immediate first). Set aside a certain amount each paycheck to be able to fund these categories fully.</p>
+                            <p>Great! So now that you have your budget, let's optimize where your money is going (from most immediate first). Set aside the necessary amount from each paycheck to satisfy requirements of each category. Each category will hold 1 month's worth of funds.</p>
                             <ol>
                                 <li>
                                     <h4>Rent/Mortgage</h4>
-                                    <p>This includes any renter's or homeowner's insurance if required.</p>
+                                    <p>The money you pay to have a place to live. This includes any renter's or homeowner's insurance if required.</p>
                                 </li>
                                 <li>
                                     <h4>Food/Groceries</h4>
-                                    <p>Everybody needs to eat. Eating gives you energy and will impact your health greatly. Sadly, snacks are not included in this category.  **In extreme cases, bills and utilities may need to be prioritized over food.{' '}
+                                    <p>Everybody needs to eat. Eating gives you energy and will impact your health greatly. Sadly, snacks are not included in this category. **In extreme cases, bills and utilities may need to be prioritized over food.{' '}
                                     <Term 
                                     term="?"
                                     definition="Multiply the amount of times you go grocery shopping in a month with the average cost of each trip. Example: If you buy groceries every week and pay $100 each time, your monthly groceries budget should be $400. To help reduce this category, look for deals and cut back on snacks."
