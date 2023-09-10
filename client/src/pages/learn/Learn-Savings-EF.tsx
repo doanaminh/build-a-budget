@@ -48,10 +48,11 @@ export default function () {
                     , to maximize your savings. High-yield savings account can
                     generate extra income for just having your money inside the
                     account. Research high-yield savings accounts available to
-                    you. The goal is to have 1 month of expenses set aside in
-                    case of an emergency. You could suddenly lose your job and
-                    this will give you 1 month grace period to find another
-                    source of income.{" "}
+                    you and open the one of your choice. A regular savings
+                    account is fine also. The goal is to have 1 month of
+                    expenses set aside in case of an emergency. You could
+                    suddenly lose your job and this will give you 1 month grace
+                    period to find another source of income.{" "}
                     <Term
                       term="?"
                       definition="It's important to note that this is money that shouldn't be touched and is exclusively for emergencies like: being laid off or car issues. This account should be used to allow you to continue making money and should be replenished when spent."
@@ -61,9 +62,9 @@ export default function () {
                 <li>
                   <h4>Pay Any Non-Essential Bills in Full</h4>
                   <p>
-                    AFTER you have built up your 1-month emergency fund. Pay
-                    non-essential bills fully like: cable, internet, phone, etc.
-                    Pay it all off in a timely manner to avoid fees.
+                    AFTER you have built up your 1-month emergency fund, pay off
+                    non-essential bills fully. Example: cable, internet, phone,
+                    etc. Pay it all off in a timely manner to avoid fees.
                   </p>
                 </li>
               </ol>
@@ -72,10 +73,8 @@ export default function () {
             <Break />
 
             <p>
-              Hopefully you now understand where your money is coming in and
-              where it's going out. Before moving on, make sure you have built
-              your emergency fund and are paying off your bills fully every
-              month. The next step will be planning for the future.
+              It may take time to build up your emergency fund. Building it up
+              litte-by-little, will eventually get you to the goal.
             </p>
           </article>
           <article className="buttons">
