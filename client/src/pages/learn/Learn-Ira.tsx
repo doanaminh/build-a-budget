@@ -23,7 +23,7 @@ export default function () {
                 term="retirement accounts"
                 definition={Terms.retirement_account}
               />
-              ) and higher education accounts.
+              ) and near-future purchases.
             </p>
 
             <Break />
@@ -35,7 +35,7 @@ export default function () {
                 <li>1 month emergency fund</li>
                 <li>Bills paid in full</li>
                 <li>Employer-matched retirement account</li>
-                <li>Debt free</li>
+                <li>Moderate-interest or higher debt free</li>
               </ul>
             </article>
 
@@ -80,15 +80,15 @@ export default function () {
                   </p>
                 </li>
                 <li>
-                  <h4>Future Purchases</h4>
+                  <h4>Near-Future Purchases</h4>
                   <p>
                     Are you expecting any large, required purchases or personal
                     investments in the near future? This includes: college
                     tuition, professional certificates, a car to get to work,
-                    etc. If yes, save the amount needed with the same high-yield
-                    savings account you created in the previous chapter or with
-                    a checking account. If not, you can continue on to the next
-                    chapter.
+                    etc. If yes, save the amount needed within the same
+                    high-yield savings account you created in the previous
+                    chapter or with a checking account. If not, you can continue
+                    on to the next chapter.
                   </p>
                 </li>
               </ol>
@@ -97,9 +97,18 @@ export default function () {
             <Break />
 
             <p>
-              You should begin thinking about accounts as mediums for purchases.
-              You are putting money into retirement accounts now, but later down
-              the line they will be the ones paying you.
+              Start thinking about each account as "buckets" for your expenses.
+              Whenever there is a new expense you should automatically think of
+              creating a new a bucket. It's important to note that you can have
+              multiple "buckets" in the same account. The important thing is to
+              be able to separate the total inside the account and label it
+              accordingly.{" "}
+              <a href="" target="blank">
+                Ally
+              </a>{" "}
+              has a feature on their app to separate your money into "buckets"
+              within the same account, but not all banks will, so you may have
+              to keep track of the math yourself.
             </p>
           </article>
           <article className="buttons">

@@ -50,10 +50,10 @@ export default function () {
                 <li>
                   <h4>Enroll in Employer-Matched Retirement Account</h4>
                   <p>
-                    Ask your employer about what kind of retirement accounts are
+                    Ask your employer about the types of retirement accounts are
                     offered and choose one to start contributing to. This could
-                    be a pension or a 401(k). The main one that will be covered
-                    is the 401(k) retirement account and it comes in either a{" "}
+                    be a pension or a 401(k). The one that will be covered is
+                    the 401(k) retirement account and it comes in either a{" "}
                     <Term
                       term="Traditional"
                       definition={Terms.traditional_retirement_account}
@@ -63,9 +63,30 @@ export default function () {
                       term="Roth"
                       definition={Terms.roth_retirement_account}
                     />{" "}
-                    version. Sign up for your preferred employer-matched
-                    retirement account and ONLY contribute up to the amount
-                    needed to get the full employer match.
+                    version. A 401(k) retirement account is an account that
+                    allows you to contribute and invest money in the stock
+                    market. Any money gained through this account is considered
+                    profit.
+                  </p>
+                  <p>
+                    Generally, if you think you will be making MORE money in the
+                    future, choose a Roth account. You will have to pay taxes on
+                    your income now, but any profits will be free from income
+                    tax when you are in a higher tax bracket.
+                  </p>
+                  <p>
+                    If you think you will be making LESS money in the future,
+                    choose a traditional account. You will avoid paying taxes on
+                    your contributions now that you are in a higher tax-bracket,
+                    then pay income tax on any profits in the future when you
+                    are in a lower tax bracket.
+                  </p>
+                  <p>
+                    Both types of accounts are tax-advantaged accounts and are
+                    beneficial regardless of which one you choose. Sign up for
+                    your preferred employer-matched retirement account and ONLY
+                    contribute up to the amount needed to get the full employer
+                    match.
                   </p>
                   <p>
                     Example: Your employer matches 100% of your
@@ -86,18 +107,18 @@ export default function () {
                   </p>
                   <p>
                     After sucessfully enrolling in your desired employer-matched
-                    retirement account, you will be offered plans to invest in
-                    the stock market. If you don't know anything about the stock
-                    market and want to safely invest, look into low cost{" "}
+                    retirement account, you will be able to invest in the stock
+                    market with your contributions. The value of this account
+                    will change depending on the stock market. If you don't know
+                    anything about the stock market and want to safely invest,
+                    look into low cost{" "}
                     <a
                       href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4"
                       target="blank"
                     >
                       index funds
                     </a>{" "}
-                    like: total market index fund or S&P 500. If you would like
-                    to play the stock market, feel free to do your research and
-                    invest as you like.{" "}
+                    like: total market index fund or S&P 500.{" "}
                     <Term
                       term="?"
                       definition="Employer retirement accounts may have limited stock options depending on which brokerage firm they are under."
@@ -110,11 +131,14 @@ export default function () {
             <Break />
 
             <p>
-              We will not be going too in-depth with the stock market. There are
-              many ways to invest in the stock market, but this guide will only
-              be focusing on the simplest methods. To make this strategy work we
-              must believe that the market will always tend to grow. We do not
-              care about immediate changes, but the changes in the long run.
+              Opening a retirement account is a big decision, so take your time
+              and discuss your options with your friends and family before
+              deciding on one. We will not be going too in-depth with the stock
+              market. There are many ways to invest in the stock market, but
+              this guide will only be focusing on the "safest" methods via index
+              funds. To make this strategy work we must believe that the market
+              will always tend to grow. We do not care about immediate changes,
+              but the changes in the long run.
             </p>
           </article>
 

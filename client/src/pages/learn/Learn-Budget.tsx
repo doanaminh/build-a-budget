@@ -55,8 +55,11 @@ export default function () {
                 necessary amount from each paycheck to satisfy requirements of
                 each category. We will be calculating everything by month, so
                 each category will require the amount that is needed for 1 month
-                of expense. For example: if you buy groceries every week and
-                spend $100 each time, then your grocery budget will be $400.
+                of expense.
+              </p>
+              <p>
+                For example: if you buy groceries every week and spend $100 each
+                time, then your grocery budget will be $400 for the month.
               </p>
 
               <Break />
@@ -139,8 +142,23 @@ export default function () {
                 I highly encourage you to cut out expenses that are not
                 necessary. The takeaway of this chapter is to start thinking of
                 your expenses as seperate categories or "buckets" of money. You
-                will then use your income to fill these buckets. Any leftover
-                income will be directed to newer buckets as we continue.
+                will then use your income to fill these buckets in the order of
+                your priorities. Any leftover income will be directed to newer
+                buckets as we continue. It's important to note that an account
+                can have multiple "buckets".
+              </p>
+              <p>
+                For example: the expenses for the categories of this chapter may
+                all exist within the same checking account. The total amount
+                that is inside your checking account could be $1,000, but $400
+                will go to groceries, $200 will go to transportation, and etc.
+              </p>
+              <p>
+                It is very important to avoid using{" "}
+                <Term term="funds" definition={Terms.fund} /> from a bucket for
+                anything other than its purpose. If funds are insufficient for
+                an expense, look to increase your budget or reduce costs where
+                possible.
               </p>
             </article>
             <article className="buttons">

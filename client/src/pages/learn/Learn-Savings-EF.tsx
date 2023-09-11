@@ -40,22 +40,29 @@ export default function () {
                     This is how much is needed to live for 1 month without
                     income. (Refer to your budget for this amount; this should
                     be the total amount in your needs category plus the total of
-                    your wants category). Try to open a high-yield savings
-                    account, like{" "}
+                    your wants category).
+                  </p>
+                  <p>
+                    Try to open a high-yield savings account, like{" "}
                     <a
                       href="https://www.ally.com/bank/online-savings-account/"
                       target="blank"
                     >
                       ally
                     </a>
-                    , to maximize your savings. High-yield savings account can
-                    generate extra income for just having your money inside the
-                    account. Research high-yield savings accounts available to
-                    you and open the one of your choice. A regular savings
-                    account is fine also. The goal is to have 1 month of
-                    expenses set aside in case of an emergency. You could
-                    suddenly lose your job and this will give you 1 month grace
-                    period to find another source of income.{" "}
+                    , to maximize your savings. Ally has a feature to separate
+                    funds within an account into multiple "buckets" and may help
+                    you budget better. High-yield savings account can generate
+                    extra income for just having your money inside the account.
+                    Research high-yield savings accounts available to you and
+                    open the one of your choice. A regular savings account is
+                    also fine.{" "}
+                  </p>
+                  <p>
+                    The goal is to have 1 month of expenses set aside in case of
+                    an emergency. You could suddenly lose your job and this will
+                    give you 1 month grace period to find another source of
+                    income.{" "}
                     <Term
                       term="?"
                       definition="It's important to note that this is money that shouldn't be touched and is exclusively for emergencies like: being laid off or car issues. This account should be used to allow you to continue making money and should be replenished when spent."
