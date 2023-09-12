@@ -64,7 +64,6 @@ export default function () {
                     trimZero(investments.initialInvestment.toString())
                   )}
                 />
-                <span>{`Please enter a number between 0 and 1,000,000`}</span>
               </li>
               <li>
                 <InputField
