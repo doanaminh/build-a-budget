@@ -18,7 +18,7 @@
     align-items: center;
     color: white;
     border-radius: .5rem;
-    background-color: #43718B;
+    background-color: #002c5f;
     padding: 0 .9rem;
     padding-bottom: 1rem;
     overflow: scroll;
@@ -33,9 +33,15 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.budgetBreakdown p {
+    color: white;
+}
 .modalButton {
     background-color: transparent;
     color: white;
+}
+.modalButton:hover {
+    color: #957C3D;
 }
 .modalButton2 {
     text-align: center;

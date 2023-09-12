@@ -17,6 +17,7 @@
 .inputBox {
   display: flex;
   justify-content: end;
+  color: black;
 }
 .inputArea:focus {
   border: 1px solid transparent;
@@ -40,12 +41,13 @@
 .input .symbol {
   background-color: transparent;
   position: absolute;
-  opacity: 70%;
+  opacity: 60%;
 }
 .years input, .percent input {
   text-align: start;
 }
 .percent .symbol {
+  color: black;
   width: 0;
   position: relative;
   left: 150px;

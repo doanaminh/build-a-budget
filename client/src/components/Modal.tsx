@@ -33,7 +33,7 @@ const Modal: React.FC<Props> = ({
   return (
     <>
       <Button
-        backgroundColor="#43718b"
+        backgroundColor="#887849"
         color="white"
         fontSize="1rem"
         height="3rem"

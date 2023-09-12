@@ -49,12 +49,14 @@ PAGES
   min-height: 79vh;
 }
 .Calculator h1 {
+  color: #002c5f;
   text-align: center;
 }
 .Calculator form {
-  background-color: #d6c4ac;
+  background-color: #47586A;
   padding: 1.5rem;
   border-radius: .5rem;
+  color: #DDDDDD;
 }
 .Calculator ul {
   list-style: none;
@@ -72,7 +74,7 @@ PAGES
 }
 .slider button {
   color: white;
-  background-color: grey;
+  background-color: rgb(155, 155, 155);
 }
 .sliderButton1 {
   border-top-right-radius: 0;
@@ -83,10 +85,14 @@ PAGES
   border-bottom-left-radius: 0;
 }
 .on {
-  background-color: #43718b !important;
+  background-color: #47586A !important;
 }
 .Budget, .Compound {
   padding-top: 0;
+}
+.Budget p, .Compound p {
+  color: #777777;
+  text-align: center;
 }
 
 /* 
@@ -119,8 +125,8 @@ PAGES
   flex-direction: column;
   justify-content: space-between;
 }
-.Home h3, .Home h4 {
-  color: #47586A;
+.Home h3, .Home h4, .homePanel h3 {
+  color: #002c5f;
 }
 
 /* 
@@ -154,7 +160,6 @@ main h1 {
 }
 .homePanel h3 {
   font-size: 2rem;
-  color: #47586A;
 }
 
 /* 
@@ -270,7 +275,7 @@ main h1 {
   color: #777777;
 }
 .body h3, .body h4 {
-  color: #47586A;
+  color: #002c5f;
 }
 .body a {
   color: #957C3D;
