@@ -6,10 +6,19 @@ export default function () {
   // Default values for investment
   const defaultInvestment = {
     initialInvestment: 1000,
+    initialInvestmentInvalid: false,
+
     monthlyContribution: 100,
+    monthlyContributionInvalid: false,
+
     yearsInvesting: 5,
+    yearsInvestingInvalid: false,
+
     interestRate: 1,
+    interestRateInvalid: false,
+
     compoundFrequency: 12,
+    compoundFrequencyInvalid: false,
   };
 
   const [investments, setInvestments] = useState(defaultInvestment);
@@ -19,9 +28,17 @@ export default function () {
     return parseInt(n);
   };
   const handleChange = (e: any) => {
+    let state = e.target.invalidInput;
+    const val = Number(e.target.value);
+    const min = Number(e.target.min);
+    const max = Number(e.target.max);
+    if (val < min || val > max) {
+      state = true;
+    }
     setInvestments({
       ...investments,
       [e.target.name]: trimZero(e.target.value),
+      [`${e.target.name}Invalid`]: state,
     });
   };
 
@@ -60,9 +77,8 @@ export default function () {
                   minimum="0"
                   maximum="1000000"
                   handleValue={handleChange}
-                  loadedValue={Number(
-                    trimZero(investments.initialInvestment.toString())
-                  )}
+                  loadedValue={investments.initialInvestment}
+                  invalidInput={investments.initialInvestmentInvalid}
                 />
               </li>
               <li>
@@ -75,6 +91,7 @@ export default function () {
                   maximum="1000000"
                   handleValue={handleChange}
                   loadedValue={100}
+                  invalidInput={investments.monthlyContributionInvalid}
                 />
               </li>
               <li>
@@ -87,6 +104,7 @@ export default function () {
                   maximum="50"
                   handleValue={handleChange}
                   loadedValue={5}
+                  invalidInput={investments.yearsInvestingInvalid}
                 />
               </li>
               <li>
@@ -99,6 +117,7 @@ export default function () {
                   maximum="50"
                   handleValue={handleChange}
                   loadedValue={1}
+                  invalidInput={investments.interestRateInvalid}
                 />
               </li>
               <li>

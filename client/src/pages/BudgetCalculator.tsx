@@ -204,6 +204,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.livingExpense}
+                    invalidInput={budget.livingExpenseInvalid}
                   />
                 </li>
                 <li>
@@ -216,6 +217,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.bills}
+                    invalidInput={budget.billsInvalid}
                   />
                 </li>
                 <li>
@@ -228,6 +230,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.groceries}
+                    invalidInput={budget.groceriesInvalid}
                   />
                 </li>
                 <li>
@@ -240,6 +243,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.transportation}
+                    invalidInput={budget.transportationInvalid}
                   />
                 </li>
                 <li>
@@ -252,6 +256,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.childcare}
+                    invalidInput={budget.childcareInvalid}
                   />
                 </li>
                 <li>
@@ -264,6 +269,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.insurance}
+                    invalidInput={budget.insuranceInvalid}
                   />
                 </li>
                 <li>
@@ -276,6 +282,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.studentLoans}
+                    invalidInput={budget.studentLoansInvalid}
                   />
                 </li>
                 <li>
@@ -288,6 +295,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.otherDebt}
+                    invalidInput={budget.otherDebtInvalid}
                   />
                 </li>
               </ul>
@@ -307,6 +315,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.entertainment}
+                    invalidInput={budget.entertainmentInvalid}
                   />
                 </li>
                 <li>
@@ -319,6 +328,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.diningOut}
+                    invalidInput={budget.diningOutInvalid}
                   />
                 </li>
                 <li>
@@ -331,6 +341,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.hobbies}
+                    invalidInput={budget.hobbiesInvalid}
                   />
                 </li>
               </ul>
@@ -350,6 +361,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.emergencyFund}
+                    invalidInput={budget.emergencyFundInvalid}
                   />
                 </li>
                 <li>
@@ -362,6 +374,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.retirementFund}
+                    invalidInput={budget.retirementFundInvalid}
                   />
                 </li>
                 <li>
@@ -374,6 +387,7 @@ export default function () {
                     maximum="1000000"
                     handleValue={handleChange}
                     loadedValue={userBudget.vacation}
+                    invalidInput={budget.vacationInvalid}
                   />
                 </li>
               </ul>

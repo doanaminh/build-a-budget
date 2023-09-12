@@ -67,11 +67,6 @@ PAGES
 .Calculator label {
   width: 50%;
 }
-.Calculator input {
-  text-align: end;
-  border: beige solid 1px;
-  border-radius: .2rem;
-}
 .slider {
   display: flex;
 }
