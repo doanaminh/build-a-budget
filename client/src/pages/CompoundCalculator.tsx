@@ -62,7 +62,7 @@ export default function () {
       <section className="Compound">
         {/*  */}
         <h1>Compound Interest Calculator</h1>
-        <p>To make this process easier, have your investment budget at hand.</p>
+        <p>Use your investment funds to see how much your money can grow!</p>
         {/* FORM THAT WILL SUBMIT WITH ALL THE NUMBERS FOR A BUDGET */}
         <form action="">
           {/* INCOME */}

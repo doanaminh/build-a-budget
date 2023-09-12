@@ -149,8 +149,8 @@ export default function () {
       <section className="Budget">
         <h1>Budget Calculator</h1>
         <p>
-          To make this process easier, it would help to collect recent bills
-          that you pay monthly to have at hand.
+          It would help to have recent bills ready. All of the expenses
+          calculated below will be monthly.
         </p>
         {/* FORM THAT WILL SUBMIT WITH ALL THE NUMBERS FOR A BUDGET */}
         <form action="">

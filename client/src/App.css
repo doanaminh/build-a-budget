@@ -22,6 +22,12 @@
   padding: 2em;
 }
 
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 /* 
 =======================================================
 COMPONENTS
@@ -53,10 +59,10 @@ PAGES
   text-align: center;
 }
 .Calculator form {
-  background-color: #47586A;
+  background-color: #e0d9ce;
   padding: 1.5rem;
   border-radius: .5rem;
-  color: #DDDDDD;
+  color: #002C5F;
 }
 .Calculator ul {
   list-style: none;
