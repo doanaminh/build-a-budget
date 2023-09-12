@@ -5,6 +5,7 @@
   text-align: end;
   border: beige solid 1px;
   border-radius: .2rem;
+  width: 10rem;
 }
 .input span {
   background-color: transparent;
@@ -17,11 +18,19 @@
 .percent span {
   width: 0;
   position: relative;
-  left: 160px;
+  left: 150px;
 
 }
 .years span {
   width: 0;
   position: relative;
-  left: 125px;
+  left: 120px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }

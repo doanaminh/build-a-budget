@@ -18,12 +18,12 @@
     align-items: center;
     color: white;
     border-radius: .5rem;
-    background-color: #554941;
+    background-color: #43718B;
     padding: 0 .9rem;
     padding-bottom: 1rem;
     overflow: scroll;
 }
-.budgetBody div {
+.budgetBody .closeButton {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -38,8 +38,15 @@
     color: white;
 }
 .modalButton2 {
-    background-color: #43718B;
-    color: beige;
+    text-align: center;
+    width: 10rem;
+    background-color: beige;
+    color: black;
+}
+.budgetBody .toBudget {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
 .budgetSections {
     display: flex;
