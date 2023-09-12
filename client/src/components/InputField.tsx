@@ -10,6 +10,7 @@ interface Props {
   placeholder?: string;
   minimum: string;
   maximum: string;
+  invalidInput: Boolean;
   nameClass: string;
   handleValue: any;
   loadedValue: any;
@@ -23,6 +24,7 @@ const InputField: React.FC<Props> = ({
   placeholder,
   minimum,
   maximum,
+  invalidInput,
   nameClass,
   handleValue,
   loadedValue,
@@ -34,19 +36,24 @@ const InputField: React.FC<Props> = ({
 
   return (
     <>
-      <label>{title}</label>
-      <div className={`${nameClass}`}>
-        <span>{symbol}</span>
-        <input
-          name={inputName}
-          type="number"
-          placeholder={placeholder}
-          min={minimum}
-          max={maximum}
-          onInput={handleValue}
-          onClick={selectAll}
-          defaultValue={loadedValue}
-        />
+      <div className={`inputField`}>
+        <label>{title}</label>
+        <div className={`${nameClass}`}>
+          <span className="symbol">{symbol}</span>
+          <input
+            name={inputName}
+            type="number"
+            placeholder={placeholder}
+            min={minimum}
+            max={maximum}
+            onInput={handleValue}
+            onClick={selectAll}
+            defaultValue={loadedValue}
+          />
+          {invalidInput && (
+            <span className="invalidWarning">{`Please enter a number between ${minimum} and ${maximum}`}</span>
+          )}
+        </div>
       </div>
     </>
   );

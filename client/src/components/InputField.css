@@ -7,7 +7,13 @@
   border-radius: .2rem;
   width: 10rem;
 }
-.input span {
+.inputField {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+}
+.input .symbol {
   background-color: transparent;
   position: absolute;
   opacity: 70%;
@@ -15,16 +21,23 @@
 .years input, .percent input {
   text-align: start;
 }
-.percent span {
+.percent .symbol {
   width: 0;
   position: relative;
   left: 150px;
 
 }
-.years span {
+.years .symbol {
   width: 0;
   position: relative;
   left: 120px;
+}
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+}
+.invalidWarning {
+  color: #B40000;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

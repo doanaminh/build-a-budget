@@ -8,27 +8,54 @@ export default function () {
   const defaultBudget = {
     // INCOME
     checkFrequency: 1,
+
     checkAmount: 0,
+    checkAmountInvalid: false,
 
     // NEEDS
     livingExpense: 0,
+    livingExpenseInvalid: false,
+
     bills: 0,
+    billsInvalid: false,
+
     groceries: 0,
+    groceriesInvalid: false,
+
     transportation: 0,
+    transportationInvalid: false,
+
     childcare: 0,
+    childcareInvalid: false,
+
     insurance: 0,
+    insuranceInvalid: false,
+
     studentLoans: 0,
+    studentLoansInvalid: false,
+
     otherDebt: 0,
+    otherDebtInvalid: false,
 
     //  WANTS
     entertainment: 0,
+    entertainmentInvalid: false,
+
     diningOut: 0,
+    diningOutInvalid: false,
+
     hobbies: 0,
+    hobbiesInvalid: false,
 
     // SAVINGS
     emergencyFund: 0,
+    emergencyFundInvalid: false,
+
     retirementFund: 0,
+    retirementFundInvalid: false,
+
     vacation: 0,
+    vacationInvalid: false,
 
     // TAGS
     hasNeeds: false,
@@ -64,9 +91,17 @@ export default function () {
 
   // EVENT LISTENER FOR ANY CHANGES FOR INPUT FIELDS
   const handleChange = (e: any) => {
+    let state = e.target.invalidInput;
+    const val = Number(e.target.value);
+    const min = Number(e.target.min);
+    const max = Number(e.target.max);
+    if (val < min || val > max) {
+      state = true;
+    }
     setBudget({
       ...budget,
       [e.target.name]: Number(e.target.value),
+      [`${e.target.name}Invalid`]: state,
     });
   };
   // EVENT LISTENER FOR ANY CHANGES TO BUDGET OBJECT
@@ -147,6 +182,7 @@ export default function () {
                   maximum="1000000"
                   handleValue={handleChange}
                   loadedValue={userBudget.checkAmount}
+                  invalidInput={budget.checkAmountInvalid}
                 />
               </li>
             </ul>
