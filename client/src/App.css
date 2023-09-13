@@ -271,6 +271,7 @@ main h1 {
 }
 .Learn a {
   font-style: italic;
+  font-weight: bold;
   /* text-decoration: underline; */
 }
 .body {
