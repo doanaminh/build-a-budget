@@ -84,6 +84,7 @@ export default function () {
 
           {/* DEBT INFOGRAPHICS */}
           <section className="debt">
+            <h3>DEBT</h3>
             <section>
               <article>
                 <img src={education} alt="" />
