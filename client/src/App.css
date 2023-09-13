@@ -70,6 +70,7 @@ PAGES
 .Calculator div, .Calculator li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.25rem 0;
 }
 .Calculator label {
@@ -321,6 +322,8 @@ main h1 {
 
 /* MOBILE VIEW */
 @media (max-width: 766px) {
+
+  /* HOME PAGE */
   main div {
     padding: 1rem;
     text-align: center;
@@ -351,5 +354,22 @@ main h1 {
   }
   .debt section article img {
     width: 30%;
+  }
+
+
+
+
+  /* CALCULATOR PAGE */
+  .Calculator {
+    padding: 2rem 0;
+  }
+  .Calculator form {
+    background-color: #e0d9ce;
+    padding: 1.5rem .5rem;
+    border-radius: .5rem;
+    color: #002C5F;
+  }
+  .Calculator ul {
+    padding-left: .5rem;
   }
 }
