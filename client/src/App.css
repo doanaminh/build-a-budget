@@ -142,11 +142,15 @@ PAGES
 main {
   background-image: url(/assets/pexels-huỳnh-đạt-2098691.jpg);
   background-size: cover;
-  min-height: 50vh;
-  max-height: 92vh;
+  width: 100%;
+  height: calc(100vh - 69px);
+  display: flex;
+  flex-direction: column-reverse;
 }
 main div {
-  padding: 50% 40% 2rem 1rem;
+  width: 50%;
+  height: fit-content;
+  padding: 0 0 2rem 2rem;
 }
 main h1 {
   margin: 0 0 3rem 0;
@@ -324,9 +328,14 @@ main h1 {
 @media (max-width: 766px) {
 
   /* HOME PAGE */
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
   main div {
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
+    width: 100%;
   }
   .goals section, .debt section {
     display: flex;

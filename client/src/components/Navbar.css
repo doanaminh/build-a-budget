@@ -26,7 +26,7 @@
   padding-bottom: 5px;
   color: white;
   transition: border-bottom ease-in-out .15s;
-  /* border: solid 1px red; */
+  cursor: pointer;
 }
 .Navbar li a:hover {
   border-bottom: solid 3px #957C3D;
@@ -97,7 +97,6 @@
     width: 100%;
     padding: 1rem 0;
     border-top: 1px solid #957C3D;
-    cursor: pointer;
   }
   .Navbar li a:hover {
     border-bottom: none;
