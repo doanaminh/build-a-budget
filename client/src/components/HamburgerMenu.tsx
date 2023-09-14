@@ -21,13 +21,34 @@ export default function () {
         <div className="navOpen">
           <ul className="navOpenLinks">
             <li>
-              <a onClick={() => navigate("/calculator")}>Calculator</a>
+              <a
+                onClick={() => {
+                  navigate("/calculator");
+                  handleOpen();
+                }}
+              >
+                Calculator
+              </a>
             </li>
             <li>
-              <a onClick={() => navigate("/learn")}>Learn</a>
+              <a
+                onClick={() => {
+                  navigate("/learn");
+                  handleOpen();
+                }}
+              >
+                Learn
+              </a>
             </li>
             <li>
-              <a onClick={() => navigate("/glossary")}>Glossary</a>
+              <a
+                onClick={() => {
+                  navigate("/glossary");
+                  handleOpen();
+                }}
+              >
+                Glossary
+              </a>
             </li>
           </ul>
         </div>
