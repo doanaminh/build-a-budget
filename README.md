@@ -4,7 +4,7 @@ An informative tool to help introduce financial literacy to the average person.
 
 **Link to project:** [Test it out here!](https://babudget.netlify.app/)
 
-![insert screenshot here](client\public\assets\babudget.netlify.app_.png)
+![insert screenshot here](client/public/assets/babudget.netlify.app_.png)
 
 ## How It's Made
 
