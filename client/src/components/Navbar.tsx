@@ -1,7 +1,10 @@
 import "./Navbar.css";
 import HamburgerMenu from "./HamburgerMenu";
+import { useNavigate } from "react-router-dom";
 
 export default function () {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="Navbar">
@@ -13,13 +16,13 @@ export default function () {
           </h2>
           <ul className="navLinks">
             <li>
-              <a href="/calculator">Calculator</a>
+              <a onClick={() => navigate("/calculator")}>Calculator</a>
             </li>
             <li>
-              <a href="/learn">Learn</a>
+              <a onClick={() => navigate("/learn")}>Learn</a>
             </li>
             <li>
-              <a href="/glossary">Glossary</a>
+              <a onClick={() => navigate("/glossary")}>Glossary</a>
             </li>
           </ul>
         </div>
