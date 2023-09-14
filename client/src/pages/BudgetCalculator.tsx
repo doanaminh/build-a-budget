@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import Modal from "../components/Modal";
 import InputField from "../components/InputField";
 
@@ -140,9 +139,6 @@ export default function () {
 
   //     },
   // }
-
-  // Navigate hook from react router
-  const navigate = () => useNavigate();
 
   return (
     <>

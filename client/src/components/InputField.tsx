@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./InputField.css";
 
 interface Props {
@@ -27,7 +26,6 @@ const InputField: React.FC<Props> = ({
   handleValue,
   loadedValue,
 }) => {
-  const [open, setOpen] = useState(false);
   const selectAll = (e: any) => {
     e.target.select();
   };
