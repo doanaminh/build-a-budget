@@ -6,13 +6,13 @@ import Button from "../components/Button";
 import Break from "../components/Break";
 
 // IMPORTING SVGs
-import home from "/svg/home.svg";
-import freedom from "/svg/freedom.svg";
-import travel from "/svg/travel.svg";
-import emergency from "/svg/emergency.svg";
-import education from "/svg/education.svg";
-import creditCard from "/svg/creditCard.svg";
-import mortgage from "/svg/mortgage.svg";
+import home from "../assets/svg/home.svg";
+import freedom from "../assets/svg/freedom.svg";
+import travel from "../assets/svg/travel.svg";
+import emergency from "../assets/svg/emergency.svg";
+import education from "../assets/svg/education.svg";
+import creditCard from "../assets/svg/creditCard.svg";
+import mortgage from "../assets/svg/mortgage.svg";
 
 export default function () {
   const navigate = useNavigate();
