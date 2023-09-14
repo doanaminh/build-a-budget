@@ -25,9 +25,6 @@ export default function () {
               <a href="/learn">Learn</a>
             </li>
             <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
               <a href="/glossary">Glossary</a>
             </li>
           </ul>

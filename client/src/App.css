@@ -332,11 +332,21 @@ main h1 {
     display: flex;
     flex-direction: column;
   }
+  .goals section article {
+    width: 80%;
+  }
   .goals section article:not(:first-child):not(:last-child){
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
     padding: 1rem 4rem 0 4rem;
     margin-bottom: 1rem;
+    width: 50%;
+  }
+  .emergency h4 {
+    margin-top: 1rem;
+  }
+  .debt h3 {
+    margin-bottom: 0;
   }
   .debt section article:not(:first-child):not(:last-child) {
     border-top: 1px solid #cccccc;
@@ -353,9 +363,11 @@ main h1 {
     padding: 0;
   }
   .debt section article img {
-    width: 30%;
+    width: 50%;
   }
-
+  .education h4 {
+    padding-top: 1rem;
+  }
 
 
 
@@ -384,5 +396,11 @@ main h1 {
   /* LEARN-LONG-TERM-GOALS */
   .LearnLongTermGoals h4 {
     text-decoration: underline;
+  }
+
+
+  /* GLOSSARY PAGE */
+  .Glossary ul {
+    padding-left: 1rem;
   }
 }
