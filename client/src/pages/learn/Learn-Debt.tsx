@@ -10,7 +10,7 @@ export default function () {
 
   return (
     <>
-      <section className="Learn Page EmployerIntro">
+      <section className="Learn Page Debt">
         <section className="sidebar">
           <Sidebar />
         </section>

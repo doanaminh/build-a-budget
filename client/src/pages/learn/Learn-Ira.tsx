@@ -9,7 +9,7 @@ export default function () {
 
   return (
     <>
-      <section className="Learn Page EmployerIntro">
+      <section className="Learn Page LearnIra">
         <section className="sidebar">
           <Sidebar />
         </section>

@@ -51,12 +51,7 @@ const Sidebar: React.FC<Props> = () => {
         </section>
 
         <section className="sidebarIcon">
-          <span>
-            {/* <span>{"|"}</span> */}
-            <span>{">"}</span>
-            {/* <span>{"|"}</span> */}
-          </span>
-
+          <span>{">"}</span>
           <span onClick={handleOpen}>&#8213; v &#8213;</span>
         </section>
       </section>

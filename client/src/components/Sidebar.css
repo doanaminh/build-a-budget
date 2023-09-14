@@ -61,10 +61,10 @@
         justify-content: flex-start;
         padding: 0;
         position: fixed;
-        top: -620px;
+        top: -550px;
         left: 0;
         width: 100%;
-        height: 680px;
+        height: 610px;
     }
     .Sidebar .tableContent {
         width: 100%;
@@ -76,7 +76,7 @@
     .tableContent li {
         margin-left: 2rem;
         text-align: center;
-        height: 70px;
+        height: 50px;
         padding: 0;
         /* display: flex;
         justify-content: center;
@@ -86,7 +86,7 @@
         text-align: center;
         text-decoration: underline;
         margin: 0 2rem;
-        height: 70px;
+        height: 50px;
         border-bottom: none;
     }
     .sidebarIcon {
@@ -104,7 +104,7 @@
     }
     .sidebarPusher {
         transition: padding-top .25s ease-in-out;
-        padding-top: 640px;
+        padding-top: 580px;
         opacity: 99%;
     }
 }

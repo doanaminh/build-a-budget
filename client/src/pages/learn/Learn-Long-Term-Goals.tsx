@@ -9,7 +9,7 @@ export default function () {
 
   return (
     <>
-      <section className="Learn Page EmployerIntro">
+      <section className="Learn Page LearnLongTermGoals">
         <section className="sidebar">
           <Sidebar />
         </section>
@@ -46,7 +46,7 @@ export default function () {
               <h4>Tax-Advantaged Accounts</h4>
               <ol>
                 <li>
-                  <h4>Health Savings Account</h4>
+                  <h5>Health Savings Account</h5>
                   <p>
                     If you have a high-deductible health plan, you may be able
                     to contribute to an HSA. What is an HSA? A Health Savings
@@ -71,7 +71,7 @@ export default function () {
                   </p>
                 </li>
                 <li>
-                  <h4>Higher Education</h4>
+                  <h5>Higher Education</h5>
                   <p>
                     If you have children or you yourself are looking to save for
                     college expenses, look into opening a 529 plan. This plan is
@@ -101,7 +101,7 @@ export default function () {
               </p>
               <ol>
                 <li>
-                  <h4>Short-Term Goals</h4>
+                  <h5>Short-Term Goals</h5>
                   <p>
                     Do you have more immediate goals that will take less than
                     3-5 years, like: down payment on a house/car or a big
@@ -109,7 +109,7 @@ export default function () {
                   </p>
                 </li>
                 <li>
-                  <h4>Long-Term Goals</h4>
+                  <h5>Long-Term Goals</h5>
                   <p>
                     Do you have long-term goals that will take longer than 3-5
                     years, like: paying off a mortgage or a wedding? Look into
@@ -120,7 +120,7 @@ export default function () {
                   </p>
                 </li>
                 <li>
-                  <h4>Retiring Early</h4>
+                  <h5>Retiring Early</h5>
                   <p>
                     If you would like to retire early, look to max out all
                     tax-advantaged retirement accounts, such as: 401(k), 403(b),

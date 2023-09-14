@@ -285,7 +285,7 @@ main h1 {
   justify-content: space-between;
   color: #777777;
 }
-.body h3, .body h4 {
+.body h3, .body h4, .body h5 {
   color: #002c5f;
 }
 .body a {
@@ -371,5 +371,18 @@ main h1 {
   }
   .Calculator ul {
     padding-left: .5rem;
+  }
+
+
+  /* LEARN PAGES */
+  .Learn ul, .Learn ol {
+    padding-left: 0;
+  }
+  .Learn li:not(:last-child) {
+    padding-bottom: 1rem;
+  }
+  /* LEARN-LONG-TERM-GOALS */
+  .LearnLongTermGoals h4 {
+    text-decoration: underline;
   }
 }
