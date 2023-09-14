@@ -30,6 +30,7 @@
 .tableContent ol h4 {
     font-size: 1.5rem;
     margin-top: 0;
+    border-bottom: 1px solid gainsboro;
 }
 .tableContent li {
     padding: 1rem 0;
@@ -45,6 +46,65 @@
 }
 .sidebarIcon span {
     font-size: 2rem;
-    color: white;
+    color: gainsboro;
+}
+.sidebarIcon span:last-child {
+    display: none;
 }
 
+@media (max-width: 766px) {
+    .Sidebar {
+        opacity: 95%;
+        background: #47586A;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+        position: fixed;
+        top: -620px;
+        left: 0;
+        width: 100%;
+        height: 680px;
+    }
+    .Sidebar .tableContent {
+        width: 100%;
+        display: inline-block;
+    }
+    .tableContent ol {
+        padding: 0;
+    }
+    .tableContent li {
+        margin-left: 2rem;
+        text-align: center;
+        height: 70px;
+        padding: 0;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    .tableContent ol h4 {
+        text-align: center;
+        text-decoration: underline;
+        margin: 0 2rem;
+        height: 70px;
+        border-bottom: none;
+    }
+    .sidebarIcon {
+        justify-content: center;
+    }
+    .sidebarIcon span:first-child {
+        display: none;
+    }
+    .sidebarIcon span:last-child {
+        display: inline-block;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+        color: gainsboro;
+    }
+    .sidebarPusher {
+        transition: padding-top .25s ease-in-out;
+        padding-top: 640px;
+        opacity: 99%;
+    }
+}
