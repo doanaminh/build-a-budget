@@ -6,13 +6,14 @@ import Button from "../components/Button";
 import Break from "../components/Break";
 
 // IMPORTING SVGs
-import home from "../assets/svg/home.svg";
-import freedom from "../assets/svg/freedom.svg";
-import travel from "../assets/svg/travel.svg";
-import emergency from "../assets/svg/emergency.svg";
-import education from "../assets/svg/education.svg";
-import creditCard from "../assets/svg/creditCard.svg";
-import mortgage from "../assets/svg/mortgage.svg";
+import home from "../public/assets/home.svg";
+import freedom from "../public/assets/freedom.svg";
+import travel from "../public/assets/travel.svg";
+import emergency from "../public/assets/emergency.svg";
+import education from "../public/assets/education.svg";
+import creditCard from "../public/assets/creditCard.svg";
+import mortgage from "../public/assets/mortgage.svg";
+import trajectoryEducation from "../public/assets/trajectory-education.svg";
 
 export default function () {
   const navigate = useNavigate();
@@ -132,7 +133,7 @@ export default function () {
 
           {/* EDUCATION INFOGRAPHICS */}
           <section className="education">
-            <img src="\svg\trajectory-education.svg" alt="" />
+            <img src={trajectoryEducation} alt="" />
             <h4>EDUCATION</h4>
             <p>
               To manage money better requires an understanding of how it
