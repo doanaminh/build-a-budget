@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+// import { useEffect } from "react";
 import Modal from "../components/Modal";
 import InputField from "../components/InputField";
 
@@ -56,6 +57,13 @@ export default function () {
     vacation: 0,
     vacationInvalid: false,
 
+    // TOTALS
+    monthlyIncome: 0,
+    totalNeeds: 0,
+    totalWants: 0,
+    totalSavings: 0,
+    remainder: 0,
+
     // TAGS
     hasNeeds: false,
     hasWants: false,
@@ -82,8 +90,8 @@ export default function () {
   };
 
   // CREATING AN OBJECT FROM LOCALSTORAGE IF USER HAS USED SITE BEFORE
-  let userBudget =
-    JSON.parse(localStorage.getItem("userBudget")) || defaultBudget;
+  let userBudget = defaultBudget;
+  // JSON.parse(localStorage.getItem("userBudget")) || defaultBudget;
 
   // CREATING A STATE VARIABLE TO HOLD ALL VALUES OF INPUT FIELDS
   const [budget, setBudget] = useState(userBudget);
@@ -104,9 +112,9 @@ export default function () {
     });
   };
   // EVENT LISTENER FOR ANY CHANGES TO BUDGET OBJECT
-  useEffect(() => {
-    localStorage.setItem("userBudget", JSON.stringify(budget));
-  }, [budget]);
+  // useEffect(() => {
+  //   localStorage.setItem("userBudget", JSON.stringify(budget));
+  // }, [budget]);
 
   // VARIABLES AND FORMULAS FOR CALCULATOR (LOGIC)
   budget.monthlyIncome = budget.checkFrequency * budget.checkAmount;
