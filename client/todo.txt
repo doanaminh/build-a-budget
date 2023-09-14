@@ -1,5 +1,0 @@
-LAST LEFT OFF:
-create a page that will explain how/what to invest in within a broker account
-
-add feature to limit input field to a number inside min/max range
-also remove leading 0s
