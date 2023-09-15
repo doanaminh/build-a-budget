@@ -140,7 +140,7 @@ PAGES
 ||| MAIN
  */
 main {
-  background-image: url(./public/assets/pexels-huỳnh-đạt-2098691.jpg);
+  background-image: url(./assets/pexels-huỳnh-đạt-2098691.jpg);
   background-size: cover;
   width: 100%;
   height: calc(100vh - 69px);

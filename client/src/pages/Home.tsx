@@ -6,14 +6,14 @@ import Button from "../components/Button";
 import Break from "../components/Break";
 
 // IMPORTING SVGs
-import home from "../public/assets/home.svg";
-import freedom from "../public/assets/freedom.svg";
-import travel from "../public/assets/travel.svg";
-import emergency from "../public/assets/emergency.svg";
-import education from "../public/assets/education.svg";
-import creditCard from "../public/assets/creditCard.svg";
-import mortgage from "../public/assets/mortgage.svg";
-import trajectoryEducation from "../public/assets/trajectory-education.svg";
+import home from "../assets/home.svg";
+import freedom from "../assets/freedom.svg";
+import travel from "../assets/travel.svg";
+import emergency from "../assets/emergency.svg";
+import education from "../assets/education.svg";
+import creditCard from "../assets/creditCard.svg";
+import mortgage from "../assets/mortgage.svg";
+import trajectoryEducation from "../assets/trajectory-education.svg";
 
 export default function () {
   const navigate = useNavigate();
