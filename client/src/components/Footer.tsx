@@ -6,7 +6,11 @@ export default function () {
       <div className="Footer">
         <article>
           <p>
-            &copy;<a href="https://doanaminh.netlify.app">Minh Doan</a> |{" "}
+            &copy;
+            <a href="https://doanaminh.netlify.app" target="blank">
+              Minh Doan
+            </a>{" "}
+            |{" "}
             <span>
               <a href="/credits">Credits</a>
             </span>
