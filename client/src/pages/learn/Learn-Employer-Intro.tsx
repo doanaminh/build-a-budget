@@ -4,12 +4,19 @@ import Sidebar from "../../components/Sidebar";
 import Term from "../../components/Term";
 import { Terms } from "../../components/Term";
 import Break from "../../components/Break";
+import SEO from "../../components/Seo";
 
 export default function () {
   const navigate = useNavigate();
 
   return (
     <>
+      <SEO
+        title="Starting an Employer-Matched Retirement Account"
+        description="Most commonly known as a 401(k) these days, the employer retirement account is a strong way to increase the value of your money. This is even more true when your employer helps contribute to it. This page discusses the different types of accounts available, like Traditional and Roth, and how to invest in it."
+        name="Build-a-Budget"
+        type="document"
+      />
       <section className="Learn Page EmployerIntro">
         <section className="sidebar">
           <Sidebar />

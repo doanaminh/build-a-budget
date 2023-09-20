@@ -3,12 +3,19 @@ import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
 import Term, { Terms } from "../../components/Term";
 import Break from "../../components/Break";
+import SEO from "../../components/Seo";
 
 export default function () {
   const navigate = useNavigate();
 
   return (
     <>
+      <SEO
+        title="Investing in Individual Retirement Accounts"
+        description="Utilizing individual retirement accounts can also yield more growth from your money. These are similar to 401(k)s, but without the help from your employer."
+        name="Build-a-Budget"
+        type="document"
+      />
       <section className="Learn Page LearnIra">
         <section className="sidebar">
           <Sidebar />

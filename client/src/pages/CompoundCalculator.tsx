@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Modal from "../components/Modal";
 import InputField from "../components/InputField";
+import { useNavigate } from "react-router-dom";
+import SEO from "../components/Seo";
 
 export default function () {
   // Default values for investment
@@ -57,100 +59,120 @@ export default function () {
     return Math.round((init + Number.EPSILON) * 100) / 100;
   };
 
+  const naviagte = useNavigate();
+
   return (
     <>
-      <section className="Compound">
-        {/*  */}
-        <h1>Compound Interest Calculator</h1>
-        <p>Use your investment funds to see how much your money can grow!</p>
-        {/* FORM THAT WILL SUBMIT WITH ALL THE NUMBERS FOR A BUDGET */}
-        <form action="">
-          {/* INCOME */}
-          <section>
-            <ul>
-              <li>
-                <InputField
-                  title="Initial Investment"
-                  symbol="$"
-                  inputName="initialInvestment"
-                  nameClass="input"
-                  minimum="0"
-                  maximum="1000000"
-                  handleValue={handleChange}
-                  loadedValue={investments.initialInvestment}
-                  invalidInput={investments.initialInvestmentInvalid}
-                />
-              </li>
-              <li>
-                <InputField
-                  title="Monthly Contribution"
-                  symbol="$"
-                  inputName="monthlyContribution"
-                  nameClass="input"
-                  minimum="0"
-                  maximum="1000000"
-                  handleValue={handleChange}
-                  loadedValue={100}
-                  invalidInput={investments.monthlyContributionInvalid}
-                />
-              </li>
-              <li>
-                <InputField
-                  title="Years of Investment"
-                  symbol="years"
-                  inputName="yearsInvesting"
-                  nameClass="input years"
-                  minimum="1"
-                  maximum="50"
-                  handleValue={handleChange}
-                  loadedValue={5}
-                  invalidInput={investments.yearsInvestingInvalid}
-                />
-              </li>
-              <li>
-                <InputField
-                  title="Estimated Interest Rate"
-                  symbol="%"
-                  inputName="interestRate"
-                  nameClass="input percent"
-                  minimum="0"
-                  maximum="50"
-                  handleValue={handleChange}
-                  loadedValue={1}
-                  invalidInput={investments.interestRateInvalid}
-                />
-              </li>
-              <li>
-                <label htmlFor="">Compound Frequency</label>
-                <select
-                  disabled={true}
-                  defaultValue={1}
-                  name="compoundFrequency"
-                  id=""
-                  onInput={handleChange}
-                >
-                  <option value={1}>Annually</option>
-                  <option value={12}>Monthly</option>
-                  <option value={365}>Daily</option>
-                </select>
-              </li>
-            </ul>
-          </section>
+      <SEO
+        title="Compound Interest Calculator"
+        description="A calculator to help project growth of an investment. Use this to see with an interest rate how much your money will grow in a certain amount of years. Perfect for calculating long term growth."
+        name="Build-a-Budget"
+        type="calculator"
+      />
+      <section className="Calculator">
+        <section className="slider">
+          <button
+            className={`sliderButton1`}
+            onClick={() => naviagte("/budget-calculator")}
+          >
+            Budget
+          </button>
+          <button className={`sliderButton2 on`}>Compound</button>
+        </section>
 
-          <div>
-            <div></div>
+        <section className="Compound">
+          {/*  */}
+          <h1>Compound Interest Calculator</h1>
+          <p>Use your investment funds to see how much your money can grow!</p>
+          {/* FORM THAT WILL SUBMIT WITH ALL THE NUMBERS FOR A BUDGET */}
+          <form action="">
+            {/* INCOME */}
+            <section>
+              <ul>
+                <li>
+                  <InputField
+                    title="Initial Investment"
+                    symbol="$"
+                    inputName="initialInvestment"
+                    nameClass="input"
+                    minimum="0"
+                    maximum="1000000"
+                    handleValue={handleChange}
+                    loadedValue={investments.initialInvestment}
+                    invalidInput={investments.initialInvestmentInvalid}
+                  />
+                </li>
+                <li>
+                  <InputField
+                    title="Monthly Contribution"
+                    symbol="$"
+                    inputName="monthlyContribution"
+                    nameClass="input"
+                    minimum="0"
+                    maximum="1000000"
+                    handleValue={handleChange}
+                    loadedValue={100}
+                    invalidInput={investments.monthlyContributionInvalid}
+                  />
+                </li>
+                <li>
+                  <InputField
+                    title="Years of Investment"
+                    symbol="years"
+                    inputName="yearsInvesting"
+                    nameClass="input years"
+                    minimum="1"
+                    maximum="50"
+                    handleValue={handleChange}
+                    loadedValue={5}
+                    invalidInput={investments.yearsInvestingInvalid}
+                  />
+                </li>
+                <li>
+                  <InputField
+                    title="Estimated Interest Rate"
+                    symbol="%"
+                    inputName="interestRate"
+                    nameClass="input percent"
+                    minimum="0"
+                    maximum="50"
+                    handleValue={handleChange}
+                    loadedValue={1}
+                    invalidInput={investments.interestRateInvalid}
+                  />
+                </li>
+                <li>
+                  <label htmlFor="">Compound Frequency</label>
+                  <select
+                    disabled={true}
+                    defaultValue={1}
+                    name="compoundFrequency"
+                    id=""
+                    onInput={handleChange}
+                  >
+                    <option value={1}>Annually</option>
+                    <option value={12}>Monthly</option>
+                    <option value={365}>Daily</option>
+                  </select>
+                </li>
+              </ul>
+            </section>
+
             <div>
-              <Modal
-                title={`Total Balance After ${investments.yearsInvesting} Years`}
-                a1Msg={""}
-                a2Msg=""
-                a3Msg=""
-                conclusion={`$${calculateCompound()}`}
-              />
+              <div></div>
+              <div>
+                <Modal
+                  title={`Total Balance After ${investments.yearsInvesting} Years`}
+                  a1Msg={""}
+                  a2Msg=""
+                  a3Msg=""
+                  conclusion={`$${calculateCompound()}`}
+                />
+              </div>
+              <div></div>
             </div>
-            <div></div>
-          </div>
-        </form>
+          </form>
+        </section>
       </section>
     </>
   );

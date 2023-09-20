@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 // IMPORT COMPONENTS
 import Button from "../components/Button";
 import Break from "../components/Break";
+import SEO from "../components/Seo";
 
 // IMPORTING SVGs
 import home from "../assets/home.svg";
@@ -19,6 +20,12 @@ export default function () {
   const navigate = useNavigate();
   return (
     <>
+      <SEO
+        title="Build-a-Budget"
+        description="Reasons that you should build a budget today and create a financial plan for the future! Do you ever dream of financial freedom, having a dream home, or traveling the world? Worried about emergencies devastating you financially? Have too much debt? Learn how to manage your personal finance!"
+        name="Build-a-Budget"
+        type="Landing Page"
+      />
       {/* HERO SECTION */}
       <section className="Home">
         <main>
@@ -47,15 +54,15 @@ export default function () {
           <section className="goals">
             <section>
               <article>
-                <img src={freedom} alt="" />
+                <img src={freedom} alt="financial freedom" />
                 <h4>Financial Freedom</h4>
               </article>
               <article>
-                <img src={home} alt="" />
+                <img src={home} alt="dream home" />
                 <h4>Dream Home</h4>
               </article>
               <article>
-                <img src={travel} alt="" />
+                <img src={travel} alt="traveling" />
                 <h4>Traveling</h4>
               </article>
             </section>
@@ -65,7 +72,7 @@ export default function () {
 
           {/* EMERGENCY */}
           <section className="emergency">
-            <img src={emergency} alt="" />
+            <img src={emergency} alt="medical emergency" />
             <h4>EMERGENCIES</h4>
             <p>
               Emergencies happen when we least expect it. Automotive, medical,
@@ -88,7 +95,7 @@ export default function () {
             <h3>DEBT</h3>
             <section>
               <article>
-                <img src={education} alt="" />
+                <img src={education} alt="school debt" />
                 <p>
                   The average undergraduate student loan debt by the end of 2022
                   was around <b>$37,787</b>.{" "}
@@ -101,7 +108,7 @@ export default function () {
                 </p>
               </article>
               <article>
-                <img src={mortgage} alt="" />
+                <img src={mortgage} alt="mortgage" />
                 <p>
                   The average mortgage debt in America in 2022 was{" "}
                   <b>$236,443</b>.{" "}
@@ -114,7 +121,7 @@ export default function () {
                 </p>
               </article>
               <article>
-                <img src={creditCard} alt="" />
+                <img src={creditCard} alt="consumer debt" />
                 <p>
                   The average american in Q1 of 2023 has <b>$5,733</b> in credit
                   card debt.{" "}
@@ -133,7 +140,10 @@ export default function () {
 
           {/* EDUCATION INFOGRAPHICS */}
           <section className="education">
-            <img src={trajectoryEducation} alt="" />
+            <img
+              src={trajectoryEducation}
+              alt="education about personal finance"
+            />
             <h4>EDUCATION</h4>
             <p>
               To manage money better requires an understanding of how it

@@ -4,12 +4,19 @@ import Sidebar from "../../components/Sidebar";
 import Term from "../../components/Term";
 import { Terms } from "../../components/Term";
 import Break from "../../components/Break";
+import SEO from "../../components/Seo";
 
 export default function () {
   const navigate = useNavigate();
 
   return (
     <>
+      <SEO
+        title="How to Tackle Debt"
+        description="Debt is a difficult matter to handle. Luckily, it is a simple matter to solve. Using strategies like the avalanche or snowball methods, with time you could eliminate your debt. Priority should be with the debt that has the highest interest and working down."
+        name="Build-a-Budget"
+        type="document"
+      />
       <section className="Learn Page Debt">
         <section className="sidebar">
           <Sidebar />

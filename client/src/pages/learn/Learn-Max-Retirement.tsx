@@ -3,12 +3,19 @@ import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
 import Term, { Terms } from "../../components/Term";
 import Break from "../../components/Break";
+import SEO from "../../components/Seo";
 
 export default function () {
   const navigate = useNavigate();
 
   return (
     <>
+      <SEO
+        title="Maximizing Tax-Advantaged Accounts"
+        description="If you have more money than living expenses, then you should look into putting more of it into your tax-advantaged accounts. This will ensure that you have more money when the time comes for retirement."
+        name="Build-a-Budget"
+        type="document"
+      />
       <section className="Learn Page LearnMaxRetirement">
         <section className="sidebar">
           <Sidebar />

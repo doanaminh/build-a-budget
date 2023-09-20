@@ -3,12 +3,19 @@ import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
 import Break from "../../components/Break";
 import Term, { Terms } from "../../components/Term";
+import SEO from "../../components/Seo";
 
 export default function () {
   const navigate = useNavigate();
 
   return (
     <>
+      <SEO
+        title="Ways to Prepare for the Far Future"
+        description="Take advantage of all tax-advantaged accounts that are needed in your situation. They only help you save more. Accounts like HSAs can help with healthcare expenses and 529s can help with college tuition for you or your family. Whatever you plan on doing in the future, make sure you plan accordingly."
+        name="Build-a-Budget"
+        type="document"
+      />
       <section className="Learn Page LearnLongTermGoals">
         <section className="sidebar">
           <Sidebar />

@@ -16,7 +16,7 @@ export default function () {
           </h2>
           <ul className="navLinks">
             <li>
-              <a onClick={() => navigate("/calculator")}>Calculator</a>
+              <a onClick={() => navigate("/budget-calculator")}>Calculator</a>
             </li>
             <li>
               <a onClick={() => navigate("/learn")}>Learn</a>

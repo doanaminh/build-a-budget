@@ -3,12 +3,19 @@ import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
 import Term from "../../components/Term";
 import Break from "../../components/Break";
+import SEO from "../../components/Seo";
 
 export default function () {
   const navigate = useNavigate();
 
   return (
     <>
+      <SEO
+        title="What is an Emergency Fund and How to Build One"
+        description="An emergency fund is like a safety net. When you fall, there will be something to catch you. Build one with some rules in mind and create a financial safety net for yourself."
+        name="Build-a-Budget"
+        type="document"
+      />
       <section className="Learn Page SavingsEF">
         <section className="sidebar">
           <Sidebar />

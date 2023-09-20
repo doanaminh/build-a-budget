@@ -4,12 +4,19 @@ import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
 import Term from "../../components/Term";
 import { Terms } from "../../components/Term";
+import SEO from "../../components/Seo";
 
 export default function () {
   const navigate = useNavigate();
 
   return (
     <>
+      <SEO
+        title="Building a Budget and How to Optimize It"
+        description="How to optimize your budget and save where you can so that you could increase the efficiency of your money. This includes savings and adjustments on categories like: rent, groceries, essentials, transportation, health care, debts, and loans."
+        name="Build-a-Budget"
+        type="document"
+      />
       <section className="Learn Page Budgeting">
         <section className="sidebar">
           <Sidebar />

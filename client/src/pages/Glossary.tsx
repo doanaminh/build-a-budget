@@ -1,6 +1,14 @@
+import SEO from "../components/Seo";
+
 export default function () {
   return (
     <>
+      <SEO
+        title="Finance Glossary"
+        description="A glossary of some basic financial terms. This page will help you learn fundamental vocabulary to understand more complex financial concepts."
+        name="Build-a-Budget"
+        type="glossary"
+      />
       <section className="Glossary">
         <article>
           <h3>Glossary</h3>

@@ -3,12 +3,19 @@ import Button from "../../components/Button";
 import Sidebar from "../../components/Sidebar";
 import Term from "../../components/Term";
 import Break from "../../components/Break";
+import SEO from "../../components/Seo";
 
 export default function () {
   const navigate = useNavigate();
 
   return (
     <>
+      <SEO
+        title="Preface to Personal Finances"
+        description="Disclaimer on the knowledge that is shared."
+        name="Build-a-Budget"
+        type="disclaimer"
+      />
       <section className="Learn Page">
         <section className="sidebar">
           <Sidebar />
