@@ -22,9 +22,9 @@ export default function () {
     <>
       <SEO
         title="Build-a-Budget"
-        description="Reasons that you should build a budget today and create a financial plan for the future! Do you ever dream of financial freedom, having a dream home, or traveling the world? Worried about emergencies devastating you financially? Have too much debt? Learn how to manage your personal finance!"
+        description="Reasons that you should build a budget today and create a financial plan for the future! Do you ever dream of financial freedom, having a dream home, or traveling the world? Worried about emergencies devastating you financially? Have too much debt? Learn how to manage your personal finance with BaBudget!"
         name="Build-a-Budget"
-        type="Landing Page"
+        type="website"
       />
       {/* HERO SECTION */}
       <section className="Home">
