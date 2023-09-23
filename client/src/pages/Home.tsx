@@ -39,7 +39,7 @@ export default function () {
               height="80px"
               width="200px"
               onClick={() => {
-                navigate(`/calculator`);
+                navigate(`/budget-calculator`);
                 window.scrollTo(0, 0);
               }}
             />
