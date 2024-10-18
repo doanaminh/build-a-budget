@@ -46,7 +46,7 @@ export default function () {
                   height="4rem"
                   width="10rem"
                   onClick={() => {
-                    navigate("/calculator");
+                    navigate("/budget-calculator");
                     window.scrollTo(0, 0);
                   }}
                 >
