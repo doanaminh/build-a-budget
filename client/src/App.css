@@ -34,8 +34,8 @@ COMPONENTS
 =======================================================
 */
 .secBreak {
-  content: '';
-  border: 1px solid #957C3D;
+  content: "";
+  border: 1px solid #957c3d;
   margin: 3rem 4rem;
 }
 
@@ -61,13 +61,14 @@ PAGES
 .Calculator form {
   background-color: #e0d9ce;
   padding: 1.5rem;
-  border-radius: .5rem;
-  color: #002C5F;
+  border-radius: 0.5rem;
+  color: #002c5f;
 }
 .Calculator ul {
   list-style: none;
 }
-.Calculator div, .Calculator li {
+.Calculator div,
+.Calculator li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,14 +93,17 @@ PAGES
   border-bottom-left-radius: 0;
 }
 .on {
-  background-color: #47586A !important;
+  background-color: #47586a !important;
 }
-.Budget, .Compound {
+.Budget,
+.Compound {
   padding-top: 0;
 }
-.Budget p, .Compound p {
-  color: #777777;
+.Budget p,
+.Compound p {
+  color: #000000;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 /* 
@@ -120,7 +124,8 @@ PAGES
   font-size: 1rem;
   text-decoration: underline;
 }
-.Glossary h3, .Glossary h6 {
+.Glossary h3,
+.Glossary h6 {
   color: #002349;
 }
 
@@ -132,7 +137,9 @@ PAGES
   flex-direction: column;
   justify-content: space-between;
 }
-.Home h3, .Home h4, .homePanel h3 {
+.Home h3,
+.Home h4,
+.homePanel h3 {
   color: #002c5f;
 }
 
@@ -163,7 +170,7 @@ main h1 {
 .homePanel {
   text-align: center;
   background-color: white;
-  color: #9A9A9A;
+  color: #9a9a9a;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -262,7 +269,7 @@ main h1 {
 ||| TAKE ACTION
 */
 .takeAction {
-  color: #9A9A9A;
+  color: #9a9a9a;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
@@ -289,11 +296,13 @@ main h1 {
   justify-content: space-between;
   color: #777777;
 }
-.body h3, .body h4, .body h5 {
+.body h3,
+.body h4,
+.body h5 {
   color: #002c5f;
 }
 .body a {
-  color: #957C3D;
+  color: #957c3d;
 }
 .Page {
   margin-left: 3vw;
@@ -323,10 +332,8 @@ main h1 {
   width: 45%;
 }
 
-
 /* MOBILE VIEW */
 @media (max-width: 766px) {
-
   /* HOME PAGE */
   main {
     flex-direction: column;
@@ -337,14 +344,15 @@ main h1 {
     text-align: center;
     width: 100%;
   }
-  .goals section, .debt section {
+  .goals section,
+  .debt section {
     display: flex;
     flex-direction: column;
   }
   .goals section article {
     width: 80%;
   }
-  .goals section article:not(:first-child):not(:last-child){
+  .goals section article:not(:first-child):not(:last-child) {
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
     padding: 1rem 4rem 0 4rem;
@@ -378,25 +386,23 @@ main h1 {
     padding-top: 1rem;
   }
 
-
-
   /* CALCULATOR PAGE */
   .Calculator {
     padding: 2rem 0;
   }
   .Calculator form {
     background-color: #e0d9ce;
-    padding: 1.5rem .5rem;
-    border-radius: .5rem;
-    color: #002C5F;
+    padding: 1.5rem 0.5rem;
+    border-radius: 0.5rem;
+    color: #002c5f;
   }
   .Calculator ul {
-    padding-left: .5rem;
+    padding-left: 0.5rem;
   }
 
-
   /* LEARN PAGES */
-  .Learn ul, .Learn ol {
+  .Learn ul,
+  .Learn ol {
     padding-left: 0;
   }
   .Learn li:not(:last-child) {
@@ -406,7 +412,6 @@ main h1 {
   .LearnLongTermGoals h4 {
     text-decoration: underline;
   }
-
 
   /* GLOSSARY PAGE */
   .Glossary ul {
